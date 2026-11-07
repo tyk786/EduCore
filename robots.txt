@@ -1,3 +1,27 @@
+# EduCore AI-Friendly Robots Configuration (Generative Engine Optimization)
+# Inviting LLMs and Search Crawlers for full RAG and index discovery
+
+User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: Omgilibot
+Allow: /
+
+User-agent: anthropic-ai
+Allow: /
+
 User-agent: *
 Allow: /
 
