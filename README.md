@@ -120,7 +120,7 @@ To activate your license:
 --------------------------------------------------------------------------------
 Developed by: Sublime Enterprises / Tariq Yousuf
 Official Website: https://www.educoreapp.blogspot.com/
-Support & Licensing Inquiries: tyk786@gmail.com
+Support & Licensing Inquiries: info@educoreapp.in
 
 ================================================================================
    EduCore - Empowering Educational Excellence Through Intelligent Management
