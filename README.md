@@ -1,127 +1,112 @@
-================================================================================
-  EduCore - Desktop School Management & ERP System
-  Version: 5.2.3 (Enterprise Edition)
-  Quick Start, Operational & Best Practices Guide
-================================================================================
+# EduCore — Desktop School Management & ERP System
+**Version:** 8.2.3 (Enterprise Edition)  
+**Website:** [https://educoreapp.in](https://educoreapp.in)  
+**Support & Licensing:** [info@educoreapp.in](mailto:info@educoreapp.in)
 
-Thank you for choosing EduCore, an enterprise-grade desktop School Management
-and ERP System designed for educational institutions.
+Thank you for choosing **EduCore**, an enterprise-grade, 100% offline desktop School Management & ERP System engineered for educational institutions.
 
---------------------------------------------------------------------------------
-1. SYSTEM REQUIREMENTS & STORAGE
---------------------------------------------------------------------------------
-- Operating System: Windows 10, Windows 11 (64-bit Architecture).
-- Hardware: Minimum 4 GB RAM (8 GB recommended), 500 MB free disk space.
-- Architecture: 100% On-Premise / Local-First Desktop Application.
-- Data Storage: All databases, configurations, and automated backups are stored
-  securely in your local Windows user profile:
-    Database:    %LOCALAPPDATA%\EduCore\data\educore.db
-    Auto-Backups:%LOCALAPPDATA%\EduCore\backups\Auto\
-    Audit Logs:  %LOCALAPPDATA%\EduCore\logs\
-    Configs:     %LOCALAPPDATA%\EduCore\config\
+---
 
-* Note: Application updates and uninstalls safely preserve all existing school
-  databases, student records, and backup archives.
+## 1. System Requirements & Local Storage
 
---------------------------------------------------------------------------------
-2. INSTALLATION & FIRST-TIME SETUP
---------------------------------------------------------------------------------
-1. Run "EduCore_Setup_v5.2.3.exe" and follow the installer prompts.
-2. Launch "EduCore" from your Desktop or Start Menu.
-3. First-Run Wizard:
-   a. Admin Account: Create the primary Administrator account (uses industry-
-      standard bcrypt password hashing with secure salt).
-   b. School Profile: Enter your official School Name, Address, Contact details,
-      Affiliation No., and upload your School Logo (used on all generated PDF
-      reports, ID cards, fee receipts, and marksheets).
-   c. Initial Login: Log in with your new Administrator credentials.
+- **Operating System:** Windows 10 & Windows 11 (64-bit Architecture)
+- **Hardware:** Minimum 4 GB RAM (8 GB recommended), 500 MB free disk space
+- **Architecture:** 100% On-Premise / Local-First Desktop Application
+- **Data Storage:** All school databases, configurations, and automated backups are stored securely inside your local Windows user profile:
+  - **Database:** `%LOCALAPPDATA%\EduCore\school_management.db`
+  - **Auto-Backups:** `%LOCALAPPDATA%\EduCore\backups\auto\`
+  - **Audit Logs:** `%LOCALAPPDATA%\EduCore\educore_audit.log`
+  - **Configs:** `%LOCALAPPDATA%\EduCore\`
 
---------------------------------------------------------------------------------
-3. RECOMMENDED WORKFLOW FOR NEW SCHOOLS
---------------------------------------------------------------------------------
-To ensure smooth operation, configure your school data in this sequence:
+> **Note:** Application updates and uninstalls safely preserve all existing school databases, student records, and backup archives.
 
-Step 1: Classes & Subjects
-  - Navigate to the 'Classes' tab.
-  - Define class levels (e.g., Nursery, Class 1 to Class 12), sections, and
-    assign default monthly fee amounts.
-  - Configure class subject lists and assign Class Teachers.
+---
 
-Step 2: Staff & Faculty
-  - Navigate to the 'Staff' tab.
-  - Add teaching and administrative staff, designate roles, qualifications,
-    base salary amounts, and attach staff photos/documents.
-  - Print Staff ID Cards with barcode identifiers.
+## 2. Installation & First-Time Setup
 
-Step 3: Student Enrollment
-  - Navigate to the 'Students' tab.
-  - Enroll students individually or use the 'Bulk Import from Excel' feature
-    (download the bundled template "student_import_template.xlsx").
-  - Assign admission numbers, roll numbers, transport modes, and fee discounts.
-  - Generate Student ID Cards and Admit Cards with cryptographic QR verification.
+1. Download the official installer package (`Setup_EduCore_App.zip`) strictly from [https://educoreapp.in](https://educoreapp.in) or our [GitHub Releases](https://github.com/tyk786/EduCore/releases).
+2. Right-click `Setup_EduCore_App.zip`, select **"Extract All…"**, and click **Extract**. *(Always run the installer from inside the extracted folder, not from inside the ZIP preview.)*
+3. Open the extracted folder and double-click **`EduCore_Setup_v8.2.3.exe`**.
+   - If Windows displays the Microsoft Defender SmartScreen prompt, follow **Section 3** below.
+4. Follow the setup wizard prompts, click **Install**, and click **Finish**.
+5. Launch **EduCore** from your Desktop or Start Menu.
+6. Complete the **First-Run Wizard**:
+   - **Admin Account:** Create the primary Administrator account (protected with bcrypt password hashing and secure random salt).
+   - **School Profile:** Enter your School Name, Address, Contact details, Affiliation No., and upload your School Logo (automatically embedded on generated PDF report cards, ID cards, fee receipts, and marksheets).
+   - **Initial Login:** Sign in with your Administrator credentials.
 
-Step 4: Daily Operations & Academics
-  - Attendance: Mark daily student and faculty attendance registers with instant
-    analytics and summary reports.
-  - Timetable & Calendar: Build conflict-free weekly timetables and academic
-    event calendars.
-  - Examinations & Grading: Record exam marks, calculate percentage rankings,
-    and generate consolidated marksheets and report cards.
-  - Library Management: Catalog book titles, manage ISBN barcodes, process
-    borrower checkouts/returns, and track overdue loan fines.
+---
 
-Step 5: Finance, Fees & Payroll
-  - Automated Monthly Billing: Generate monthly tuition and transport invoices
-    with one click across all active classes.
-  - Fee Collection: Record full or partial payments, print professional A4/thermal
-    receipts with QR validation, and automatically roll over unpaid balances.
-  - Payroll & Disbursements: Process monthly staff salaries, record allowances,
-    advances, and deductions, and print staff payment vouchers.
-  - Expense Ledger: Track day-to-day school expenses, maintenance funds, and
-    generate financial balance sheet reports.
+## 3. Windows Defender SmartScreen & Security Verification
 
---------------------------------------------------------------------------------
-4. DATA PROTECTION & BACKUP RESILIENCE
---------------------------------------------------------------------------------
-EduCore features an enterprise automated backup engine:
-- Daily Auto-Backup: A background daemon checks database age on startup and
-  automatically creates a verified backup every 24 hours without UI interruption.
-- Pre-Backup Integrity Check: Runs SQLite "PRAGMA quick_check" before archiving
-  to guarantee corrupted files are never backed up.
-- Automatic Rotation: Keeps the newest 30 automated backup archives and prunes
-  older archives to conserve disk space.
-- Manual Backups: Perform on-demand backups anytime via Settings -> Maintenance ->
-  Backup & Restore.
-- Best Practice: Periodically copy the "%LOCALAPPDATA%\EduCore\backups\" folder
-  to a secure external drive or secondary storage.
+### 100% Safe, Offline & Virus-Free Guarantee
+EduCore is a self-contained, completely offline school ERP built for strict institutional data privacy. **No student records, grades, or fee transactions are ever transmitted to external cloud servers.**
 
---------------------------------------------------------------------------------
-5. LICENSING & ACTIVATION TIERS
---------------------------------------------------------------------------------
-EduCore includes a 30-day Evaluation Trial (up to 50 active students).
-For commercial deployment, perpetual node-locked license tiers are available
-based on active student capacity:
+### Why Does SmartScreen Appear ("Windows protected your PC")?
+- **Cloud Reputation Check:** Microsoft Defender SmartScreen checks newly released software downloads against an online download-volume database. Because EduCore releases frequent updates, Windows may display an advisory prompt asking you to verify the file source before executing.
+- **Why "Unknown publisher"?** To keep EduCore affordable for schools, it is distributed without adding the recurring surcharges of an expensive third-party corporate code-signing certificate. Windows Defender continues to actively scan the installer and protect your PC.
+- **Not a Virus Warning:** SmartScreen is an advisory prompt to pause and verify your source — **not** malware or virus detection. As long as you downloaded EduCore directly from [https://educoreapp.in](https://educoreapp.in) or this official repository, it is verified and safe to run. **Never disable Microsoft Defender or system antivirus protections.**
 
-- TRIAL Tier:        30 days evaluation, up to 50 active students.
-- BASIC Tier:        Perpetual license, up to 200 active students.
-- STANDARD Tier:     Perpetual license, up to 500 active students.
-- PROFESSIONAL Tier: Perpetual license, up to 700 active students.
-- ENTERPRISE Tier:   Perpetual license, up to 1,000 active students.
-- DIAMOND Tier:      Perpetual license, up to 2,000 active students.
-- ULTIMATE Tier:     Perpetual license, up to 3,000 active students.
+### How to Confirm & Proceed (2 Simple Clicks)
+1. **Click "More info":** Directly under the description text on the blue SmartScreen prompt, click the underlined **"More info"** link to reveal application details.
+2. **Verify App Name & Click "Run anyway":** Confirm that the App name displays **`EduCore_Setup_v8.2.3.exe`**, then click the **"Run anyway"** button at the bottom right to start setup.
 
-To activate your license:
-1. Open EduCore -> Settings -> Help & Licensing -> License Management.
-2. Note your unique Machine ID displayed in the dialog.
-3. Enter your authorized cryptographic activation key to activate instantly.
+> **Troubleshooting ("Run anyway" not visible):** If your school PC runs in Windows S-Mode or under managed IT group policies, right-click `EduCore_Setup_v8.2.3.exe`, open **Properties**, check the **"Unblock"** box at the bottom of the *General* tab, and click **Apply**.
 
---------------------------------------------------------------------------------
-6. TECHNICAL SUPPORT & CONTACT
---------------------------------------------------------------------------------
-Developed by: Sublime Enterprises / Tariq Yousuf
-Official Website: https://www.educoreapp.blogspot.com/
-Support & Licensing Inquiries: info@educoreapp.in
+📥 **Illustrated Walkthrough:** Download the step-by-step **[EduCore Installation & Safety Guide (.pdf)](assets/EduCore_Installation_Guide.pdf)** (also available at [https://educoreapp.in/assets/EduCore_Installation_Guide.pdf](https://educoreapp.in/assets/EduCore_Installation_Guide.pdf)).
 
-================================================================================
-   EduCore - Empowering Educational Excellence Through Intelligent Management
-================================================================================
+---
+
+## 4. Recommended Workflow for New Schools
+
+Configure your institution's data in this sequence for optimal operation:
+
+1. **Classes & Subjects:** Define class levels (e.g., Nursery, Class 1 to Class 12), sections, default monthly fees, subject lists, and Class Teachers in the **Classes** tab.
+2. **Staff & Faculty:** Add teaching and administrative staff, designate roles, qualifications, base salaries, photos/documents, and print **Staff ID Cards** with barcode identifiers.
+3. **Student Enrollment:** Enroll students individually or use **Bulk Import from Excel** (`student_import_template.xlsx`). Assign admission numbers, roll numbers, transport modes, discounts, and generate QR-verified **Student ID Cards** & **Admit Cards**.
+4. **Daily Operations & Academics:** Manage daily student/staff attendance, build conflict-free timetables and academic calendars, record exam grades for automated consolidated marksheets/report cards, and run barcode-enabled Library checkouts.
+5. **Finance, Fees & Payroll:** Generate one-click monthly tuition/transport invoices, collect full or partial payments with A4/thermal QR receipts, process monthly staff payroll vouchers, and track institutional expense ledgers.
+
+---
+
+## 5. Data Protection & Backup Resilience
+
+EduCore includes an automated local backup engine:
+- **Daily Auto-Backup:** Automatically verifies database age on startup and creates a local backup archive every 24 hours without interrupting work.
+- **Pre-Backup Integrity Check:** Runs SQLite `PRAGMA quick_check` prior to archiving so corrupted files are never backed up.
+- **Automatic Rotation:** Retains the latest 30 automated archives and prunes older snapshots to save disk space.
+- **Manual Backups:** Trigger on-demand backups anytime via `Settings → Maintenance → Backup & Restore`.
+- **Best Practice:** Periodically copy `%LOCALAPPDATA%\EduCore\backups\` to an external USB drive or secure secondary storage.
+
+---
+
+## 6. Licensing & Activation Tiers
+
+EduCore includes a **30-day Evaluation Trial** (up to 50 active students). Perpetual node-locked license tiers are available by active student capacity:
+
+| Tier | License Type | Active Student Limit |
+| :--- | :--- | :--- |
+| **Trial** | 30-Day Evaluation | Up to 50 students |
+| **Basic** | Perpetual | Up to 200 students |
+| **Standard** | Perpetual | Up to 500 students |
+| **Professional** | Perpetual | Up to 700 students |
+| **Enterprise** | Perpetual | Up to 1,000 students |
+| **Diamond** | Perpetual | Up to 2,000 students |
+| **Ultimate** | Perpetual | Up to 3,000 students |
+
+### How to Activate Your License
+1. Open EduCore and go to `Settings → Help & Licensing → License Management`.
+2. Copy your unique hardware **Machine ID**.
+3. Email your Machine ID and desired tier to **[info@educoreapp.in](mailto:info@educoreapp.in)** to receive your cryptographic activation key.
+
+---
+
+## 7. Technical Support & Contact
+
+- **Publisher:** Sublime Enterprises / Tariq Yousuf
+- **Official Website:** [https://educoreapp.in](https://educoreapp.in)
+- **Installation & Safety Guide:** [https://educoreapp.in/assets/EduCore_Installation_Guide.pdf](https://educoreapp.in/assets/EduCore_Installation_Guide.pdf)
+- **Support & Licensing Inquiries:** [info@educoreapp.in](mailto:info@educoreapp.in)
+
+---
+*EduCore — Smart Tool for a Smart School*
