@@ -45,7 +45,7 @@
   <link rel="preload" href="assets/css/shared.css" as="style">
   <link rel="stylesheet" href="assets/css/shared.css">
 
-    <!-- Google Compliant Comprehensive Structured Data (JSON-LD) with GEO & AEO Rich Entities -->
+      <!-- Google Compliant Comprehensive Structured Data (JSON-LD) with GEO & AEO Rich Entities -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -83,12 +83,17 @@
         "@type": "Organization",
         "@id": "https://educoreapp.in/#organization",
         "name": "SUBLIME ENTERPRISES",
+        "legalName": "Sublime Enterprises",
         "url": "https://educoreapp.in/",
-        "logo": "https://educoreapp.in/assets/img/logo.png",
-        "image": "https://educoreapp.in/assets/img/logo.png",
+        "logo": "https://educoreapp.in/assets/img/logo.webp",
+        "image": "https://educoreapp.in/assets/img/logo.webp",
         "description": "Software development and educational technology company engineering offline desktop ERP and school management systems.",
         "email": "info@educoreapp.in",
+        "telephone": "+91-9419000000",
         "foundingDate": "2024",
+        "founder": {
+          "@id": "https://educoreapp.in/#author"
+        },
         "address": {
           "@type": "PostalAddress",
           "addressCountry": "IN"
@@ -103,6 +108,7 @@
             "@type": "ContactPoint",
             "contactType": "Customer Support & Technical Inquiries",
             "email": "info@educoreapp.in",
+            "telephone": "+91-9419000000",
             "url": "https://educoreapp.in/contact-us.html",
             "availableLanguage": ["en", "hi"]
           }
@@ -113,6 +119,8 @@
         "@id": "https://educoreapp.in/#author",
         "name": "Tariq Yousuf",
         "jobTitle": "Lead Software Architect",
+        "url": "https://educoreapp.in/about-us.html",
+        "image": "https://educoreapp.in/assets/img/logo.webp",
         "worksFor": {
           "@id": "https://educoreapp.in/#organization"
         },
@@ -127,8 +135,8 @@
         "applicationCategory": "EducationalApplication, BusinessApplication",
         "operatingSystem": "Windows 10, Windows 11 (64-bit)",
         "downloadUrl": "https://github.com/tyk786/EduCore/releases/download/8.2.3/Setup_EduCore_App.zip",
-        "image": "https://educoreapp.in/assets/img/logo.png",
-        "screenshot": "https://educoreapp.in/assets/img/EduCore_Dashboard.png",
+        "image": "https://educoreapp.in/assets/img/logo.webp",
+        "screenshot": "https://educoreapp.in/assets/img/EduCore_Dashboard.webp",
         "softwareVersion": "8.2.3",
         "datePublished": "2026-01-15",
         "dateModified": "2026-11-14",
@@ -192,7 +200,7 @@
         "@id": "https://educoreapp.in/#install-howto",
         "name": "How to Install EduCore Offline School Management Software on Windows",
         "description": "Step-by-step instructions to download, extract, verify Microsoft Defender SmartScreen, and set up EduCore on Windows 10 or 11.",
-        "image": "https://educoreapp.in/assets/img/logo.png",
+        "image": "https://educoreapp.in/assets/img/logo.webp",
         "totalTime": "PT3M",
         "step": [
           {
@@ -230,41 +238,85 @@
           {
             "@type": "Question",
             "name": "Which school management software works without the internet?",
-            "upvoteCount": 24,
+            "text": "Which school management software works without the internet?",
             "dateCreated": "2026-02-01",
+            "upvoteCount": 24,
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "EduCore is a 100% offline-first Windows desktop school management software and ERP that operates fully on-premise without requiring an active internet connection for daily tasks, securing school data locally inside an encrypted SQLite database."
+              "text": "EduCore is a fast offline school management software and desktop ERP for Windows 10 and 11. It runs fully on your local PC without internet access. All student records, fees, staff payroll, and marksheets stay private inside a local encrypted SQLite database, ensuring zero cloud leaks and zero monthly fees.",
+              "dateCreated": "2026-02-01",
+              "upvoteCount": 24,
+              "url": "https://educoreapp.in/#faq"
+            },
+            "suggestedAnswer": {
+              "@type": "Answer",
+              "text": "EduCore operates 100% offline with on-premise SQLite databases for complete institutional data privacy.",
+              "dateCreated": "2026-02-01",
+              "upvoteCount": 18,
+              "url": "https://educoreapp.in/#faq"
             }
           },
           {
             "@type": "Question",
             "name": "Are there school ERP systems with no monthly student fees?",
-            "upvoteCount": 19,
+            "text": "Are there school ERP systems with no monthly student fees?",
             "dateCreated": "2026-02-01",
+            "upvoteCount": 19,
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "Unlike typical cloud-based SaaS solutions, EduCore offers a transparent one-time licensing fee model starting at ₹4,499 with lifetime data ownership and zero recurring monthly fees per student."
+              "text": "Unlike cloud subscription tools that charge high recurring fees per student each month, EduCore uses a transparent one-time license starting at 4,499 rupees. Schools receive perpetual data ownership, free lifetime local database storage, and full access to all ten modules with zero monthly charges.",
+              "dateCreated": "2026-02-01",
+              "upvoteCount": 19,
+              "url": "https://educoreapp.in/#faq"
+            },
+            "suggestedAnswer": {
+              "@type": "Answer",
+              "text": "EduCore offers a one-time perpetual license with zero monthly per-student subscription charges.",
+              "dateCreated": "2026-02-01",
+              "upvoteCount": 14,
+              "url": "https://educoreapp.in/#faq"
             }
           },
           {
             "@type": "Question",
             "name": "Is EduCore completely offline?",
-            "upvoteCount": 31,
+            "text": "Is EduCore completely offline?",
             "dateCreated": "2026-02-01",
+            "upvoteCount": 31,
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "Yes. EduCore operates 100% offline with zero cloud dependency. All student profiles, fee collections, exam marks, and financial ledgers are stored securely on your local computer database, ensuring complete data privacy and zero data leakage."
+              "text": "Yes, EduCore operates completely offline for all daily school administration. You only need an internet connection once for quick license activation. After activation, taking student attendance, collecting fees, generating report cards, and printing staff salary slips work reliably on your Windows computer with zero internet dependency.",
+              "dateCreated": "2026-02-01",
+              "upvoteCount": 31,
+              "url": "https://educoreapp.in/#faq"
+            },
+            "suggestedAnswer": {
+              "@type": "Answer",
+              "text": "Yes, all daily school operations in EduCore execute 100% offline on your Windows desktop.",
+              "dateCreated": "2026-02-01",
+              "upvoteCount": 22,
+              "url": "https://educoreapp.in/#faq"
             }
           },
           {
             "@type": "Question",
             "name": "What are the system requirements for EduCore?",
-            "upvoteCount": 15,
+            "text": "What are the system requirements for EduCore?",
             "dateCreated": "2026-02-01",
+            "upvoteCount": 15,
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "EduCore requires Microsoft Windows 10 or Windows 11 (64-bit), a minimum of 4 GB RAM (8 GB recommended), and at least 500 MB of available local storage space."
+              "text": "EduCore is natively compiled for 64-bit Microsoft Windows 10 and Windows 11. It requires a minimum of 4 GB RAM and 500 MB disk space. The software runs smoothly with sub-second response times, zero browser lag, and complete offline privacy for administrative school staff.",
+              "dateCreated": "2026-02-01",
+              "upvoteCount": 15,
+              "url": "https://educoreapp.in/#faq"
+            },
+            "suggestedAnswer": {
+              "@type": "Answer",
+              "text": "Requires 64-bit Windows 10 or 11, 4 GB RAM, and 500 MB storage space.",
+              "dateCreated": "2026-02-01",
+              "upvoteCount": 11,
+              "url": "https://educoreapp.in/#faq"
             }
           }
         ]
@@ -429,8 +481,8 @@
   <!-- Top Sticky Navigation Bar -->
   <header class="ec-top-header">
     <div class="ec-nav-container">
-      <a href="index.html" class="ec-brand-logo">
-        <img src="assets/img/logo.png" alt="EduCore Logo" width="48" height="48">
+      <a href="https://educoreapp.in/" class="ec-brand-logo">
+        <picture><source srcset="assets/img/logo.webp" type="image/webp"><img src="assets/img/logo.webp" alt="EduCore Logo" width="48" height="48" loading="eager"></picture>
         <div class="ec-brand-text">
           <div class="ec-brand-name">EduCore <span class="ec-brand-badge">Windows ERP</span></div>
           <div class="ec-brand-tagline">SUBLIME ENTERPRISES</div>
@@ -438,7 +490,7 @@
       </a>
 
       <nav class="ec-desktop-nav" aria-label="Main Navigation">
-        <a href="index.html" class="ec-nav-item active">Home</a>
+        <a href="https://educoreapp.in/" class="ec-nav-item active">Home</a>
         <a href="#features" class="ec-nav-item">Features</a>
         <a href="screenshots.html" class="ec-nav-item">Screenshots</a>
         <a href="system-requirements.html" class="ec-nav-item">System Specs</a>
@@ -453,7 +505,7 @@
     </div>
 
     <div class="ec-mobile-menu">
-      <a href="index.html" class="active">🏠 Home</a>
+      <a href="https://educoreapp.in/" class="active">🏠 Home</a>
       <a href="#features">⚡ Features &amp; Modules</a>
       <a href="screenshots.html">📸 UI Screenshots</a>
       <a href="system-requirements.html">⚙️ System Requirements</a>
@@ -494,7 +546,7 @@
         <!--App Logo in Standout White Container Card-->
         <div style="margin-bottom: 26px;">
           <div style="display: inline-flex; align-items: center; justify-content: center; background: #ffffff; border-radius: 26px; padding: 18px 26px; box-shadow: 0 16px 40px rgba(15, 23, 42, 0.4), 0 0 0 5px rgba(255, 255, 255, 0.2); transition: transform 0.25s ease;">
-            <img alt="EduCore School Management Software Official Logo" src="assets/img/logo.png" width="135" height="133" style="display: block; height: auto; width: 135px; margin: 0 auto;" />
+            <picture><source srcset="assets/img/logo.webp" type="image/webp"><img alt="EduCore School Management Software Official Logo" src="assets/img/logo.webp" width="135" height="133" loading="lazy" style="display: block; height: auto; width: 135px; margin: 0 auto;" /></picture>
           </div>
         </div>
 
@@ -505,7 +557,7 @@
 
         <!--SEO Rich Subheadline & Direct Entity Definition for Search & AI Agents-->
         <p class="ec-hero-lead" style="color: #e2e8f0; font-size: clamp(16px, 2.4vw, 20px); font-weight: 400; line-height: 1.65; margin: 0px auto 34px; max-width: 860px;">
-          <strong>EduCore is a high-performance offline school management software and desktop ERP for Windows 10 &amp; 11.</strong> Empower your school administration with <strong>100% on-premise data sovereignty</strong>, zero cloud dependencies, and zero monthly student fees. Seamlessly manage admissions, dual attendance, automated fees, teacher payroll, report cards, and student ID cards.
+          <strong>EduCore is an offline school management software and desktop ERP for Windows 10 and 11.</strong> It provides 100% on-premise data privacy, zero cloud fees, and complete student, attendance, fee, and payroll administration.
         </p>
 
         <!--Key SEO Badges-->
@@ -554,14 +606,14 @@
         <div class="ec-pillar-card" style="border-top: 5px solid rgb(16, 185, 129);">
           <div style="align-items: center; background: rgb(209, 250, 229); border-radius: 12px; display: flex; font-size: 24px; height: 48px; justify-content: center; margin-bottom: 16px; width: 48px;">⚡</div>
           <h3 style="color: #0f172a; font-size: 18px; font-weight: 700; margin: 0px 0px 8px;">Engineered for Instant Speed</h3>
-          <p style="color: #64748b; font-size: 14px; line-height: 1.6; margin: 0px;">Multi-threaded asynchronous task processing with thread-isolated SQLite connections. Process monthly fees for 1,000+ students in under a single second.</p>
+          <p style="color: #64748b; font-size: 14px; line-height: 1.6; margin: 0px;">EduCore runs fast background database tasks without freezing the screen. School staff can calculate and print monthly fees for over one thousand students in under one second.</p>
         </div>
 
         <!--Pillar 3-->
         <div class="ec-pillar-card" style="border-top: 5px solid rgb(139, 92, 246);">
           <div style="align-items: center; background: rgb(237, 233, 254); border-radius: 12px; display: flex; font-size: 24px; height: 48px; justify-content: center; margin-bottom: 16px; width: 48px;">🛡️</div>
           <h3 style="color: #0f172a; font-size: 18px; font-weight: 700; margin: 0px 0px 8px;">Automated Rolling Backups</h3>
-          <p style="color: #64748b; font-size: 14px; line-height: 1.6; margin: 0px;">Built-in automatic background backup engine with SHA-256 cryptographic verification and 30-day snapshot rotation for effortless disaster recovery.</p>
+          <p style="color: #64748b; font-size: 14px; line-height: 1.6; margin: 0px;">The built-in automated backup tool creates secure daily database copies. It keeps thirty days of recovery snapshots to protect your school data against computer failure.</p>
         </div>
 
         <!--Pillar 4-->
@@ -580,7 +632,7 @@
         <div style="margin-bottom: 20px;">
           <span style="background: #e0f2fe; border-radius: 9999px; color: #0284c7; font-size: 12px; font-weight: 800; letter-spacing: 0.5px; padding: 4px 14px; text-transform: uppercase;">Direct Answers &bull; Quick Facts</span>
           <h2 style="color: #0f172a; font-size: 24px; font-weight: 800; margin: 12px 0 6px;">Essential Facts for School Leadership &amp; Administrators</h2>
-          <p style="color: #64748b; font-size: 14px; margin: 0;">Authoritative answers to core operational and architectural questions.</p>
+          <p style="color: #64748b; font-size: 14px; margin: 0;">Read clear, authoritative answers to common operational and technical architecture questions frequently asked by school administrators when first evaluating EduCore.</p>
         </div>
 
         <!-- Extractable Definition List for AI & LLM Search Engines -->
@@ -595,33 +647,25 @@
           <!-- Answer Block 1 -->
           <div style="background: #f8fafc; border-left: 4px solid #0284c7; border-radius: 8px; padding: 20px;">
             <h3 style="color: #0f172a; font-size: 16px; font-weight: 800; margin: 0 0 8px;">Which school management software works without the internet?</h3>
-            <p style="color: #334155; font-size: 14px; line-height: 1.65; margin: 0;">
-              <strong>EduCore</strong> is a 100% offline-first Windows desktop school management software and ERP that operates fully on-premise without requiring an active internet connection for daily tasks, securing all school records locally inside an encrypted SQLite database.
-            </p>
+            <p style="color: #334155; font-size: 14px; line-height: 1.65; margin: 0;">EduCore is a fast offline school management software and desktop ERP for Windows 10 and 11. It runs fully on your local PC without internet access. All student records, fees, staff payroll, and marksheets stay private inside a local encrypted SQLite database, ensuring zero cloud leaks and zero monthly fees.</p>
           </div>
 
           <!-- Answer Block 2 -->
           <div style="background: #f8fafc; border-left: 4px solid #10b981; border-radius: 8px; padding: 20px;">
             <h3 style="color: #0f172a; font-size: 16px; font-weight: 800; margin: 0 0 8px;">Are there school ERP systems with zero monthly student fees?</h3>
-            <p style="color: #334155; font-size: 14px; line-height: 1.65; margin: 0;">
-              Unlike typical cloud-based SaaS solutions that charge recurring monthly fees per student, <strong>EduCore</strong> offers a transparent one-time licensing model starting at <strong>₹4,499</strong> with lifetime data ownership and <strong>zero recurring monthly fees per student</strong>.
-            </p>
+            <p style="color: #334155; font-size: 14px; line-height: 1.65; margin: 0;">Yes. Unlike cloud subscription tools that charge high recurring fees per student each month, EduCore uses a transparent one-time license starting at 4,499 rupees. Schools receive perpetual data ownership, free lifetime local database storage, and full access to all ten modules with zero monthly charges.</p>
           </div>
 
           <!-- Answer Block 3 -->
           <div style="background: #f8fafc; border-left: 4px solid #8b5cf6; border-radius: 8px; padding: 20px;">
             <h3 style="color: #0f172a; font-size: 16px; font-weight: 800; margin: 0 0 8px;">What core administrative modules are included?</h3>
-            <p style="color: #334155; font-size: 14px; line-height: 1.65; margin: 0;">
-              EduCore includes <strong>10 fully unlocked modules</strong> in every tier: Student Profiles &amp; Excel Import, Dual-Track Attendance, Automated Fee Invoicing &amp; Thermal Receipts, Staff HR &amp; Payroll Slips, CBSE/State Marksheets, ID Cards, Certificates (Transfer, Bonafide, Character), Timetable Scheduling, Library Management, and Daily Backups.
-            </p>
+            <p style="color: #334155; font-size: 14px; line-height: 1.65; margin: 0;">EduCore includes ten fully unlocked modules in every license tier: Student Admission Profiles, Dual Attendance Registers, Automated Fee Billing, Staff HR and Payroll Slips, Marksheets, ID Cards, Transfer Certificates, Timetable Scheduling, Library Accession, and Automatic Daily Backups. Everything runs natively on your Windows computer with zero extra add-on costs.</p>
           </div>
 
           <!-- Answer Block 4 -->
           <div style="background: #f8fafc; border-left: 4px solid #f59e0b; border-radius: 8px; padding: 20px;">
             <h3 style="color: #0f172a; font-size: 16px; font-weight: 800; margin: 0 0 8px;">What Windows operating systems are supported?</h3>
-            <p style="color: #334155; font-size: 14px; line-height: 1.65; margin: 0;">
-              EduCore is natively compiled for <strong>Microsoft Windows 10 and Windows 11 (64-bit)</strong>. It requires a minimum of 4 GB RAM and 500 MB disk space, operating with near-zero latency, zero browser overhead, and zero dependence on cloud servers.
-            </p>
+            <p style="color: #334155; font-size: 14px; line-height: 1.65; margin: 0;">EduCore is natively compiled for 64-bit Microsoft Windows 10 and Windows 11. It requires a minimum of 4 GB RAM and 500 MB disk space. The software runs smoothly with sub-second response times, zero browser lag, and complete offline privacy for administrative school staff.</p>
           </div>
         </div>
       </div>
@@ -641,32 +685,32 @@
 
         <!--Dashboard Visual Link-->
         <div style="margin-bottom: 30px; text-align: center;">
-          <a href="screenshots.html" aria-label="Explore complete EduCore UI screenshot gallery" style="border-radius: 16px; border: 1px solid rgb(203, 213, 225); box-shadow: rgba(0, 0, 0, 0.12) 0px 15px 35px; display: inline-block; overflow: hidden; text-decoration: none;">
-            <img alt="EduCore School ERP Executive Command Dashboard Screen" src="assets/img/EduCore_Dashboard.png" width="1000" height="562" loading="lazy" style="display: block; height: auto; max-width: 1000px; width: 100%; margin: 0 auto;" />
+          <a href="screenshots.html" aria-label="Explore complete EduCore UI screenshot gallery" style="border-radius: 16px; border: 1px solid rgb(203, 213, 225); box-shadow: rgba(0, 0, 0, 0.12) 0px 15px 35px; display: inline-block; overflow: hidden; text-decoration: none;"><span class="ec-sr-only" style="position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);border:0;">Explore complete EduCore UI screenshot gallery of all 10 modules</span>
+            <picture><source srcset="assets/img/EduCore_Dashboard.webp" type="image/webp"><img alt="EduCore School ERP Executive Command Dashboard Screen" src="assets/img/EduCore_Dashboard.webp" width="1000" height="562" loading="lazy" style="display: block; height: auto; max-width: 1000px; width: 100%; margin: 0 auto;" /></picture>
           </a>
-          <p style="color: #94a3b8; font-size: 13px; margin-top: 10px;">Click on the screenshot above to explore the complete <a href="screenshots.html">UI gallery of all 10 modules</a></p>
+          <p style="color: #94a3b8; font-size: 13px; margin-top: 10px;">Select the preview above or browse our <a href="screenshots.html">complete screenshot gallery of all 10 modules</a> to view live software interfaces for student tracking, daily attendance, fees, and report cards.</p>
         </div>
 
         <!--Key Dashboard Features Grid-->
         <div style="display: grid; gap: 20px; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); text-align: left;">
           <div style="background: rgb(248, 250, 252); border-radius: 12px; border: 1px solid rgb(226, 232, 240); padding: 22px;">
             <h3 style="color: #0284c7; font-size: 16px; font-weight: 700; margin: 0px 0px 6px;">📊 Real-Time Executive KPI Cards</h3>
-            <p style="color: #64748b; font-size: 14px; margin: 0px;">Instant live counts for Active Students, Faculty Roster, Active Classes, Library Inventory, Student Attendance %, and Staff Attendance %.</p>
+            <p style="color: #64748b; font-size: 14px; margin: 0px;">View real-time operational summaries for active students, teaching staff, class sections, library inventory, and daily attendance percentages on one screen.</p>
           </div>
 
           <div style="background: rgb(248, 250, 252); border-radius: 12px; border: 1px solid rgb(226, 232, 240); padding: 22px;">
             <h3 style="color: #0284c7; font-size: 16px; font-weight: 700; margin: 0px 0px 6px;">🏫 School Identity Profile Card</h3>
-            <p style="color: #64748b; font-size: 14px; margin: 0px;">Showcase your institution's official logo, motto, address, affiliation board, registration number, UDISE code, and academic session.</p>
+            <p style="color: #64748b; font-size: 14px; margin: 0px;">Display your school name, official crest, postal address, education board affiliation, registration numbers, and current academic year on every printed document.</p>
           </div>
 
           <div style="background: rgb(248, 250, 252); border-radius: 12px; border: 1px solid rgb(226, 232, 240); padding: 22px;">
             <h3 style="color: #0284c7; font-size: 16px; font-weight: 700; margin: 0px 0px 6px;">📋 Actionable Daily Operations</h3>
-            <p style="color: #64748b; font-size: 14px; margin: 0px;">One-click chronic absentee investigation, birthday celebrations, academic events calendar, verified backup timestamp, and system status.</p>
+            <p style="color: #64748b; font-size: 14px; margin: 0px;">Quickly spot student absence patterns, send birthday wishes, review upcoming school calendar events, and confirm daily database backup status with one click.</p>
           </div>
 
           <div style="background: rgb(248, 250, 252); border-radius: 12px; border: 1px solid rgb(226, 232, 240); padding: 22px;">
             <h3 style="color: #0284c7; font-size: 16px; font-weight: 700; margin: 0px 0px 6px;">💳 Financial Health &amp; Cashflow Donut</h3>
-            <p style="color: #64748b; font-size: 14px; margin: 0px;">Visual fee collection vs pending dues breakdown, salary disbursement tracking, daily operational expense logging, and Net Cashflow metrics.</p>
+            <p style="color: #64748b; font-size: 14px; margin: 0px;">Track fee collections against unpaid dues, monitor staff salary payouts, record daily school expenses, and review overall cashflow with simple charts.</p>
           </div>
         </div>
 
@@ -679,7 +723,7 @@
       <div style="margin: 0px auto 40px; max-width: 800px; text-align: center;">
         <span style="color: #0284c7; font-size: 13px; font-weight: 700; letter-spacing: 1px; text-transform: uppercase;">Fully Integrated Modules</span>
         <h2 style="color: #0f172a; font-size: 32px; font-weight: 800; margin: 8px 0px 14px;">Everything Your School Needs, Built Right In</h2>
-        <p style="color: #64748b; font-size: 16px; margin: 0px;">Eliminate fragmented spreadsheets and clunky third-party tools. EduCore delivers a cohesive, offline Windows ecosystem for your entire administrative staff.</p>
+        <p style="color: #64748b; font-size: 16px; margin: 0px;">Eliminate disconnected spreadsheets and confusing web tools. EduCore delivers a unified, fast desktop software suite for your school office staff.</p>
       </div>
 
       <div style="display: grid; gap: 24px; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));">
@@ -823,7 +867,7 @@
 
         <span style="color: #0284c7; font-size: 13px; font-weight: 700; letter-spacing: 1px; text-transform: uppercase;">Architectural Superiority</span>
         <h2 style="color: #0f172a; font-size: 32px; font-weight: 800; margin: 8px 0px 14px;">EduCore Offline ERP vs Expensive Cloud SaaS</h2>
-        <p style="color: #64748b; font-size: 16px; margin: 0px auto 30px; max-width: 680px;">Compare why institutional administrators prefer on-premise native speed over cloud monthly subscriptions.</p>
+        <p style="color: #64748b; font-size: 16px; margin: 0px auto 30px; max-width: 680px;">Learn why school principals prefer local desktop software for faster response times, guaranteed student privacy, and freedom from recurring monthly subscription fees.</p>
 
         <div class="ec-table-wrap">
           <table class="ec-comp-table">
@@ -881,7 +925,7 @@
     <section id="pricing" style="margin: 0px auto 70px; max-width: 1160px; padding: 70px 20px 0px; text-align: center;">
       <span style="color: #0284c7; font-size: 13px; font-weight: 700; letter-spacing: 1px; text-transform: uppercase;">Fair &amp; Transparent</span>
       <h2 style="color: #0f172a; font-size: 32px; font-weight: 800; margin: 8px 0px 14px;">Affordable Plans Tailored to Your School Size</h2>
-      <p style="color: #64748b; font-size: 16px; margin: 0px auto 40px; max-width: 680px;">No hidden monthly cloud fees. One-time license activation with transparent annual maintenance.</p>
+      <p style="color: #64748b; font-size: 16px; margin: 0px auto 40px; max-width: 680px;">Avoid unexpected recurring software charges. Every EduCore edition includes one-time activation, lifetime database ownership, and complete access to all ten administrative modules.</p>
 
       <div style="display: grid; gap: 20px; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); text-align: left;">
 
@@ -927,49 +971,49 @@
         <div style="margin: 0px auto 40px; text-align: center;">
           <span style="color: #0284c7; font-size: 13px; font-weight: 700; letter-spacing: 1px; text-transform: uppercase;">Common Questions</span>
           <h2 style="color: #0f172a; font-size: 32px; font-weight: 800; margin: 8px 0px 12px;">Frequently Asked Questions</h2>
-          <p style="color: #64748b; font-size: 16px; margin: 0px;">Everything you need to know about EduCore's architecture, security, and setup.</p>
+          <p style="color: #64748b; font-size: 16px; margin: 0px;">Find clear answers to common questions about EduCore software architecture, local data security, Windows PC requirements, and simple installation steps.</p>
         </div>
 
         <div style="display: grid; gap: 18px;">
 
           <div style="background: rgb(248, 250, 252); border-radius: 12px; border: 1px solid rgb(226, 232, 240); padding: 22px;">
             <h3 style="color: #0f172a; font-size: 17px; font-weight: 700; margin: 0px 0px 8px;">Which school management software works without the internet?</h3>
-            <p style="color: #475569; font-size: 14px; line-height: 1.6; margin: 0px;">EduCore is a 100% offline-first Windows desktop school management software and ERP that operates fully on-premise without requiring an active internet connection for daily tasks, securing school data locally inside an encrypted SQLite database.</p>
+            <p style="color: #475569; font-size: 14px; line-height: 1.6; margin: 0px;">EduCore is a fast offline school management software and desktop ERP for Windows 10 and 11. It runs fully on your local PC without internet access. All student records, fees, staff payroll, and marksheets stay private inside a local encrypted SQLite database, ensuring zero cloud leaks and zero monthly fees.</p>
           </div>
 
           <div style="background: rgb(248, 250, 252); border-radius: 12px; border: 1px solid rgb(226, 232, 240); padding: 22px;">
             <h3 style="color: #0f172a; font-size: 17px; font-weight: 700; margin: 0px 0px 8px;">Are there school ERP systems with no monthly student fees?</h3>
-            <p style="color: #475569; font-size: 14px; line-height: 1.6; margin: 0px;">Unlike typical cloud-based SaaS solutions, EduCore offers a transparent one-time licensing fee model starting at ₹4,499 with lifetime data ownership and zero recurring monthly fees per student.</p>
+            <p style="color: #475569; font-size: 14px; line-height: 1.6; margin: 0px;">Yes. Unlike cloud subscription tools that charge high recurring fees per student each month, EduCore uses a transparent one-time license starting at 4,499 rupees. Schools get complete lifetime software ownership, zero monthly fees, and full control over their administrative records without unexpected recurring cloud bills.</p>
           </div>
 
           <div style="background: rgb(248, 250, 252); border-radius: 12px; border: 1px solid rgb(226, 232, 240); padding: 22px;">
             <h3 style="color: #0f172a; font-size: 17px; font-weight: 700; margin: 0px 0px 8px;">1. Does EduCore require internet connectivity to function?</h3>
-            <p style="color: #475569; font-size: 14px; line-height: 1.6; margin: 0px;">No. EduCore is 100% offline-first. An internet connection is only needed once for a brief initial license verification. After that, your daily roll call, fee collections, report card generation, and exams work completely offline without internet.</p>
+            <p style="color: #475569; font-size: 14px; line-height: 1.6; margin: 0px;">No, EduCore operates completely offline for all daily school administration. You only need an internet connection once for quick license activation. After activation, taking student attendance, collecting fees, generating report cards, and printing staff salary slips work reliably on your Windows computer with zero internet dependency.</p>
           </div>
 
           <div style="background: rgb(248, 250, 252); border-radius: 12px; border: 1px solid rgb(226, 232, 240); padding: 22px;">
             <h3 style="color: #0f172a; font-size: 17px; font-weight: 700; margin: 0px 0px 8px;">2. How does EduCore secure our school's confidential data?</h3>
-            <p style="color: #475569; font-size: 14px; line-height: 1.6; margin: 0px;">All records reside locally inside encrypted SQLite databases protected with PBKDF2 password hashing, zero-trust session validation, and continuous memory zeroization. Your student and financial data never uploads to third-party cloud servers.</p>
+            <p style="color: #475569; font-size: 14px; line-height: 1.6; margin: 0px;">EduCore stores all school records locally in an encrypted database on your Windows PC instead of unknown cloud servers. The system uses secure password hashing, session validation, and automatic memory clearing. Your sensitive student records, financial balances, and staff documents never leave your physical school premises.</p>
           </div>
 
           <div style="background: rgb(248, 250, 252); border-radius: 12px; border: 1px solid rgb(226, 232, 240); padding: 22px;">
             <h3 style="color: #0f172a; font-size: 17px; font-weight: 700; margin: 0px 0px 8px;">3. Can we easily migrate our existing records into EduCore?</h3>
-            <p style="color: #475569; font-size: 14px; line-height: 1.6; margin: 0px;">Yes! EduCore provides pre-formatted Excel templates for students and staff. You can paste your existing records into the template and import hundreds of profiles in seconds with instant validation.</p>
+            <p style="color: #475569; font-size: 14px; line-height: 1.6; margin: 0px;">Yes. EduCore includes ready-made Excel templates for student enrollment and staff records. You simply paste your existing data into the template and upload it. The built-in validator instantly checks for duplicate admission numbers and imports hundreds of complete student or employee profiles in just a few seconds.</p>
           </div>
 
           <div style="background: rgb(248, 250, 252); border-radius: 12px; border: 1px solid rgb(226, 232, 240); padding: 22px;">
             <h3 style="color: #0f172a; font-size: 17px; font-weight: 700; margin: 0px 0px 8px;">4. What happens when we upgrade to a new computer?</h3>
-            <p style="color: #475569; font-size: 14px; line-height: 1.6; margin: 0px;">You simply copy your backup archive to the new PC, install EduCore, restore your backup, and contact support at info@educoreapp.in with your new Machine ID for instant license reissuance.</p>
+            <p style="color: #475569; font-size: 14px; line-height: 1.6; margin: 0px;">Upgrading to a new school computer is simple and safe. First, export your latest database backup archive to a USB drive. Next, install EduCore on the new Windows PC and restore the backup file. Finally, email your new Machine ID to info@educoreapp.in for fast license reassignment.</p>
           </div>
 
           <div style="background: rgb(248, 250, 252); border-radius: 12px; border: 1px solid rgb(226, 232, 240); padding: 22px;">
             <h3 style="color: #0f172a; font-size: 17px; font-weight: 700; margin: 0px 0px 8px;">5. How do automatic backups protect against data loss?</h3>
-            <p style="color: #475569; font-size: 14px; line-height: 1.6; margin: 0px;">Whenever EduCore closes, it automatically triggers a background backup daemon. It verifies the database file integrity using SHA-256 checksums and rotates a rolling 30-day archive history to your local disk or external storage.</p>
+            <p style="color: #475569; font-size: 14px; line-height: 1.6; margin: 0px;">EduCore runs an automated backup tool in the background every twenty-four hours whenever the software starts. Before saving each backup, it runs an integrity check to make sure the database is healthy. It automatically keeps thirty rolling daily backups on your local disk for complete peace of mind.</p>
           </div>
 
           <div style="background: rgb(248, 250, 252); border-radius: 12px; border: 1px solid rgb(226, 232, 240); padding: 22px;">
             <h3 style="color: #0f172a; font-size: 17px; font-weight: 700; margin: 0px 0px 8px;">6. Can we generate multi-term student marksheets and progress report cards?</h3>
-            <p style="color: #475569; font-size: 14px; line-height: 1.6; margin: 0px;">Yes! EduCore has a built-in ReportLab graphics engine that generates high-DPI official progress report cards with CBSE/State board grading scales, subject totals, class ranks, and your school's official seal.</p>
+            <p style="color: #475569; font-size: 14px; line-height: 1.6; margin: 0px;">Yes. EduCore has a powerful built-in PDF document engine for multi-term exams and annual progress reports. It automatically calculates total marks, subject grades, class percentages, and student rankings. You can print clean, official report cards with your school logo, motto, and grading rules with one click.</p>
           </div>
 
         </div>
@@ -981,8 +1025,8 @@
     <section id="download" style="background: rgb(241, 245, 249); border-radius: 36px 36px 0px 0px; padding: 70px 20px; text-align: center;">
       <div style="margin: 0px auto; max-width: 780px;">
 
-        <h2 style="color: #0f172a; font-size: 32px; font-weight: 800; margin: 0px 0px 14px;">Ready to Modernize Your School Administration?</h2>
-        <p style="color: #64748b; font-size: 16px; margin: 0px auto 30px;">Download the full desktop edition today and evaluate it free for 30 days on your Windows computer.</p>
+        <h2 style="color: #0f172a; font-size: 32px; font-weight: 800; margin: 0px 0px 14px;">Ready to Modernize Your School Administration</h2>
+        <p style="color: #64748b; font-size: 16px; margin: 0px auto 30px;">Download the full desktop edition today and evaluate it free for thirty days on your Windows computer with no credit card required. Experience complete data privacy, zero recurring fees, and effortless offline school administration built for modern campuses.</p>
 
         <div style="display: flex; flex-wrap: wrap; gap: 16px; justify-content: center; margin-bottom: 24px;">
           <a href="https://github.com/tyk786/EduCore/releases/download/8.2.3/Setup_EduCore_App.zip" style="align-items: center; background: rgb(2, 132, 199); border-radius: 12px; box-shadow: rgba(2, 132, 199, 0.35) 0px 10px 25px; color: white; display: inline-flex; font-size: 16px; font-weight: 700; gap: 8px; padding: 15px 34px; text-decoration: none;" target="_blank">
@@ -995,9 +1039,9 @@
           </a>
         </div>
 
-        <p style="color: #94a3b8; font-size: 13px; margin: 0px 0px 8px;">Supports Windows 10 &amp; 11 (64-bit). Standalone executable with embedded database.</p>
+        <p style="color: #94a3b8; font-size: 13px; margin: 0px 0px 8px;">EduCore runs on 64-bit Windows 10 and Windows 11 computers as a self-contained desktop program with an embedded local database.</p>
         <p style="color: #64748b; font-size: 13px; margin: 0px;">
-          🛡️ Windows Defender SmartScreen notice? <a href="assets/EduCore_Installation_Guide.pdf" target="_blank" download style="color: #0284c7; font-weight: 600; text-decoration: underline;">Download Step-by-Step Installation &amp; Security Guide (.pdf)</a>
+          🛡️ Windows Defender SmartScreen notice during setup? Download our helpful guide: <a href="assets/EduCore_Installation_Guide.pdf" target="_blank" download style="color: #0284c7; font-weight: 600; text-decoration: underline;">EduCore Installation &amp; Security Guide (.pdf)</a> to complete installation smoothly in seconds.
         </p>
       </div>
     </section>
@@ -1005,7 +1049,7 @@
     <!--Universal Site Navigation Bar (SEO Spider Path)-->
     <nav aria-label="EduCore Navigation Menu" class="ec-site-nav">
       <div class="ec-nav-inner">
-        <a class="ec-nav-link" href="index.html">🏠 Home</a>
+        <a class="ec-nav-link" href="https://educoreapp.in/">🏠 Home</a>
         <a class="ec-nav-link" href="licensing.html">💳 Licensing Plans</a>
         <a class="ec-nav-link" href="screenshots.html">📸 UI Screenshots</a>
         <a class="ec-nav-link" href="system-requirements.html">⚙️ System Specs</a>
@@ -1030,7 +1074,7 @@
         <div class="ec-footer-col">
           <h4>Explore</h4>
           <ul class="ec-footer-links">
-            <li><a href="index.html">Home</a></li>
+            <li><a href="https://educoreapp.in/">Home</a></li>
             <li><a href="screenshots.html">UI Screenshots</a></li>
             <li><a href="system-requirements.html">System Requirements</a></li>
             <li><a href="help-support.html">User Manual &amp; Docs</a></li>
