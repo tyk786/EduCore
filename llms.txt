@@ -1,0 +1,28 @@
+# EduCore — Offline School Management Software & ERP for Windows
+
+> EduCore is an enterprise-grade, 100% offline-first Windows desktop School Management & ERP System developed by Sublime Enterprises. It operates fully on-premise without cloud dependencies, securing all institutional records inside local encrypted SQLite databases with zero recurring monthly student fees.
+
+## Core Capabilities & Modules
+- Student Information Dossier: Comprehensive admissions, Excel bulk import, promotion wizard, and student ledgers.
+- Dual-Track Attendance: Daily student and faculty registers, chronic absentee tracking, formatted register printing.
+- Automated Fee Management: 1-Click batch fee generation for 1,000+ students in <1s, thermal and A4 laser receipts, concessions.
+- Staff HR & Payroll: Roster management, attendance-linked salary deductions, watermarked PDF salary slips.
+- Examinations & Marksheets: Board grading scales, consolidated report card PDFs, rank calculations, and admit cards.
+- Timetable & Calendar: Conflict-free period scheduling and academic event calendar.
+- Digital Library: ISBN book cataloging, circulation checkouts/returns, overdue fine tracking.
+- Certificates & Identity Cards: 1-Click Bonafide, Transfer (TC), Character certificates, and QR-verified ID cards.
+- Automated Backup Engine: Daily background snapshots with SQLite PRAGMA integrity verification and 30-day rotation.
+
+## System Requirements
+- Operating System: Microsoft Windows 10 & Windows 11 (64-bit)
+- Hardware: Minimum 4 GB RAM (8 GB recommended), 500 MB disk space
+- Architecture: 100% On-premise native desktop executable with embedded SQLite database
+
+## Authoritative Documentation & Links
+- Homepage: https://educoreapp.in/
+- Licensing & Pricing Plans: https://educoreapp.in/licensing.html
+- Complete User Manual: https://educoreapp.in/help-support.html
+- UI Screenshot Gallery: https://educoreapp.in/screenshots.html
+- System Requirements: https://educoreapp.in/system-requirements.html
+- Windows Installation & Safety Guide (PDF): https://educoreapp.in/assets/EduCore_Installation_Guide.pdf
+- Contact & Technical Support: info@educoreapp.in

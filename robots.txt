@@ -25,5 +25,6 @@ Allow: /
 User-agent: *
 Allow: /
 
-# Sitemap Index
+# Sitemap Index & LLM Manifest
 Sitemap: https://educoreapp.in/sitemap.xml
+# LLM Knowledge File: https://educoreapp.in/llms.txt
