@@ -368,6 +368,16 @@
           <a href="#cat-features" style="background: rgba(255, 255, 255, 0.15); border: 1px solid rgba(255, 255, 255, 0.25); border-radius: 9999px; color: #ffffff; font-size: 12px; font-weight: 600; padding: 6px 14px; text-decoration: none;">⚡ Core Features</a>
           <a href="#cat-setup" style="background: rgba(255, 255, 255, 0.15); border: 1px solid rgba(255, 255, 255, 0.25); border-radius: 9999px; color: #ffffff; font-size: 12px; font-weight: 600; padding: 6px 14px; text-decoration: none;">🛠️ Setup &amp; Migration</a>
         </div>
+        <!-- WebMCP Instant FAQ Search Tool -->
+        <div style="margin-top: 22px; max-width: 580px; margin-left: auto; margin-right: auto;">
+          <form id="faq-search-form" class="ec-faq-search-form" style="display: flex; gap: 8px; justify-content: center; align-items: center;" toolname="searchFAQ" tooldescription="Search 25 authoritative FAQs regarding EduCore offline school management ERP, pricing, data security, and setup" toolautosubmit>
+            <label for="faq-search-input" class="ec-sr-only">Search School Management Software FAQ</label>
+            <input type="search" id="faq-search-input" name="query" placeholder="🔍 Search questions (e.g. fees, offline security, marksheets)..." style="width: 100%; padding: 10px 16px; border-radius: 9999px; border: 1px solid rgba(255,255,255,0.3); background: rgba(255,255,255,0.95); font-size: 14px; color: #0f172a; outline: none; box-shadow: 0 4px 14px rgba(0,0,0,0.15);" toolparamdescription="The search keyword or question topic to query within the school ERP FAQ knowledge base" required>
+            <button type="submit" id="faq-search-btn" class="ec-btn-primary" style="padding: 10px 18px; font-size: 13px; border-radius: 9999px; white-space: nowrap; cursor: pointer;">Search</button>
+          </form>
+          <div id="faq-count-feedback" style="font-size: 12px; color: #cbd5e1; margin-top: 8px;" aria-live="polite">Browse all 25 questions across 5 core categories below</div>
+        </div>
+
 
       </div>
     </section>
@@ -594,6 +604,31 @@
           </div>
         </div>
 
+                <!-- WebMCP Submit Custom Question Tool -->
+        <div class="ec-card" style="max-width: 680px; margin: 40px auto 0; text-align: left; padding: 28px;">
+          <h3 id="heading-submit-question" style="font-size: 18px; font-weight: 700; margin: 0 0 8px; color: var(--ec-slate-900);">Have a Specific School ERP Question?</h3>
+          <p style="font-size: 14px; color: var(--ec-slate-600); margin: 0 0 16px;">Ask our software specialists about CBSE report cards, multi-counter fee setups, or offline data migration.</p>
+          
+          <form id="faq-submit-question-form" action="contact-us.html" method="get" toolname="submitQuestion" tooldescription="Submit a custom school management ERP inquiry or specific question to EduCore technical specialists">
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin-bottom: 12px;">
+              <div>
+                <label for="ask-name" style="display: block; font-size: 12px; font-weight: 600; color: var(--ec-slate-700); margin-bottom: 4px;">Your Name</label>
+                <input type="text" id="ask-name" name="name" placeholder="Principal / Administrator" style="width: 100%; padding: 8px 12px; border: 1px solid var(--ec-slate-300); border-radius: 6px; font-size: 13px;" toolparamdescription="Name of the school administrator submitting the inquiry" required>
+              </div>
+              <div>
+                <label for="ask-email" style="display: block; font-size: 12px; font-weight: 600; color: var(--ec-slate-700); margin-bottom: 4px;">School Email</label>
+                <input type="email" id="ask-email" name="email" placeholder="school@domain.com" style="width: 100%; padding: 8px 12px; border: 1px solid var(--ec-slate-300); border-radius: 6px; font-size: 13px;" toolparamdescription="School email address to receive the technical answer" required>
+              </div>
+            </div>
+            <div style="margin-bottom: 14px;">
+              <label for="ask-question" style="display: block; font-size: 12px; font-weight: 600; color: var(--ec-slate-700); margin-bottom: 4px;">Your Question</label>
+              <textarea id="ask-question" name="question" rows="3" placeholder="Describe your question or requirements..." style="width: 100%; padding: 8px 12px; border: 1px solid var(--ec-slate-300); border-radius: 6px; font-size: 13px; font-family: inherit;" toolparamdescription="The detailed question regarding school ERP functionality or requirements" required></textarea>
+            </div>
+            <button type="submit" id="ask-submit-btn" class="ec-btn-primary" style="padding: 9px 20px; font-size: 13px; cursor: pointer;">Send Question to Specialists</button>
+          </form>
+        </div>
+
+
         <!-- Sticky Bottom CTA Box -->
         <div style="background: linear-gradient(135deg, #0f172a 0%, #1e3a8a 100%); border-radius: 16px; color: white; padding: 40px 30px; text-align: center; margin-top: 60px;">
           <h2 style="color: white; font-size: 24px; font-weight: 800; margin: 0 0 10px;">Evaluate EduCore Free for 30 Days</h2>
@@ -613,17 +648,7 @@
 
       </div>
     </section>
-      <!-- Declarative WebMCP AI Agent Tools -->
-    <div class="ec-sr-only" aria-hidden="true">
-      <form action="school-management-software-faq.html" method="get" toolname="searchFAQ" tooldescription="Search school management software questions, pricing guides, offline ERP specifications, and features">
-        <input type="text" name="q" toolparamdescription="Search keyword or question about school management software">
-      </form>
-      <form action="contact-us.html" method="get" toolname="submitQuestion" tooldescription="Submit a custom question regarding EduCore School Management Software or request personalized guidance">
-        <input type="text" name="name" toolparamdescription="Name of the person submitting the question">
-        <input type="email" name="email" toolparamdescription="Email address to receive the response">
-        <input type="text" name="question" toolparamdescription="The full question about school software features, setup, or pricing">
-      </form>
-    </div>
+      
   </main>
 
   <!-- Global Footer -->

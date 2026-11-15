@@ -821,6 +821,20 @@
         <p class="ec-section-desc">Say goodbye to surprise software bills. Every EduCore license has a one-time price, lifetime data ownership, and full access to all ten modules.</p>
       </div>
 
+            <!-- Interactive License Fee Calculator (WebMCP AI Agent & User Tool) -->
+      <div class="ec-card ec-mb-32" style="background: linear-gradient(135deg, #f8fafc 0%, #f0f9ff 100%); border: 1px solid #bae6fd; max-width: 640px; margin: 0 auto 36px; padding: 24px; text-align: center;">
+        <span class="ec-tag" style="margin-bottom: 8px;">Instant Fee Estimator</span>
+        <h3 id="heading-calc" style="font-size: 18px; font-weight: 700; margin: 6px 0 10px; color: var(--ec-slate-900);">Calculate Your School's License Tier</h3>
+        <p style="font-size: 14px; color: var(--ec-slate-600); margin: 0 0 16px;">Enter your student enrollment to find the exact perpetual license tier for your campus:</p>
+        
+        <form id="license-calculator-form" class="ec-calc-form" style="display: flex; flex-wrap: wrap; gap: 10px; justify-content: center; align-items: center;" toolname="calculateLicenseCost" tooldescription="Calculate the recommended EduCore one-time perpetual license tier and cost based on student enrollment capacity" toolautosubmit>
+          <label for="calc-students" class="ec-sr-only">Student Enrollment Count</label>
+          <input type="number" id="calc-students" name="students" min="1" max="10000" placeholder="e.g. 350 students" style="padding: 10px 14px; border: 1px solid var(--ec-slate-300); border-radius: 8px; font-size: 14px; width: 220px;" toolparamdescription="The total number of students enrolled in the school (integer between 1 and 10000)" required>
+          <button type="submit" id="calc-submit-btn" class="ec-btn-primary" style="padding: 10px 20px; font-size: 14px; cursor: pointer;">Calculate Plan</button>
+        </form>
+        <div id="calc-result" style="display: none; margin-top: 14px; text-align: left;" aria-live="polite"></div>
+      </div>
+
       <div class="ec-grid-4">
         <!--Trial-->
         <div class="ec-pricing-card">
@@ -929,10 +943,10 @@
       <!-- Declarative WebMCP AI Agent Tools -->
     <div class="ec-sr-only" aria-hidden="true">
       <form action="contact-us.html" method="get" toolname="requestSchoolDemo" tooldescription="Submit a request for a live walkthrough or demonstration of EduCore Offline School Management Software">
-        <input type="text" name="admin_name" toolparamdescription="Name of the school administrator or principal">
-        <input type="email" name="admin_email" toolparamdescription="Official school contact email address">
-        <input type="text" name="school_name" toolparamdescription="Name of the educational institution">
-        <input type="text" name="student_count" toolparamdescription="Estimated number of students in the school">
+        <input type="text" id="demo-admin-name" name="admin_name" toolparamdescription="Name of the school administrator or principal">
+        <input type="email" id="demo-admin-email" name="admin_email" toolparamdescription="Official school contact email address">
+        <input type="text" id="demo-school-name" name="school_name" toolparamdescription="Name of the educational institution">
+        <input type="text" id="demo-student-count" name="student_count" toolparamdescription="Estimated number of students in the school">
       </form>
     </div>
   </main>
@@ -988,6 +1002,7 @@
     </div>
   </footer>
 
+  <script src="https://unpkg.com/@mcp-b/global@latest/dist/index.global.js" defer></script>
   <script defer src="assets/js/main.js"></script>
 </body>
 </html>
