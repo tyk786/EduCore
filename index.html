@@ -58,6 +58,14 @@
       "inLanguage": "en-US",
       "publisher": {
         "@id": "https://educoreapp.in/#organization"
+      },
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": {
+          "@type": "EntryPoint",
+          "urlTemplate": "https://educoreapp.in/school-management-software-faq.html?q={search_term_string}"
+        },
+        "query-input": "required name=search_term_string"
       }
     },
     {
@@ -187,7 +195,10 @@
           },
           "author": {
             "@type": "Person",
-            "name": "Rajesh Verma"
+            "name": "Rajesh Verma",
+            "jobTitle": "School Administrator",
+            "url": "https://educoreapp.in/about-us.html",
+            "sameAs": "https://educoreapp.in/#organization"
           },
           "reviewBody": "EduCore transformed our administration. Generating report cards, collecting fees, and tracking student attendance completely offline eliminated recurring cloud expenses."
         }
@@ -235,6 +246,23 @@
           "position": 4,
           "name": "Complete Setup Wizard",
           "text": "Follow the installer prompts, click Install, click Finish, and launch EduCore from your Desktop."
+        }
+      ],
+      "estimatedCost": {
+        "@type": "MonetaryAmount",
+        "currency": "INR",
+        "value": "0"
+      },
+      "supply": [
+        {
+          "@type": "HowToSupply",
+          "name": "Windows 10 or 11 PC (64-bit)"
+        }
+      ],
+      "tool": [
+        {
+          "@type": "HowToTool",
+          "name": "Setup_EduCore_App.zip Installer"
         }
       ]
     },
@@ -387,7 +415,7 @@
           <div class="ec-hero-logo-card">
             <picture>
               <source srcset="assets/img/logo.webp" type="image/webp">
-              <img src="assets/img/logo.webp" alt="EduCore School Management Software Official Logo" width="130" height="130" loading="eager">
+              <img src="assets/img/logo.webp" alt="EduCore School Management Software Official Logo" width="130" height="130" loading="lazy">
             </picture>
             <div class="ec-hero-version-badge">
               <span>EduCore Windows ERP</span>
@@ -401,16 +429,10 @@
         <div class="ec-hero-content">
           <!-- Compact Breadcrumb -->
           <nav aria-label="Breadcrumb">
-            <ol class="ec-hero-breadcrumbs" itemscope itemtype="https://schema.org/BreadcrumbList">
-              <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
-                <a href="https://educoreapp.in/" itemprop="item"><span itemprop="name">Home</span></a>
-                <meta itemprop="position" content="1" />
-              </li>
+            <ol class="ec-hero-breadcrumbs">
+              <li><a href="https://educoreapp.in/">Home</a></li>
               <li>/</li>
-              <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
-                <span itemprop="name" style="color: #cbd5e1;">Offline Windows School ERP</span>
-                <meta itemprop="position" content="2" />
-              </li>
+              <li style="color: #cbd5e1;">Offline Windows School ERP</li>
             </ol>
           </nav>
 
@@ -453,7 +475,7 @@
     <!--================= TRUST & CORE PILLARS =================-->
     <section id="pillars" class="ec-section" aria-label="Core Pillars" style="margin-top: -24px; position: relative; z-index: 10;">
       <div class="ec-section-header">
-        <h2 class="ec-section-title" style="color: #ffffff; text-shadow: 0 2px 8px rgba(15,23,42,0.8);">Core Pillars of EduCore</h2>
+        <h2 id="heading-pillars" class="ec-section-title" style="color: #ffffff; text-shadow: 0 2px 8px rgba(15,23,42,0.8);">Core Pillars of EduCore</h2>
       </div>
       <div class="ec-grid-4">
         <!--Pillar 1-->
@@ -491,7 +513,7 @@
       <div class="ec-direct-answers">
         <div class="ec-direct-answers-header">
           <span class="ec-tag">Direct Answers &bull; Quick Facts</span>
-          <h2 class="ec-section-title ec-mt-16">Essential School Management Software Facts for Leadership</h2>
+          <h2 id="heading-direct-answers" class="ec-section-title ec-mt-16">Essential School Management Software Facts for Leadership</h2>
           <p class="ec-section-desc">Read clear answers to common questions about EduCore. School leaders often ask these important questions when choosing our offline software.</p>
         </div>
 
@@ -501,31 +523,47 @@
           <dd>A 100% offline desktop school management ERP application natively compiled for Microsoft Windows 10 and 11.</dd>
           <dt>Offline School ERP:</dt>
           <dd>An on-premise school software system that stores all student, financial, and academic records locally without cloud servers.</dd>
+          <dt>School Management Software:</dt>
+          <dd>A comprehensive administrative system that automates student admissions, dual-track attendance, fee billing, and report cards.</dd>
+          <dt>On-Premise School ERP:</dt>
+          <dd>A locally hosted school database application that grants institutions complete data privacy and eliminates recurring cloud subscriptions.</dd>
         </dl>
 
         <div class="ec-grid-2">
           <!-- Answer Block 1 -->
           <div class="ec-answer-block">
-            <h3>Which school management software works without the internet?</h3>
+            <h3 id="faq-offline-erp">Which school management software works without the internet?</h3>
             <p>EduCore is a fast offline school ERP for Windows 10 and 11. It runs fully on your local PC with no internet needed. All student records, fees, staff payroll, and marks stay safe on your computer. This setup stops cloud leaks and saves you money every month.</p>
           </div>
 
           <!-- Answer Block 2 -->
           <div class="ec-answer-accent ec-accent-emerald">
-            <h3>Are there school ERP systems with zero monthly student fees?</h3>
+            <h3 id="faq-pricing-zero-fees">Are there school ERP systems with zero monthly student fees?</h3>
             <p style="color: var(--ec-slate-700); font-size: 14px; line-height: 1.65; margin: 0;">Yes. Cloud tools charge high fees for each student every month. EduCore is different. It uses a clear one-time license starting at 4,499 rupees. Schools own their data for life with zero monthly fees and no surprise cloud bills on their account.</p>
           </div>
 
           <!-- Answer Block 3 -->
           <div class="ec-answer-accent ec-accent-purple">
-            <h3>What core administrative modules are included?</h3>
+            <h3 id="faq-modules">What core administrative modules are included?</h3>
             <p style="color: var(--ec-slate-700); font-size: 14px; line-height: 1.65; margin: 0;">EduCore includes ten full modules in every plan. You get student records, daily attendance, fee receipts, and staff payroll. It also handles exam report cards, library books, school buses, and student ID cards. Every license comes with free daily backups on your PC.</p>
           </div>
 
           <!-- Answer Block 4 -->
           <div class="ec-answer-accent ec-accent-amber">
-            <h3>What Windows operating systems are supported?</h3>
+            <h3 id="faq-windows-support">What Windows operating systems are supported?</h3>
             <p style="color: var(--ec-slate-700); font-size: 14px; line-height: 1.65; margin: 0;">EduCore runs on 64-bit Windows 10 and Windows 11 computers. It needs at least 4 GB RAM and 500 MB free disk space. The app opens fast and works without lag. School staff can work smoothly all day with complete privacy on their local PC.</p>
+          </div>
+
+          <!-- Answer Block 5 -->
+          <div class="ec-answer-accent ec-accent-blue" style="border-left: 4px solid var(--ec-blue);">
+            <h3 id="faq-backup-protection">How does EduCore protect student records from computer failure?</h3>
+            <p style="color: var(--ec-slate-700); font-size: 14px; line-height: 1.65; margin: 0;">EduCore creates automatic daily rolling backups stored safely on your computer. The system keeps thirty days of checksum-verified copies. School administrators can also export database backups to an external USB flash drive with one click for total disaster recovery protection.</p>
+          </div>
+
+          <!-- Answer Block 6 -->
+          <div class="ec-answer-accent" style="border-left: 4px solid #0891b2;">
+            <h3 id="faq-excel-migration">Can schools import existing student data from Excel spreadsheets?</h3>
+            <p style="color: var(--ec-slate-700); font-size: 14px; line-height: 1.65; margin: 0;">Yes. EduCore includes a fast Excel import tool for student admissions and staff records. Office staff can upload existing class rosters directly into the system. The built-in validator prevents duplicate roll numbers and flags missing fields before saving records.</p>
           </div>
         </div>
       </div>
@@ -536,7 +574,7 @@
       <div class="ec-dashboard-showcase">
         <div class="ec-section-header">
           <span class="ec-section-label">Command Center</span>
-          <h2 class="ec-section-title">The Main School Dashboard</h2>
+          <h2 id="heading-dashboard" class="ec-section-title">The Main School Dashboard</h2>
           <p class="ec-section-desc">
             Designed from real school principal feedback to answer your most crucial morning question: <em>"What needs my immediate attention across the school today?"</em>
           </p>
@@ -580,7 +618,7 @@
     <section id="features" class="ec-section">
       <div class="ec-section-header">
         <span class="ec-section-label">Fully Integrated Modules</span>
-        <h2 class="ec-section-title">Everything Your School Needs, Built Right In</h2>
+        <h2 id="heading-modules" class="ec-section-title">Everything Your School Needs, Built Right In</h2>
         <p class="ec-section-desc">Replace messy spreadsheets with one simple desktop tool. EduCore gives your office team a fast, reliable app for all daily school work.</p>
       </div>
 
@@ -721,7 +759,7 @@
     <section id="comparison" class="ec-section-full" style="background: #ffffff; border-top: 1px solid var(--ec-slate-200); border-bottom: 1px solid var(--ec-slate-200);">
       <div style="max-width: 1040px; margin: 0 auto; text-align: center;">
         <span class="ec-section-label">Why Desktop ERP Wins</span>
-        <h2 class="ec-section-title">EduCore Offline ERP vs Expensive Cloud SaaS</h2>
+        <h2 id="heading-comparison" class="ec-section-title">EduCore Offline ERP vs Expensive Cloud SaaS</h2>
         <p class="ec-section-desc" style="max-width: 680px; margin: 0 auto 28px;">School principals prefer local desktop software for speed and safety. EduCore keeps all student records private and frees schools from costly monthly bills.</p>
 
         <div class="ec-table-wrap">
@@ -779,7 +817,7 @@
     <section id="pricing" class="ec-section" style="padding-top: 56px;">
       <div class="ec-section-header">
         <span class="ec-section-label">Fair &amp; Simple</span>
-        <h2 class="ec-section-title">Affordable Plans Tailored to Your School Size</h2>
+        <h2 id="heading-pricing" class="ec-section-title">Affordable Plans Tailored to Your School Size</h2>
         <p class="ec-section-desc">Say goodbye to surprise software bills. Every EduCore license has a one-time price, lifetime data ownership, and full access to all ten modules.</p>
       </div>
 
@@ -822,7 +860,7 @@
     <section id="faq-preview" class="ec-faq-banner">
       <div style="max-width: 960px; margin: 0 auto; text-align: center;">
         <span class="ec-section-label">Knowledge Base &amp; FAQ</span>
-        <h2 class="ec-section-title">School Management Software Frequently Asked Questions</h2>
+        <h2 id="heading-faq" class="ec-section-title">School Management Software Frequently Asked Questions</h2>
         <p class="ec-section-desc" style="max-width: 680px; margin: 0 auto 24px;">Have questions about offline vs cloud ERP, pricing models, Excel data migration, or Windows installation? Browse our comprehensive 25-question buyer's guide.</p>
         <div style="display: flex; flex-wrap: wrap; gap: 12px; justify-content: center;">
           <a href="school-management-software-faq.html" class="ec-btn-primary">
@@ -836,9 +874,27 @@
     </section>
 
     <!--================= FINAL CTA & DOWNLOAD =================-->
+        <!--================= HOW TO INSTALL (Step-by-Step Featured Snippet Target) =================-->
+    <section id="install" class="ec-section" aria-label="Installation Guide">
+      <div class="ec-card" style="border-left: 4px solid var(--ec-blue);">
+        <div class="ec-section-header ec-mb-16" style="text-align: left; margin: 0 0 16px;">
+          <span class="ec-section-label">Quick Setup Guide</span>
+          <h2 id="heading-howto" class="ec-section-title" style="font-size: 22px; margin: 0 0 6px;">How to Install EduCore Offline School ERP on Windows</h2>
+          <p class="ec-section-desc" style="font-size: 14px; margin: 0;">Set up EduCore on your Windows 10 or 11 computer in three simple steps with complete local data security.</p>
+        </div>
+
+        <ol style="margin: 0; padding-left: 20px; color: var(--ec-slate-700); font-size: 14px; line-height: 1.8;">
+          <li id="step-download" style="margin-bottom: 8px;"><strong>Download the Setup Archive:</strong> Get the official <a href="https://github.com/tyk786/EduCore/releases/download/8.2.3/Setup_EduCore_App.zip" target="_blank">Setup_EduCore_App.zip</a> package directly from our website or GitHub releases.</li>
+          <li id="step-extract" style="margin-bottom: 8px;"><strong>Extract the Installer Files:</strong> Right-click the downloaded zip archive in Windows Explorer and select <em>Extract All</em> to open the setup folder.</li>
+          <li id="step-smartscreen" style="margin-bottom: 8px;"><strong>Confirm Windows SmartScreen:</strong> Run <code>EduCore_Setup_v8.2.3.exe</code>. If prompted, click <em>More info</em> and choose <em>Run anyway</em> to proceed safely.</li>
+          <li id="step-launch"><strong>Complete Installation:</strong> Follow the on-screen setup prompts, click <em>Finish</em>, and launch EduCore directly from your desktop icon.</li>
+        </ol>
+      </div>
+    </section>
+
     <section id="download" class="ec-cta-section">
       <div style="max-width: 780px; margin: 0 auto;">
-        <h2>Ready to Modernize Your School Administration</h2>
+        <h2 id="heading-download">Ready to Modernize Your School Administration</h2>
         <p class="ec-section-desc ec-mb-24">Download the free desktop trial today. Try EduCore free for thirty days on your Windows PC. No credit card is needed. Enjoy total data privacy, zero monthly fees, and easy offline school tools.</p>
 
         <div class="ec-cta-actions">
@@ -870,6 +926,15 @@
         <a class="ec-nav-link" href="privacy-policy.html">🛡️ Privacy Policy</a>
       </div>
     </nav>
+      <!-- Declarative WebMCP AI Agent Tools -->
+    <div class="ec-sr-only" aria-hidden="true">
+      <form action="contact-us.html" method="get" toolname="requestSchoolDemo" tooldescription="Submit a request for a live walkthrough or demonstration of EduCore Offline School Management Software">
+        <input type="text" name="admin_name" toolparamdescription="Name of the school administrator or principal">
+        <input type="email" name="admin_email" toolparamdescription="Official school contact email address">
+        <input type="text" name="school_name" toolparamdescription="Name of the educational institution">
+        <input type="text" name="student_count" toolparamdescription="Estimated number of students in the school">
+      </form>
+    </div>
   </main>
 
   <!--================= FOOTER =================-->
@@ -899,7 +964,7 @@
             <li><a href="school-management-software-faq.html">School Software FAQ</a></li>
             <li><a href="privacy-policy.html">Data Privacy Policy</a></li>
             <li><a href="about-us.html">About Us</a></li>
-            <li><a href="contact-us.html">Request Live Demo</a></li>
+            <li><a href="contact-us.html">Contact Us</a></li>
           </ul>
         </div>
 
@@ -915,7 +980,7 @@
         <div>© 2026 SUBLIME ENTERPRISES. All Rights Reserved.</div>
         <div class="ec-footer-bottom-links">
           <a href="privacy-policy.html">Privacy</a>
-          <a href="EULA.txt" target="_blank">Terms / EULA</a>
+          <a href="EULA.txt" target="_blank">Terms of Service</a>
           <a href="licensing.html">Pricing</a>
           <a href="contact-us.html">Contact</a>
         </div>
