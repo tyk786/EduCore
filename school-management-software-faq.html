@@ -22,6 +22,7 @@
   <meta name="twitter:description" content="Comprehensive buyer's guide and answers to 25 essential questions about school management systems and ERP.">
   <meta name="twitter:image" content="https://educoreapp.in/assets/img/EduCore_Dashboard.webp">
 
+  <link rel="stylesheet" href="assets/css/shared.css">
   <link rel="stylesheet" href="assets/css/styles.css">
 
   <script type="application/ld+json">{
@@ -283,10 +284,11 @@
 <body>
 
   <!-- Top Sticky Header Navigation -->
-  <header class="ec-header">
-    <div class="ec-header-container">
+    <!-- Top Sticky Navigation Bar -->
+  <header class="ec-top-header">
+    <div class="ec-nav-container">
       <a href="https://educoreapp.in/" class="ec-brand-logo">
-        <picture><source srcset="assets/img/logo.webp" type="image/webp"><img src="assets/img/logo.webp" alt="EduCore Logo" width="36" height="36" loading="eager" style="border-radius: 50%;"></picture>
+        <picture><source srcset="assets/img/logo.webp" type="image/webp"><img src="assets/img/logo.webp" alt="EduCore Logo" width="38" height="38" loading="eager"></picture>
         <div class="ec-brand-text">
           <div class="ec-brand-name">EduCore <span class="ec-brand-badge">Windows ERP</span></div>
           <div class="ec-brand-tagline">SUBLIME ENTERPRISES</div>
@@ -306,21 +308,20 @@
         <a href="https://github.com/tyk786/EduCore/releases/download/8.2.3/Setup_EduCore_App.zip" class="ec-nav-cta" target="_blank">📥 Free Trial</a>
       </nav>
 
-      <button class="ec-mobile-toggle" aria-label="Toggle navigation" aria-expanded="false">&#9776;</button>
+      <button class="ec-mobile-toggle" aria-label="Toggle Navigation Menu">☰</button>
     </div>
 
-    <!-- Mobile Drawer Navigation -->
     <div class="ec-mobile-menu">
-      <a href="https://educoreapp.in/">🏠 Home</a>
+      <a href="https://educoreapp.in/" class="">🏠 Home</a>
       <a href="https://educoreapp.in/#features">⚡ Features &amp; Modules</a>
-      <a href="screenshots.html">📸 UI Screenshots</a>
-      <a href="system-requirements.html">⚙️ System Requirements</a>
-      <a href="licensing.html">💳 Pricing &amp; Licensing</a>
+      <a href="screenshots.html" class="">📸 UI Screenshots</a>
+      <a href="system-requirements.html" class="">⚙️ System Requirements</a>
+      <a href="licensing.html" class="">💳 Pricing &amp; Licensing</a>
       <a href="school-management-software-faq.html" class="active">❓ FAQ &amp; Guide</a>
-      <a href="help-support.html">📖 User Manual &amp; Docs</a>
-      <a href="about-us.html">ℹ️ About Us</a>
-      <a href="contact-us.html">📞 Contact Support</a>
-      <a href="privacy-policy.html">🛡️ Privacy Policy</a>
+      <a href="help-support.html" class="">📖 User Manual &amp; Docs</a>
+      <a href="about-us.html" class="">ℹ️ About Us</a>
+      <a href="contact-us.html" class="">📞 Contact Support</a>
+      <a href="privacy-policy.html" class="">🛡️ Privacy Policy</a>
       <a href="https://github.com/tyk786/EduCore/releases/download/8.2.3/Setup_EduCore_App.zip" class="ec-mobile-cta" target="_blank">📥 Download 30-Day Free Trial</a>
     </div>
   </header>
@@ -604,6 +605,9 @@
               <span>Request Live Walkthrough ✨</span>
             </a>
           </div>
+          <p style="margin: 16px 0 0; font-size: 13px; color: #cbd5e1;">
+            🛡️ Windows SmartScreen Notice? <a href="assets/EduCore_Installation_Guide.pdf" target="_blank" download style="color: #38bdf8; text-decoration: underline;">Download Step-by-Step Installation Guide (.pdf)</a>
+          </p>
         </div>
 
       </div>
@@ -611,6 +615,7 @@
   </main>
 
   <!-- Global Footer -->
+    <!--================= FOOTER =================-->
   <footer class="ec-footer">
     <div class="ec-footer-container">
       <div class="ec-footer-grid">
@@ -626,32 +631,37 @@
             <li><a href="https://educoreapp.in/">Home</a></li>
             <li><a href="screenshots.html">UI Screenshots</a></li>
             <li><a href="system-requirements.html">System Requirements</a></li>
-            <li><a href="licensing.html">Licensing Plans</a></li>
-            <li><a href="school-management-software-faq.html">School Software FAQ</a></li>
             <li><a href="help-support.html">User Manual &amp; Docs</a></li>
           </ul>
         </div>
 
         <div class="ec-footer-col">
-          <h4>Company &amp; Privacy</h4>
+          <h4>Licensing &amp; Legal</h4>
           <ul class="ec-footer-links">
-            <li><a href="about-us.html">About Us</a></li>
+            <li><a href="licensing.html">Licensing Plans</a></li>
+            <li><a href="school-management-software-faq.html">School Software FAQ</a></li>
             <li><a href="privacy-policy.html">Data Privacy Policy</a></li>
-            <li><a href="contact-us.html">Contact Support</a></li>
-            <li><a href="https://docs.google.com/forms/d/e/1FAIpQLSeJX17DAjNQ7jBfLTHKr072KRg-OaDC-J2rRRk_P5Yt6bda3A/viewform" target="_blank">Request Live Demo</a></li>
+            <li><a href="about-us.html">About Us</a></li>
+            <li><a href="contact-us.html">Request Live Demo</a></li>
           </ul>
         </div>
 
-        <div class="ec-footer-col">
-          <h4>Product Identity</h4>
-          <p style="font-size: 13px; color: #94a3b8; margin-bottom: 6px;">Email: <a href="mailto:info@educoreapp.in" style="color: #38bdf8; text-decoration: none;">info@educoreapp.in</a></p>
-          <p style="font-size: 13px; color: #94a3b8; margin-bottom: 6px;">Operating System: Windows 10 &amp; 11 (64-bit)</p>
-          <p style="font-size: 13px; color: #94a3b8; margin-bottom: 6px;">Architecture: Offline Desktop SQLite ERP</p>
+        <div class="ec-footer-col ec-footer-contact">
+          <h4>Official Support</h4>
+          <p>Email: <a href="mailto:info@educoreapp.in">info@educoreapp.in</a></p>
+          <p>Operating System: Windows 10 &amp; 11 (64-bit)</p>
+          <p>Support Hours: Mon - Sat (9:00 AM - 6:00 PM IST)</p>
         </div>
       </div>
 
       <div class="ec-footer-bottom">
-        <p>&copy; 2026 SUBLIME ENTERPRISES. All Rights Reserved. EduCore is an on-premise Windows school management system.</p>
+        <div>© 2026 SUBLIME ENTERPRISES. All Rights Reserved.</div>
+        <div class="ec-footer-bottom-links">
+          <a href="privacy-policy.html">Privacy</a>
+          <a href="EULA.txt" target="_blank">Terms / EULA</a>
+          <a href="licensing.html">Pricing</a>
+          <a href="contact-us.html">Contact</a>
+        </div>
       </div>
     </div>
   </footer>
