@@ -734,7 +734,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .ec-section-desc {
-  color: var(--ec-slate-500);
+  color: var(--ec-slate-600);
   font-size: 15px;
   line-height: 1.6;
   margin: 0;
@@ -1272,7 +1272,7 @@ h1, h2, h3, h4, h5, h6 {
   justify-content: space-between;
   gap: 12px;
   font-size: 12px;
-  color: var(--ec-slate-500);
+  color: var(--ec-slate-400);
 }
 
 .ec-footer-bottom-links {
@@ -1281,7 +1281,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .ec-footer-bottom-links a {
-  color: var(--ec-slate-500);
+  color: var(--ec-slate-300);
   font-size: 12px;
 }
 
