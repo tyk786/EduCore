@@ -145,7 +145,7 @@ function registerEduCoreAgentTools() {
   // Tool 3: Search FAQ
   navigator.modelContext.registerTool({
     name: 'searchFAQ',
-    description: 'Searches EduCore knowledge base of 25 authoritative school management software FAQs covering pricing, offline security, CBSE marksheets, and setup.',
+    description: 'Searches EduCore knowledge base of 25 authoritative School ERP and management software FAQs covering pricing, offline security, marksheets, and setup.',
     inputSchema: {
       type: 'object',
       properties: {
