@@ -683,7 +683,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .ec-breadcrumbs li:not(:last-child)::after {
   content: "/";
-  color: var(--ec-slate-400);
+  color: var(--ec-slate-500);
 }
 
 .ec-breadcrumbs a {
