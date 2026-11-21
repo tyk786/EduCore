@@ -72,7 +72,7 @@ This EULA is effective until terminated. Licensee's rights under this EULA will 
 --------------------------------------------------------------------------------
 For license activation, support, or legal inquiries, please contact:
   Publisher: Sublime Enterprises / Tariq Yousuf
-  Website:   https://www.educoreapp.blogspot.com/
+  Website:   https://educoreapp.in/
   Email:     info@educoreapp.in
 
 ================================================================================
