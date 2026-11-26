@@ -1253,7 +1253,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .ec-comp-table th.ec-highlight {
-  background: rgba(16, 185, 129, 0.16);
+  background: #0b2922;
   color: var(--ec-emerald-bright);
   border-bottom: 2px solid var(--ec-emerald);
 }
@@ -1675,6 +1675,13 @@ h1, h2, h3, h4, h5, h6 {
   letter-spacing: 0.4px;
   text-transform: uppercase;
   font-weight: 700;
+}
+
+.ec-matrix-table th.ec-th-highlight,
+.ec-tco-table thead th.ec-th-highlight {
+  background: #0b2922;
+  color: var(--ec-emerald-bright);
+  border-bottom: 2px solid var(--ec-emerald);
 }
 
 .ec-matrix-table th:first-child,

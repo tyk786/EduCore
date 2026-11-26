@@ -3,16 +3,6 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <!-- Google tag (gtag.js) - Google Analytics 4 -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-STDN5C3C2P"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-
-    gtag('config', 'G-STDN5C3C2P');
-  </script>
   <link rel="canonical" href="https://educoreapp.in/screenshots.html">
   <link rel="sitemap" type="application/xml" title="Sitemap" href="https://educoreapp.in/sitemap.xml">
 
@@ -41,8 +31,9 @@
   <link rel="manifest" href="assets/favicon/site.webmanifest">
   <meta name="theme-color" content="#070b14">
 
-  <link rel="preload" href="assets/css/shared.css" as="style">
-  <link rel="stylesheet" href="assets/css/shared.css">
+  <link rel="preload" href="assets/css/shared.min.css" as="style">
+  <link rel="stylesheet" href="assets/css/shared.min.css">
+  <link rel="preload" as="image" href="assets/img/thumbs/EduCore_Dashboard.webp" imagesrcset="assets/img/thumbs/EduCore_Dashboard.webp 720w, assets/img/EduCore_Dashboard.webp 1200w" imagesizes="(max-width: 640px) 92vw, 360px" fetchpriority="high">
 
   <!-- Schema.org JSON-LD -->
   <script type="application/ld+json">
@@ -86,6 +77,15 @@
   <style>
     /* Subpage layout & screenshot cards harmonized via shared.css */
   </style>
+    <!-- Google tag (gtag.js) - Google Analytics 4 -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-STDN5C3C2P"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-STDN5C3C2P');
+  </script>
 </head>
 <body>
   <a href="#main-content" class="ec-skip-link">Skip to main content</a>
@@ -96,7 +96,7 @@
   <header class="ec-top-header">
     <div class="ec-nav-container">
       <a href="https://educoreapp.in/" class="ec-brand-logo">
-        <picture><source srcset="assets/img/logo.webp" type="image/webp"><img src="assets/img/logo.webp" alt="EduCore Logo" width="38" height="38" loading="eager"></picture>
+        <picture><source srcset="assets/img/logo-nav.webp" type="image/webp"><img src="assets/img/logo-nav.webp" alt="EduCore Logo" width="38" height="38" loading="eager" decoding="async"></picture>
         <div class="ec-brand-text">
           <div class="ec-brand-name">EduCore <span class="ec-brand-badge">Windows ERP</span></div>
           <div class="ec-brand-tagline">SUBLIME ENTERPRISES</div>
@@ -163,7 +163,7 @@
         <!--1. Executive Dashboard-->
         <div class="ec-screenshot-card">
           <a class="ec-img-wrap" href="assets/img/EduCore_Dashboard.webp" target="_blank">
-            <img alt="EduCore School ERP Executive Command Dashboard Interface" loading="lazy" src="assets/img/EduCore_Dashboard.webp" width="1200" height="650" decoding="async" />
+            <img alt="EduCore School ERP Executive Command Dashboard Interface" loading="eager" fetchpriority="high" src="assets/img/EduCore_Dashboard.webp" srcset="assets/img/thumbs/EduCore_Dashboard.webp 720w, assets/img/EduCore_Dashboard.webp 1200w" sizes="(max-width: 640px) 92vw, 360px" width="1200" height="650" decoding="async" />
           </a>
           <div>
             <h3>Executive Command Dashboard</h3>
@@ -174,7 +174,7 @@
         <!--2. Student Profile-->
         <div class="ec-screenshot-card">
           <a class="ec-img-wrap" href="assets/img/EduCore_Student_Profile.webp" target="_blank">
-            <img alt="EduCore Student Information Profile Management and Admission File" loading="lazy" src="assets/img/EduCore_Student_Profile.webp" width="1200" height="651" decoding="async" />
+            <img alt="EduCore Student Information Profile Management and Admission File" loading="eager" fetchpriority="high" src="assets/img/EduCore_Student_Profile.webp" srcset="assets/img/thumbs/EduCore_Student_Profile.webp 720w, assets/img/EduCore_Student_Profile.webp 1200w" sizes="(max-width: 640px) 92vw, 360px" width="1200" height="651" decoding="async" />
           </a>
           <div>
             <h3>Student Information &amp; Profiles</h3>
@@ -185,7 +185,7 @@
         <!--3. Staff Profile-->
         <div class="ec-screenshot-card">
           <a class="ec-img-wrap" href="assets/img/EduCore_Staff_Profile.webp" target="_blank">
-            <img alt="EduCore Faculty and Staff HR Management System" loading="lazy" src="assets/img/EduCore_Staff_Profile.webp" width="1200" height="651" decoding="async" />
+            <img alt="EduCore Faculty and Staff HR Management System" loading="lazy" src="assets/img/EduCore_Staff_Profile.webp" srcset="assets/img/thumbs/EduCore_Staff_Profile.webp 720w, assets/img/EduCore_Staff_Profile.webp 1200w" sizes="(max-width: 640px) 92vw, 360px" width="1200" height="651" decoding="async" />
           </a>
           <div>
             <h3>Faculty &amp; Staff HR</h3>
@@ -196,7 +196,7 @@
         <!--4. Class Management-->
         <div class="ec-screenshot-card">
           <a class="ec-img-wrap" href="assets/img/EduCore_Classes.webp" target="_blank">
-            <img alt="EduCore Class and Section Capacity Management Configuration" loading="lazy" src="assets/img/EduCore_Classes.webp" width="1200" height="651" decoding="async" />
+            <img alt="EduCore Class and Section Capacity Management Configuration" loading="lazy" src="assets/img/EduCore_Classes.webp" srcset="assets/img/thumbs/EduCore_Classes.webp 720w, assets/img/EduCore_Classes.webp 1200w" sizes="(max-width: 640px) 92vw, 360px" width="1200" height="651" decoding="async" />
           </a>
           <div>
             <h3>Class &amp; Section Management</h3>
@@ -207,7 +207,7 @@
         <!--5. Time Table-->
         <div class="ec-screenshot-card">
           <a class="ec-img-wrap" href="assets/img/EduCore_TimeTable.webp" target="_blank">
-            <img alt="EduCore Automated School Timetable Schedule Generator" loading="lazy" src="assets/img/EduCore_TimeTable.webp" width="1200" height="651" decoding="async" />
+            <img alt="EduCore Automated School Timetable Schedule Generator" loading="lazy" src="assets/img/EduCore_TimeTable.webp" srcset="assets/img/thumbs/EduCore_TimeTable.webp 720w, assets/img/EduCore_TimeTable.webp 1200w" sizes="(max-width: 640px) 92vw, 360px" width="1200" height="651" decoding="async" />
           </a>
           <div>
             <h3>Conflict-Free Timetable Generator</h3>
@@ -218,7 +218,7 @@
         <!--6. Library-->
         <div class="ec-screenshot-card">
           <a class="ec-img-wrap" href="assets/img/EduCore_Library.webp" target="_blank">
-            <img alt="EduCore School Digital Library Catalog and Book Loan System" loading="lazy" src="assets/img/EduCore_Library.webp" width="1200" height="651" decoding="async" />
+            <img alt="EduCore School Digital Library Catalog and Book Loan System" loading="lazy" src="assets/img/EduCore_Library.webp" srcset="assets/img/thumbs/EduCore_Library.webp 720w, assets/img/EduCore_Library.webp 1200w" sizes="(max-width: 640px) 92vw, 360px" width="1200" height="651" decoding="async" />
           </a>
           <div>
             <h3>Digital Library System</h3>
@@ -229,7 +229,7 @@
         <!--7. Attendance-->
         <div class="ec-screenshot-card">
           <a class="ec-img-wrap" href="assets/img/EduCore_Attendance.webp" target="_blank">
-            <img alt="EduCore Student and Staff Dual Attendance Management Hub" loading="lazy" src="assets/img/EduCore_Attendance.webp" width="1200" height="650" decoding="async" />
+            <img alt="EduCore Student and Staff Dual Attendance Management Hub" loading="lazy" src="assets/img/EduCore_Attendance.webp" srcset="assets/img/thumbs/EduCore_Attendance.webp 720w, assets/img/EduCore_Attendance.webp 1200w" sizes="(max-width: 640px) 92vw, 360px" width="1200" height="650" decoding="async" />
           </a>
           <div>
             <h3>Dual-Track Attendance Hub</h3>
@@ -240,7 +240,7 @@
         <!--8. Results-->
         <div class="ec-screenshot-card">
           <a class="ec-img-wrap" href="assets/img/EduCore_Results.webp" target="_blank">
-            <img alt="EduCore Examination Results and Academic Grading System" loading="lazy" src="assets/img/EduCore_Results.webp" width="1200" height="651" decoding="async" />
+            <img alt="EduCore Examination Results and Academic Grading System" loading="lazy" src="assets/img/EduCore_Results.webp" srcset="assets/img/thumbs/EduCore_Results.webp 720w, assets/img/EduCore_Results.webp 1200w" sizes="(max-width: 640px) 92vw, 360px" width="1200" height="651" decoding="async" />
           </a>
           <div>
             <h3>Exams &amp; Grading System</h3>
@@ -251,7 +251,7 @@
         <!--9. Finance-->
         <div class="ec-screenshot-card">
           <a class="ec-img-wrap" href="assets/img/Educore_Finance.webp" target="_blank">
-            <img alt="EduCore Automated Fee Collection and Billing Command Center" loading="lazy" src="assets/img/Educore_Finance.webp" width="1200" height="651" decoding="async" />
+            <img alt="EduCore Automated Fee Collection and Billing Command Center" loading="lazy" src="assets/img/Educore_Finance.webp" srcset="assets/img/thumbs/Educore_Finance.webp 720w, assets/img/Educore_Finance.webp 1200w" sizes="(max-width: 640px) 92vw, 360px" width="1200" height="651" decoding="async" />
           </a>
           <div>
             <h3>Fee Collection &amp; Billing</h3>
@@ -262,7 +262,7 @@
         <!--10. Expenses-->
         <div class="ec-screenshot-card">
           <a class="ec-img-wrap" href="assets/img/EduCore_Expenses.webp" target="_blank">
-            <img alt="EduCore School Operational Expense and Cashflow Ledger Tracker" loading="lazy" src="assets/img/EduCore_Expenses.webp" width="1200" height="650" decoding="async" />
+            <img alt="EduCore School Operational Expense and Cashflow Ledger Tracker" loading="lazy" src="assets/img/EduCore_Expenses.webp" srcset="assets/img/thumbs/EduCore_Expenses.webp 720w, assets/img/EduCore_Expenses.webp 1200w" sizes="(max-width: 640px) 92vw, 360px" width="1200" height="650" decoding="async" />
           </a>
           <div>
             <h3>Operating Expense Tracker</h3>
@@ -273,7 +273,7 @@
         <!--11. Calendar-->
         <div class="ec-screenshot-card">
           <a class="ec-img-wrap" href="assets/img/EduCore_Calendar.webp" target="_blank">
-            <img alt="EduCore Academic Events Calendar and Holiday Scheduler" loading="lazy" src="assets/img/EduCore_Calendar.webp" width="1200" height="651" decoding="async" />
+            <img alt="EduCore Academic Events Calendar and Holiday Scheduler" loading="lazy" src="assets/img/EduCore_Calendar.webp" srcset="assets/img/thumbs/EduCore_Calendar.webp 720w, assets/img/EduCore_Calendar.webp 1200w" sizes="(max-width: 640px) 92vw, 360px" width="1200" height="651" decoding="async" />
           </a>
           <div>
             <h3>Academic Events Calendar</h3>
@@ -284,7 +284,7 @@
         <!--12. Reports-->
         <div class="ec-screenshot-card">
           <a class="ec-img-wrap" href="assets/img/EduCore_Reports.webp" target="_blank">
-            <img alt="EduCore Dynamic Reporting Hub and Custom Spreadsheet Builder" loading="lazy" src="assets/img/EduCore_Reports.webp" width="1200" height="650" decoding="async" />
+            <img alt="EduCore Dynamic Reporting Hub and Custom Spreadsheet Builder" loading="lazy" src="assets/img/EduCore_Reports.webp" srcset="assets/img/thumbs/EduCore_Reports.webp 720w, assets/img/EduCore_Reports.webp 1200w" sizes="(max-width: 640px) 92vw, 360px" width="1200" height="650" decoding="async" />
           </a>
           <div>
             <h3>Reporting Hub &amp; Dynamic Builder</h3>
@@ -295,7 +295,7 @@
         <!--13. Settings-->
         <div class="ec-screenshot-card">
           <a class="ec-img-wrap" href="assets/img/EduCore_Settings.webp" target="_blank">
-            <img alt="EduCore School ERP Settings Backup Management and Security Center" loading="lazy" src="assets/img/EduCore_Settings.webp" width="1200" height="651" decoding="async" />
+            <img alt="EduCore School ERP Settings Backup Management and Security Center" loading="lazy" src="assets/img/EduCore_Settings.webp" srcset="assets/img/thumbs/EduCore_Settings.webp 720w, assets/img/EduCore_Settings.webp 1200w" sizes="(max-width: 640px) 92vw, 360px" width="1200" height="651" decoding="async" />
           </a>
           <div>
             <h3>System Settings &amp; Security</h3>
@@ -306,7 +306,7 @@
         <!--14. Help-->
         <div class="ec-screenshot-card">
           <a class="ec-img-wrap" href="assets/img/EduCore_Help.webp" target="_blank">
-            <img alt="EduCore Built-in Help Documentation and Troubleshooting Guide" loading="lazy" src="assets/img/EduCore_Help.webp" width="1200" height="651" decoding="async" />
+            <img alt="EduCore Built-in Help Documentation and Troubleshooting Guide" loading="lazy" src="assets/img/EduCore_Help.webp" srcset="assets/img/thumbs/EduCore_Help.webp 720w, assets/img/EduCore_Help.webp 1200w" sizes="(max-width: 640px) 92vw, 360px" width="1200" height="651" decoding="async" />
           </a>
           <div>
             <h3>Built-In Knowledge Base</h3>
@@ -317,7 +317,7 @@
         <!--15. Feedback-->
         <div class="ec-screenshot-card">
           <a class="ec-img-wrap" href="assets/img/EduCore_Feedback.webp" target="_blank">
-            <img alt="EduCore Feedback Suggestions and Bug Reporting Hub" loading="lazy" src="assets/img/EduCore_Feedback.webp" width="1200" height="651" decoding="async" />
+            <img alt="EduCore Feedback Suggestions and Bug Reporting Hub" loading="lazy" src="assets/img/EduCore_Feedback.webp" srcset="assets/img/thumbs/EduCore_Feedback.webp 720w, assets/img/EduCore_Feedback.webp 1200w" sizes="(max-width: 640px) 92vw, 360px" width="1200" height="651" decoding="async" />
           </a>
           <div>
             <h3>Feedback &amp; Suggestions Hub</h3>
@@ -328,7 +328,7 @@
         <!--16. About-->
         <div class="ec-screenshot-card">
           <a class="ec-img-wrap" href="assets/img/EduCore_About.webp" target="_blank">
-            <img alt="EduCore Platform Architecture and SUBLIME ENTERPRISES Support Desk" loading="lazy" src="assets/img/EduCore_About.webp" width="1200" height="651" decoding="async" />
+            <img alt="EduCore Platform Architecture and SUBLIME ENTERPRISES Support Desk" loading="lazy" src="assets/img/EduCore_About.webp" srcset="assets/img/thumbs/EduCore_About.webp 720w, assets/img/EduCore_About.webp 1200w" sizes="(max-width: 640px) 92vw, 360px" width="1200" height="651" decoding="async" />
           </a>
           <div>
             <h3>About &amp; Technical Support Desk</h3>
@@ -346,7 +346,7 @@
         <!--17. Terminal Marksheet-->
         <div class="ec-screenshot-card">
           <a class="ec-img-wrap" href="assets/img/marks_certificate.JPG" target="_blank">
-            <img alt="EduCore Official Terminal Marksheet and Progress Report Card Template" loading="lazy" src="assets/img/marks_certificate.JPG" width="800" height="554" decoding="async" />
+            <img alt="EduCore Official Terminal Marksheet and Progress Report Card Template" loading="lazy" src="assets/img/marks_certificate.webp" srcset="assets/img/thumbs/marks_certificate.webp 520w, assets/img/marks_certificate.webp 800w" sizes="(max-width: 640px) 92vw, 360px" width="800" height="554" decoding="async" />
           </a>
           <div>
             <h3>Marksheet / Report Card</h3>
@@ -357,7 +357,7 @@
         <!--18. Bonafide Certificate-->
         <div class="ec-screenshot-card">
           <a class="ec-img-wrap" href="assets/img/Bonafide_Certificate.JPG" target="_blank">
-            <img alt="EduCore Official Bonafide Certificate PDF Generation Template" loading="lazy" src="assets/img/Bonafide_Certificate.JPG" width="800" height="549" decoding="async" />
+            <img alt="EduCore Official Bonafide Certificate PDF Generation Template" loading="lazy" src="assets/img/Bonafide_Certificate.webp" srcset="assets/img/thumbs/Bonafide_Certificate.webp 520w, assets/img/Bonafide_Certificate.webp 800w" sizes="(max-width: 640px) 92vw, 360px" width="800" height="549" decoding="async" />
           </a>
           <div>
             <h3>Bonafide Certificate</h3>
@@ -368,7 +368,7 @@
         <!--19. Character Certificate-->
         <div class="ec-screenshot-card">
           <a class="ec-img-wrap" href="assets/img/Character_Certificate.JPG" target="_blank">
-            <img alt="EduCore Student Character and Conduct Certificate Template" loading="lazy" src="assets/img/Character_Certificate.JPG" width="800" height="545" decoding="async" />
+            <img alt="EduCore Student Character and Conduct Certificate Template" loading="lazy" src="assets/img/Character_Certificate.webp" srcset="assets/img/thumbs/Character_Certificate.webp 520w, assets/img/Character_Certificate.webp 800w" sizes="(max-width: 640px) 92vw, 360px" width="800" height="545" decoding="async" />
           </a>
           <div>
             <h3>Character Certificate</h3>
@@ -379,7 +379,7 @@
         <!--20. Transfer Certificate (TC)-->
         <div class="ec-screenshot-card">
           <a class="ec-img-wrap" href="assets/img/Transfer_Certificate.JPG" target="_blank">
-            <img alt="EduCore Official School Leaving Transfer Certificate TC Document" loading="lazy" src="assets/img/Transfer_Certificate.JPG" width="800" height="555" decoding="async" />
+            <img alt="EduCore Official School Leaving Transfer Certificate TC Document" loading="lazy" src="assets/img/Transfer_Certificate.webp" srcset="assets/img/thumbs/Transfer_Certificate.webp 520w, assets/img/Transfer_Certificate.webp 800w" sizes="(max-width: 640px) 92vw, 360px" width="800" height="555" decoding="async" />
           </a>
           <div>
             <h3>Transfer Certificate (TC)</h3>
@@ -390,7 +390,7 @@
         <!--21. Admit Card-->
         <div class="ec-screenshot-card">
           <a class="ec-img-wrap" href="assets/img/Admit_Card.JPG" target="_blank">
-            <img alt="EduCore Examination Hall Ticket Admit Card Generator" loading="lazy" src="assets/img/Admit_Card.JPG" width="800" height="576" decoding="async" />
+            <img alt="EduCore Examination Hall Ticket Admit Card Generator" loading="lazy" src="assets/img/Admit_Card.webp" srcset="assets/img/thumbs/Admit_Card.webp 520w, assets/img/Admit_Card.webp 800w" sizes="(max-width: 640px) 92vw, 360px" width="800" height="576" decoding="async" />
           </a>
           <div>
             <h3>Exam Admit Cards</h3>
@@ -401,7 +401,7 @@
         <!--22. Fee Receipt-->
         <div class="ec-screenshot-card">
           <a class="ec-img-wrap" href="assets/img/Fee_Reciept.JPG" target="_blank">
-            <img alt="EduCore Student Fee Payment Receipt Sample Printable Template" loading="lazy" src="assets/img/Fee_Reciept.JPG" width="827" height="671" decoding="async" />
+            <img alt="EduCore Student Fee Payment Receipt Sample Printable Template" loading="lazy" src="assets/img/Fee_Reciept.webp" srcset="assets/img/thumbs/Fee_Reciept.webp 520w, assets/img/Fee_Reciept.webp 827w" sizes="(max-width: 640px) 92vw, 360px" width="827" height="671" decoding="async" />
           </a>
           <div>
             <h3>Fee Receipt</h3>
@@ -412,7 +412,7 @@
         <!--23. Salary Slip-->
         <div class="ec-screenshot-card">
           <a class="ec-img-wrap" href="assets/img/Salary_Slip.JPG" target="_blank">
-            <img alt="EduCore Faculty and Staff Salary Pay Slip Generation Template" loading="lazy" src="assets/img/Salary_Slip.JPG" width="845" height="749" decoding="async" />
+            <img alt="EduCore Faculty and Staff Salary Pay Slip Generation Template" loading="lazy" src="assets/img/Salary_Slip.webp" srcset="assets/img/thumbs/Salary_Slip.webp 520w, assets/img/Salary_Slip.webp 845w" sizes="(max-width: 640px) 92vw, 360px" width="845" height="749" decoding="async" />
           </a>
           <div>
             <h3>Staff Salary Slip</h3>
@@ -423,7 +423,7 @@
         <!--24. School Calendar-->
         <div class="ec-screenshot-card">
           <a class="ec-img-wrap" href="assets/img/EduCore_School_Calendar.webp" target="_blank">
-            <img alt="EduCore Official Academic School Calendar Events and Holiday Schedule" loading="lazy" src="assets/img/EduCore_School_Calendar.webp" width="1143" height="799" decoding="async" />
+            <img alt="EduCore Official Academic School Calendar Events and Holiday Schedule" loading="lazy" src="assets/img/EduCore_School_Calendar.webp" srcset="assets/img/thumbs/EduCore_School_Calendar.webp 720w, assets/img/EduCore_School_Calendar.webp 1143w" sizes="(max-width: 640px) 92vw, 360px" width="1143" height="799" decoding="async" />
           </a>
           <div>
             <h3>Academic School Calendar</h3>
@@ -440,7 +440,7 @@
       <div class="ec-screenshot-grid">
         <div class="ec-screenshot-card">
           <a class="ec-img-wrap" href="assets/img/Staff_ID_1.JPG" target="_blank">
-            <img alt="EduCore Staff Employee ID Badge Template Layout A" loading="lazy" src="assets/img/Staff_ID_1.JPG" width="671" height="489" decoding="async" />
+            <img alt="EduCore Staff Employee ID Badge Template Layout A" loading="lazy" src="assets/img/Staff_ID_1.webp" srcset="assets/img/thumbs/Staff_ID_1.webp 520w, assets/img/Staff_ID_1.webp 671w" sizes="(max-width: 640px) 92vw, 360px" width="671" height="489" decoding="async" />
           </a>
           <div>
             <h3>Staff ID (Design A)</h3>
@@ -450,7 +450,7 @@
 
         <div class="ec-screenshot-card">
           <a class="ec-img-wrap" href="assets/img/Staff_ID_2.JPG" target="_blank">
-            <img alt="EduCore Staff Employee ID Badge Template Layout B" loading="lazy" src="assets/img/Staff_ID_2.JPG" width="663" height="482" decoding="async" />
+            <img alt="EduCore Staff Employee ID Badge Template Layout B" loading="lazy" src="assets/img/Staff_ID_2.webp" srcset="assets/img/thumbs/Staff_ID_2.webp 520w, assets/img/Staff_ID_2.webp 663w" sizes="(max-width: 640px) 92vw, 360px" width="663" height="482" decoding="async" />
           </a>
           <div>
             <h3>Staff ID (Design B)</h3>
@@ -463,7 +463,7 @@
       <div class="ec-screenshot-grid">
         <div class="ec-screenshot-card">
           <a class="ec-img-wrap" href="assets/img/Student_ID_1.JPG" target="_blank">
-            <img alt="EduCore Student Identity Card Printable Badge Format A" loading="lazy" src="assets/img/Student_ID_1.JPG" width="675" height="493" decoding="async" />
+            <img alt="EduCore Student Identity Card Printable Badge Format A" loading="lazy" src="assets/img/Student_ID_1.webp" srcset="assets/img/thumbs/Student_ID_1.webp 520w, assets/img/Student_ID_1.webp 675w" sizes="(max-width: 640px) 92vw, 360px" width="675" height="493" decoding="async" />
           </a>
           <div>
             <h3>Student ID (Design A)</h3>
@@ -473,7 +473,7 @@
 
         <div class="ec-screenshot-card">
           <a class="ec-img-wrap" href="assets/img/Student_ID_2.JPG" target="_blank">
-            <img alt="EduCore Student Identity Card Printable Badge Format B" loading="lazy" src="assets/img/Student_ID_2.JPG" width="671" height="498" decoding="async" />
+            <img alt="EduCore Student Identity Card Printable Badge Format B" loading="lazy" src="assets/img/Student_ID_2.webp" srcset="assets/img/thumbs/Student_ID_2.webp 520w, assets/img/Student_ID_2.webp 671w" sizes="(max-width: 640px) 92vw, 360px" width="671" height="498" decoding="async" />
           </a>
           <div>
             <h3>Student ID (Design B)</h3>
