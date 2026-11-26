@@ -43,7 +43,6 @@
 
   <link rel="preload" href="assets/css/shared.css" as="style">
   <link rel="stylesheet" href="assets/css/shared.css">
-  <link rel="stylesheet" href="assets/css/styles.css">
 
   <!-- Schema.org JSON-LD -->
   <script type="application/ld+json">
@@ -73,20 +72,34 @@
         "name": "About EduCore School Management Software & SUBLIME ENTERPRISES",
         "description": "Learn about the mission, offline architecture, and engineering principles behind EduCore, developed by SUBLIME ENTERPRISES to provide 100% data sovereignty for schools.",
         "publisher": {
-          "@type": "Organization",
-          "name": "SUBLIME ENTERPRISES",
-          "url": "https://educoreapp.in/",
-          "logo": "https://educoreapp.in/assets/img/logo.png",
-          "email": "info@educoreapp.in"
+          "@id": "https://educoreapp.in/#organization"
         }
       },
       {
         "@type": "Organization",
         "@id": "https://educoreapp.in/#organization",
         "name": "SUBLIME ENTERPRISES",
+        "legalName": "Sublime Enterprises",
         "url": "https://educoreapp.in/",
-        "logo": "https://educoreapp.in/assets/img/logo.png",
+        "logo": "https://educoreapp.in/assets/img/logo.webp",
         "email": "info@educoreapp.in",
+        "foundingDate": "2024",
+        "address": {
+          "@type": "PostalAddress",
+          "addressCountry": "IN"
+        },
+        "founder": {
+          "@type": "Person",
+          "@id": "https://educoreapp.in/#author",
+          "name": "Tariq Yousuf",
+          "jobTitle": "Lead Software Architect",
+          "sameAs": [
+            "https://github.com/tyk786"
+          ]
+        },
+        "sameAs": [
+          "https://github.com/tyk786/EduCore"
+        ],
         "contactPoint": {
           "@type": "ContactPoint",
           "contactType": "Customer Support & Licensing",
@@ -228,8 +241,10 @@
       <a href="screenshots.html" class="">📸 UI Screenshots</a>
       <a href="system-requirements.html" class="">⚙️ System Requirements</a>
       <a href="licensing.html" class="">💳 Pricing &amp; Licensing</a>
+      <a href="offline-vs-cloud-school-erp-tco-guide.html" class="">📊 Offline vs. Cloud TCO Guide</a>
       <a href="school-management-software-faq.html" class="">❓ FAQ &amp; Guide</a>
       <a href="help-support.html" class="">📖 User Manual &amp; Docs</a>
+      <a href="changelog.html" class="">🚀 Release Changelog</a>
       <a href="about-us.html" class="active">ℹ️ About Us</a>
       <a href="contact-us.html" class="">📞 Contact Support</a>
       <a href="privacy-policy.html" class="">🛡️ Privacy Policy</a>
@@ -259,7 +274,10 @@
           Institutional Autonomy &amp; Data Sovereignty
         </div>
         <h1 style="color: #0f172a; font-size: clamp(28px, 4vw, 40px); font-weight: 800; margin: 0 0 10px;">About EduCore — School Management Software &amp; Offline ERP</h1>
-        <p style="color: #0369a1; font-size: 18px; font-weight: 600; margin: 0 0 6px;">Smart Tool For A Smart School</p>
+        <p style="color: #0369a1; font-size: 18px; font-weight: 600; margin: 0 0 10px;">Smart Tool For A Smart School</p>
+        <p style="color: #475569; font-size: 15.5px; line-height: 1.65; margin: 0 auto 10px; max-width: 760px;">
+          EduCore is an offline desktop School ERP for 64-bit Windows 10 and 11 developed by SUBLIME ENTERPRISES. All student records, fee ledgers, payroll, and exam marks reside in an encrypted local SQLite database with zero cloud uploads. Available via a 30-day free trial (up to 50 students) or one-time perpetual licenses starting at ₹4,499.
+        </p>
         <p style="color: #64748b; font-size: 14px; margin: 0;">Student Information • Biometric Attendance • Automated Fees • Teacher Payroll • Exam Marksheets</p>
       </header>
 
@@ -303,6 +321,20 @@
           </p>
         </div>
 
+      </section>
+
+      <!-- Data Privacy & DPDP Custody Section -->
+      <section class="ec-card" id="dpdp-compliance">
+        <h2 style="align-items: center; color: #0f172a; display: flex; font-size: 22px; font-weight: 800; gap: 10px; margin: 0 0 14px;">
+          <span>📜</span> <span>Student Data Privacy &amp; India DPDP Alignment</span>
+        </h2>
+        <p style="color: #475569; font-size: 15px; line-height: 1.65; margin: 0 0 12px;">
+          Because EduCore operates entirely on-premise using a local encrypted SQLite database, institutions maintain direct physical and administrative custody over student, parent, and staff personal records. No admissions data, fee ledgers, or examination records are transmitted to external SaaS servers, helping Indian schools align naturally with India's <strong>Digital Personal Data Protection (DPDP) Act</strong> principles of data minimization and institutional custody without third-party cloud exposure.
+        </p>
+        <div style="display: flex; flex-wrap: wrap; gap: 14px; font-size: 14px; font-weight: 600;">
+          <a href="privacy-policy.html" style="color: #0369a1; text-decoration: none;">🛡️ Read Full Data Privacy Policy →</a>
+          <a href="offline-vs-cloud-school-erp-tco-guide.html" style="color: #0369a1; text-decoration: none;">📊 Offline vs. Cloud TCO &amp; Privacy Guide →</a>
+        </div>
       </section>
 
       <!-- Institutions Served -->
@@ -353,6 +385,7 @@
             <div><strong>Country of Origin:</strong> India (IN)</div>
             <div><strong>Official Support:</strong> info@educoreapp.in</div>
             <div><strong>Repository:</strong> <a href="https://github.com/tyk786/EduCore" target="_blank" rel="noopener noreferrer" style="color: #0369a1; text-decoration: none;">github.com/tyk786/EduCore</a></div>
+            <div><strong>Release History:</strong> <a href="changelog.html" style="color: #0369a1; text-decoration: none;">View Public Changelog (v8.2.3)</a></div>
           </div>
 
           <div style="border-top: 1px solid #f1f5f9; margin-top: 16px; padding-top: 14px;">
@@ -375,9 +408,11 @@
         <div class="ec-nav-inner">
           <a href="/" class="ec-nav-link">🏠 Home</a>
           <a href="licensing.html" class="ec-nav-link">💳 Licensing Plans</a>
+          <a href="offline-vs-cloud-school-erp-tco-guide.html" class="ec-nav-link">📊 TCO &amp; Privacy Guide</a>
           <a href="screenshots.html" class="ec-nav-link">📸 UI Screenshots</a>
           <a href="system-requirements.html" class="ec-nav-link">⚙️ System Specs</a>
           <a href="help-support.html" class="ec-nav-link">📖 User Manual</a>
+          <a href="changelog.html" class="ec-nav-link">🚀 Changelog</a>
           <a href="contact-us.html" class="ec-nav-link">📞 Contact Us</a>
           <a href="about-us.html" class="ec-nav-link">ℹ️ About Us</a>
           <a href="privacy-policy.html" class="ec-nav-link">🛡️ Privacy Policy</a>
@@ -406,6 +441,7 @@
             <li><a href="screenshots.html">UI Screenshots</a></li>
             <li><a href="system-requirements.html">System Requirements</a></li>
             <li><a href="help-support.html">User Manual &amp; Docs</a></li>
+            <li><a href="offline-vs-cloud-school-erp-tco-guide.html">Offline vs. Cloud TCO Guide</a></li>
           </ul>
         </div>
 
@@ -414,6 +450,7 @@
           <ul class="ec-footer-links">
             <li><a href="licensing.html">Licensing Plans</a></li>
             <li><a href="school-management-software-faq.html">School Software FAQ</a></li>
+            <li><a href="changelog.html">Release Changelog</a></li>
             <li><a href="privacy-policy.html">Data Privacy Policy</a></li>
             <li><a href="about-us.html">About Us</a></li>
             <li><a href="contact-us.html">Contact Us</a></li>

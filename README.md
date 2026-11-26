@@ -55,6 +55,11 @@ EduCore is a self-contained, completely offline school ERP built for strict inst
 
 📥 **Illustrated Walkthrough:** Download the step-by-step **[EduCore Installation & Safety Guide (.pdf)](assets/EduCore_Installation_Guide.pdf)** (also available at [https://educoreapp.in/assets/EduCore_Installation_Guide.pdf](https://educoreapp.in/assets/EduCore_Installation_Guide.pdf)).
 
+### Verified Release Checksums & Malware Scan (`v8.2.3`)
+- **VirusTotal Scan:** [0 / 72 Clean Scan](https://www.virustotal.com/gui/file/f47999d6952f294330de11cbf0c78290e692f04f7673212d048ad170164deeec)
+- **`EduCore_Setup_v8.2.3.exe` (SHA-256):** `f47999d6952f294330de11cbf0c78290e692f04f7673212d048ad170164deeec`
+- **`Setup_EduCore_App.zip` (SHA-256):** `129899440ee867a074ecd8a4ba5720c25bf2ef0853c689f5dfe27a8e83494978`
+
 ---
 
 ## 4. Recommended Workflow for New Schools
@@ -105,6 +110,8 @@ EduCore includes a **30-day Evaluation Trial** (up to 50 active students). Perpe
 
 - **Publisher:** Sublime Enterprises / Tariq Yousuf
 - **Official Website:** [https://educoreapp.in](https://educoreapp.in)
+- **Offline vs. Cloud TCO Guide:** [https://educoreapp.in/offline-vs-cloud-school-erp-tco-guide.html](https://educoreapp.in/offline-vs-cloud-school-erp-tco-guide.html)
+- **Release Changelog:** [https://educoreapp.in/changelog.html](https://educoreapp.in/changelog.html)
 - **Installation & Safety Guide:** [https://educoreapp.in/assets/EduCore_Installation_Guide.pdf](https://educoreapp.in/assets/EduCore_Installation_Guide.pdf)
 - **Support & Licensing Inquiries:** [info@educoreapp.in](mailto:info@educoreapp.in)
 

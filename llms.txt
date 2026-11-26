@@ -22,13 +22,15 @@
 ## Authoritative Documentation & Links
 - [EduCore Homepage](https://educoreapp.in/): Official product overview and 30-day free trial download.
 - [Licensing & Pricing Plans](https://educoreapp.in/licensing.html): Perpetual, one-time lifetime license tiers with zero recurring student fees.
+- [Offline vs. Cloud School ERP TCO & Privacy Guide](https://educoreapp.in/offline-vs-cloud-school-erp-tco-guide.html): 1-year, 3-year, and 5-year cost comparison and DPDP Act custody guide.
 - [Complete User Manual & Handbook](https://educoreapp.in/help-support.html): Step-by-step guides for student admission, fee receipts, and backups.
 - [UI Screenshot Gallery](https://educoreapp.in/screenshots.html): High-resolution screenshots of all 10 core administrative modules.
-- [System Specifications & Requirements](https://educoreapp.in/system-requirements.html): Windows 10 & 11 64-bit hardware recommendations.
+- [System Specifications & Requirements](https://educoreapp.in/system-requirements.html): Windows 10 & 11 64-bit hardware recommendations and SmartScreen verification guide.
 - [School Management Software & School ERP FAQ](https://educoreapp.in/school-management-software-faq.html): 25 authoritative answers covering school management software, School ERP selection, School SIS features, pricing, offline security, and school ERP login.
 - [Windows Installation & Safety Guide (PDF)](https://educoreapp.in/assets/EduCore_Installation_Guide.pdf): Illustrated two-step guide for Windows Defender SmartScreen.
 
 ## Optional
-- [About Sublime Enterprises](https://educoreapp.in/about-us.html): Company background and engineering principles.
-- [Data Privacy Policy](https://educoreapp.in/privacy-policy.html): On-premise local data governance and zero-telemetry commitment.
-- [Contact & Support](https://educoreapp.in/contact-us.html): Support channels, phone, and official email info@educoreapp.in.
+- [Release Changelog (v8.2.3)](https://educoreapp.in/changelog.html): Public version history, security milestones, and SHA-256 checksums.
+- [About Sublime Enterprises](https://educoreapp.in/about-us.html): Company background, DPDP custody principles, and verified publisher details.
+- [Data Privacy Policy](https://educoreapp.in/privacy-policy.html): On-premise local data governance, DPDP alignment, and zero-telemetry commitment.
+- [Contact & Support](https://educoreapp.in/contact-us.html): Official support, licensing activation, and demo email info@educoreapp.in.

@@ -72,25 +72,25 @@ function registerEduCoreAgentTools() {
         renewal = '₹2,999 / year';
         desc = 'Up to 500 students. Complete suite with staff payroll, library accession, student ID card generator, and timetable.';
       } else if (count <= 700) {
-        plan = 'Pro Tier (700 Students)';
+        plan = 'Professional Tier (700 Students)';
         price = '₹14,999';
         renewal = '₹3,999 / year';
-        desc = 'Up to 700 students with priority phone and remote desk support.';
+        desc = 'Up to 700 students with priority email and remote desk support.';
       } else if (count <= 1000) {
-        plan = 'Premium Tier (1,000 Students)';
-        price = '₹18,999';
-        renewal = '₹4,999 / year';
+        plan = 'Enterprise Tier (1,000 Students)';
+        price = '₹22,499';
+        renewal = '₹5,999 / year';
         desc = 'Up to 1,000 students. High-capacity performance for large secondary and senior secondary schools.';
       } else if (count <= 2000) {
-        plan = 'Enterprise-2K (2,000 Students)';
-        price = '₹29,999';
-        renewal = '₹6,999 / year';
-        desc = 'Up to 2,000 students with multi-counter fee receipt network capabilities.';
+        plan = 'Diamond Tier (2,000 Students)';
+        price = '₹37,499';
+        renewal = '₹8,999 / year';
+        desc = 'Up to 2,000 students. Large institutional campus infrastructure with all 10 modules unlocked.';
       } else {
-        plan = 'Enterprise-Max (3,000+ Students)';
-        price = '₹39,999 - ₹59,999';
-        renewal = 'Custom support contract';
-        desc = 'Large campus scale with custom CBSE/State Board marksheet templates and dedicated engineering support.';
+        plan = 'Ultimate Tier (3,000+ Students)';
+        price = '₹59,999';
+        renewal = '₹11,999 / year';
+        desc = 'Up to 3,000 students with custom CBSE/State Board marksheet support and dedicated priority assistance.';
       }
       return {
         content: [{
@@ -259,7 +259,7 @@ document.addEventListener('DOMContentLoaded', function () {
           return;
         } catch (err) {}
       }
-      let planName = count <= 50 ? 'Free Trial (₹0)' : count <= 200 ? 'Basic Plan (₹4,499)' : count <= 500 ? 'Standard Plan (₹9,999)' : 'Higher Capacity / Enterprise';
+      let planName = count <= 50 ? 'Free Trial (₹0)' : count <= 200 ? 'Basic Tier (₹4,499)' : count <= 500 ? 'Standard Tier (₹9,999)' : count <= 700 ? 'Professional Tier (₹14,999)' : count <= 1000 ? 'Enterprise Tier (₹22,499)' : count <= 2000 ? 'Diamond Tier (₹37,499)' : 'Ultimate Tier (₹59,999)';
       calcResult.innerHTML = `<div style="background: #e0f2fe; border: 1px solid #bae6fd; border-radius: 8px; padding: 14px 18px; color: #0369a1; font-size: 14px; line-height: 1.6;"><strong>Recommended Plan:</strong> ${planName} for ${count} students. Includes lifetime offline data sovereignty and all 10 modules unlocked.</div>`;
       calcResult.style.display = 'block';
     });

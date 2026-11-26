@@ -43,7 +43,6 @@
 
   <link rel="preload" href="assets/css/shared.css" as="style">
   <link rel="stylesheet" href="assets/css/shared.css">
-  <link rel="stylesheet" href="assets/css/styles.css">
 
   <!-- Schema.org JSON-LD -->
   <script type="application/ld+json">
@@ -88,13 +87,63 @@
       },
       {
         "@type": "SoftwareApplication",
+        "@id": "https://educoreapp.in/#software",
         "name": "EduCore School Management Software",
         "operatingSystem": "Windows 10, Windows 11 (64-bit)",
         "applicationCategory": "EducationalApplication, BusinessApplication",
+        "softwareVersion": "8.2.3",
         "downloadUrl": "https://github.com/tyk786/EduCore/releases/download/8.2.3/Setup_EduCore_App.zip",
+        "image": "https://educoreapp.in/assets/img/logo.webp",
         "memoryRequirements": "4 GB RAM minimum (8 GB recommended)",
         "storageRequirements": "500 MB free hard drive or SSD space",
-        "processorRequirements": "Intel or AMD 64-bit Dual-Core or Quad-Core processor"
+        "processorRequirements": "Intel or AMD 64-bit Dual-Core or Quad-Core processor",
+        "offers": {
+          "@type": "AggregateOffer",
+          "priceCurrency": "INR",
+          "lowPrice": "0",
+          "highPrice": "59999",
+          "offerCount": "7"
+        }
+      },
+      {
+        "@type": "HowTo",
+        "@id": "https://educoreapp.in/system-requirements.html#howto",
+        "name": "How to Install EduCore Offline School ERP on Windows 10 and 11",
+        "description": "Step-by-step installation guide including verifying Microsoft Defender SmartScreen and SHA-256 installer checksums on Windows 10 or 11.",
+        "totalTime": "PT5M",
+        "step": [
+          {
+            "@type": "HowToStep",
+            "position": 1,
+            "name": "Download Setup_EduCore_App.zip",
+            "text": "Download the official Setup_EduCore_App.zip archive from https://educoreapp.in or GitHub Releases and verify the SHA-256 checksum."
+          },
+          {
+            "@type": "HowToStep",
+            "position": 2,
+            "name": "Extract All Installer Files",
+            "text": "Right-click Setup_EduCore_App.zip in Windows Explorer, select Extract All, and open the extracted folder before launching EduCore_Setup_v8.2.3.exe."
+          },
+          {
+            "@type": "HowToStep",
+            "position": 3,
+            "name": "Verify Microsoft Defender SmartScreen",
+            "text": "If Windows displays 'Windows protected your PC', click 'More info', confirm the App name is EduCore_Setup_v8.2.3.exe, and click 'Run anyway'.",
+            "image": "https://educoreapp.in/assets/img/SmartScreen_Step2_Run_Anyway.webp"
+          },
+          {
+            "@type": "HowToStep",
+            "position": 4,
+            "name": "Create Master Administrator & School Profile",
+            "text": "Launch EduCore from the Desktop or Start Menu, configure your administrator credentials, upload your school logo, and enter campus details."
+          },
+          {
+            "@type": "HowToStep",
+            "position": 5,
+            "name": "Bulk Import Student & Staff Rosters",
+            "text": "Use the pre-formatted Excel templates to import existing student and faculty records directly into the local SQLite database."
+          }
+        ]
       }
     ]
   }
@@ -216,8 +265,10 @@
       <a href="screenshots.html" class="">📸 UI Screenshots</a>
       <a href="system-requirements.html" class="active">⚙️ System Requirements</a>
       <a href="licensing.html" class="">💳 Pricing &amp; Licensing</a>
+      <a href="offline-vs-cloud-school-erp-tco-guide.html" class="">📊 Offline vs. Cloud TCO Guide</a>
       <a href="school-management-software-faq.html" class="">❓ FAQ &amp; Guide</a>
       <a href="help-support.html" class="">📖 User Manual &amp; Docs</a>
+      <a href="changelog.html" class="">🚀 Release Changelog</a>
       <a href="about-us.html" class="">ℹ️ About Us</a>
       <a href="contact-us.html" class="">📞 Contact Support</a>
       <a href="privacy-policy.html" class="">🛡️ Privacy Policy</a>
@@ -242,8 +293,8 @@
           Hardware &amp; OS Compatibility
         </div>
         <h1 style="color: #0f172a; font-size: clamp(28px, 4vw, 40px); font-weight: 800; margin: 0px 0px 12px;">EduCore System Requirements &amp; Windows Installation Guide</h1>
-        <p style="color: #64748b; font-size: 16px; margin: 0px auto; max-width: 700px;">
-          EduCore is engineered as a lightweight, native, pre-compiled Windows desktop platform. Review the hardware and operating system specifications below for optimal performance.
+        <p style="color: #64748b; font-size: 16px; margin: 0px auto; max-width: 760px; line-height: 1.65;">
+          EduCore is an offline desktop School ERP for 64-bit Windows 10 and 11 developed by SUBLIME ENTERPRISES. Requiring at least 4 GB RAM and 500 MB disk space, it stores all student records and fees inside an encrypted local SQLite database with zero cloud servers, starting from a 30-day free trial or ₹4,499 one-time license.
         </p>
       </header>
 
@@ -355,6 +406,36 @@
         </div>
       </section>
 
+      <!--Visual SmartScreen Verification & Checksums-->
+      <section class="ec-sys-card" id="smartscreen-guide">
+        <div style="display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 10px; margin-bottom: 12px;">
+          <h2 style="color: #0f172a; font-size: 20px; font-weight: 800; margin: 0;">🛡️ Windows Defender SmartScreen Visual Guide &amp; SHA-256 Verification</h2>
+          <a href="https://www.virustotal.com/gui/file/f47999d6952f294330de11cbf0c78290e692f04f7673212d048ad170164deeec" target="_blank" rel="noopener noreferrer" style="background: #ecfdf5; border: 1px solid #a7f3d0; border-radius: 6px; padding: 4px 12px; font-size: 12px; font-weight: 700; color: #047857; text-decoration: none;">
+            ✅ VirusTotal 0/72 Clean Scan
+          </a>
+        </div>
+        <p style="color: #475569; font-size: 14.5px; line-height: 1.65; margin: 0 0 18px;">
+          Because EduCore is distributed offline without costly corporate code-signing certificates, Windows may show an informational Microsoft Defender SmartScreen prompt when you run <code>EduCore_Setup_v8.2.3.exe</code> for the first time. Verify our official SHA-256 checksums below and follow these two clicks:
+        </p>
+
+        <div class="ec-grid-2" style="margin-bottom: 20px;">
+          <figure style="background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 12px; margin: 0; padding: 14px; text-align: center;">
+            <img src="assets/img/SmartScreen_Step1_More_Info.webp" alt="Windows protected your PC SmartScreen prompt showing More info link highlighted" width="791" height="736" loading="lazy" decoding="async" style="border-radius: 8px; margin: 0 auto 10px; max-width: 340px; width: 100%; height: auto;" />
+            <figcaption style="color: #334155; font-size: 13px; font-weight: 600;">Step 1: Click the underlined <em>More info</em> link under the SmartScreen message.</figcaption>
+          </figure>
+          <figure style="background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 12px; margin: 0; padding: 14px; text-align: center;">
+            <img src="assets/img/SmartScreen_Step2_Run_Anyway.webp" alt="Windows SmartScreen expanded view confirming EduCore_Setup_v8.2.3.exe and highlighting Run anyway" width="791" height="740" loading="lazy" decoding="async" style="border-radius: 8px; margin: 0 auto 10px; max-width: 340px; width: 100%; height: auto;" />
+            <figcaption style="color: #334155; font-size: 13px; font-weight: 600;">Step 2: Confirm App shows <code>EduCore_Setup_v8.2.3.exe</code> and click <em>Run anyway</em>.</figcaption>
+          </figure>
+        </div>
+
+        <div style="background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 10px; padding: 14px 16px; font-size: 12px; color: #475569;">
+          <div style="font-weight: 700; color: #0f172a; margin-bottom: 6px;">Cryptographic SHA-256 File Verification (v8.2.3)</div>
+          <div><strong>EduCore_Setup_v8.2.3.exe:</strong> <code style="font-size: 11px; color: #0369a1; word-break: break-all;">f47999d6952f294330de11cbf0c78290e692f04f7673212d048ad170164deeec</code></div>
+          <div style="margin-top: 4px;"><strong>Setup_EduCore_App.zip:</strong> <code style="font-size: 11px; color: #0369a1; word-break: break-all;">129899440ee867a074ecd8a4ba5720c25bf2ef0853c689f5dfe27a8e83494978</code></div>
+        </div>
+      </section>
+
       <!--Troubleshooting & FAQs-->
       <section class="ec-sys-card">
         <h2 style="color: #0f172a; font-size: 20px; font-weight: 800; margin: 0px 0px 16px;">💡 Windows Installation FAQs &amp; Troubleshooting</h2>
@@ -392,9 +473,11 @@
         <div class="ec-nav-inner">
           <a class="ec-nav-link" href="/">🏠 Home</a>
           <a class="ec-nav-link" href="licensing.html">💳 Licensing Plans</a>
+          <a class="ec-nav-link" href="offline-vs-cloud-school-erp-tco-guide.html">📊 TCO &amp; Privacy Guide</a>
           <a class="ec-nav-link" href="screenshots.html">📸 UI Screenshots</a>
           <a class="ec-nav-link" href="system-requirements.html">⚙️ System Specs</a>
           <a class="ec-nav-link" href="help-support.html">📖 User Manual</a>
+          <a class="ec-nav-link" href="changelog.html">🚀 Changelog</a>
           <a class="ec-nav-link" href="contact-us.html">📞 Contact Us</a>
           <a class="ec-nav-link" href="about-us.html">ℹ️ About Us</a>
           <a class="ec-nav-link" href="privacy-policy.html">🛡️ Privacy Policy</a>
@@ -423,6 +506,7 @@
             <li><a href="screenshots.html">UI Screenshots</a></li>
             <li><a href="system-requirements.html">System Requirements</a></li>
             <li><a href="help-support.html">User Manual &amp; Docs</a></li>
+            <li><a href="offline-vs-cloud-school-erp-tco-guide.html">Offline vs. Cloud TCO Guide</a></li>
           </ul>
         </div>
 
@@ -431,6 +515,7 @@
           <ul class="ec-footer-links">
             <li><a href="licensing.html">Licensing Plans</a></li>
             <li><a href="school-management-software-faq.html">School Software FAQ</a></li>
+            <li><a href="changelog.html">Release Changelog</a></li>
             <li><a href="privacy-policy.html">Data Privacy Policy</a></li>
             <li><a href="about-us.html">About Us</a></li>
             <li><a href="contact-us.html">Contact Us</a></li>

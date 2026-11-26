@@ -43,7 +43,6 @@
 
   <link rel="preload" href="assets/css/shared.css" as="style">
   <link rel="stylesheet" href="assets/css/shared.css">
-  <link rel="stylesheet" href="assets/css/styles.css">
 
   <!-- Schema.org JSON-LD -->
   <script type="application/ld+json">
@@ -68,50 +67,22 @@
         ]
       },
       {
-        "@type": "Product",
-        "@id": "https://educoreapp.in/licensing.html#product",
-        "name": "EduCore School Management Software License",
-        "description": "Transparent offline school management software licenses where 100% of all ERP modules are unlocked in every tier. The only cap across tiers is the active student capacity limit, ensuring lifetime data ownership and zero recurring cloud subscriptions.",
-        "brand": {
-          "@type": "Brand",
-          "name": "EduCore"
+        "@type": "SoftwareApplication",
+        "@id": "https://educoreapp.in/#software",
+        "name": "EduCore School Management Software",
+        "applicationCategory": "EducationalApplication, BusinessApplication",
+        "operatingSystem": "Windows 10, Windows 11 (64-bit)",
+        "softwareVersion": "8.2.3",
+        "downloadUrl": "https://github.com/tyk786/EduCore/releases/download/8.2.3/Setup_EduCore_App.zip",
+        "description": "Transparent offline school management software licenses where 100% of all ERP modules are unlocked in every tier. All student records, fees, payroll, and marksheets reside locally in an encrypted SQLite database.",
+        "image": "https://educoreapp.in/assets/img/logo.webp",
+        "publisher": {
+          "@type": "Organization",
+          "@id": "https://educoreapp.in/#organization",
+          "name": "SUBLIME ENTERPRISES",
+          "url": "https://educoreapp.in/",
+          "email": "info@educoreapp.in"
         },
-        "image": "https://educoreapp.in/assets/img/logo.png",
-        "aggregateRating": {
-          "@type": "AggregateRating",
-          "ratingValue": "4.9",
-          "reviewCount": "48",
-          "bestRating": "5",
-          "worstRating": "1"
-        },
-        "review": [
-          {
-            "@type": "Review",
-            "reviewRating": {
-              "@type": "Rating",
-              "ratingValue": "5",
-              "bestRating": "5"
-            },
-            "author": {
-              "@type": "Person",
-              "name": "Rajesh Verma"
-            },
-            "reviewBody": "EduCore transformed our administration. Generating report cards, collecting fees, and tracking student attendance completely offline eliminated recurring cloud expenses."
-          },
-          {
-            "@type": "Review",
-            "reviewRating": {
-              "@type": "Rating",
-              "ratingValue": "5",
-              "bestRating": "5"
-            },
-            "author": {
-              "@type": "Person",
-              "name": "Sister Mary Theresa"
-            },
-            "reviewBody": "The offline SQLite database security gives us total peace of mind. Very smooth Excel import and our teachers learned the interface in less than an hour."
-          }
-        ],
         "offers": {
           "@type": "AggregateOffer",
           "priceCurrency": "INR",
@@ -429,8 +400,10 @@
       <a href="screenshots.html" class="">📸 UI Screenshots</a>
       <a href="system-requirements.html" class="">⚙️ System Requirements</a>
       <a href="licensing.html" class="active">💳 Pricing &amp; Licensing</a>
+      <a href="offline-vs-cloud-school-erp-tco-guide.html" class="">📊 Offline vs. Cloud TCO Guide</a>
       <a href="school-management-software-faq.html" class="">❓ FAQ &amp; Guide</a>
       <a href="help-support.html" class="">📖 User Manual &amp; Docs</a>
+      <a href="changelog.html" class="">🚀 Release Changelog</a>
       <a href="about-us.html" class="">ℹ️ About Us</a>
       <a href="contact-us.html" class="">📞 Contact Support</a>
       <a href="privacy-policy.html" class="">🛡️ Privacy Policy</a>
@@ -455,8 +428,8 @@
           Transparent &amp; Perpetual
         </div>
         <h1 style="color: #0f172a; font-size: clamp(28px, 4vw, 40px); font-weight: 800; margin: 0 0 12px;">EduCore Licensing &amp; Pricing Plans — All Features Unlocked In Every Tier</h1>
-        <p style="color: #64748b; font-size: 16px; margin: 0 auto; max-width: 760px;">
-          Zero feature gating. Every plan gives your school 100% access to all ERP modules, tools, and updates. The only cap applied across tiers is the student enrollment capacity.
+        <p style="color: #64748b; font-size: 16px; margin: 0 auto; max-width: 780px; line-height: 1.65;">
+          EduCore is an offline desktop School ERP for 64-bit Windows 10 and 11 developed by SUBLIME ENTERPRISES. All student records, fee ledgers, payroll, and exam marks reside in an encrypted local SQLite database with zero cloud uploads. Start with a 30-day free trial (up to 50 students) or one-time perpetual licenses from ₹4,499 with all 10 modules unlocked.
         </p>
       </header>
 
@@ -860,6 +833,56 @@
         </div>
       </section>
 
+      <!-- Offline Desktop ERP vs. Cloud SaaS Comparison Matrix -->
+      <section style="background: #ffffff; border: 1px solid #e2e8f0; border-radius: 20px; box-shadow: 0 6px 24px rgba(0, 0, 0, 0.03); margin-bottom: 50px; overflow: hidden; padding: 32px 24px;">
+        <h2 style="color: #0f172a; font-size: 24px; font-weight: 800; margin: 0 0 8px; text-align: center;">EduCore Offline Desktop ERP vs. Typical Cloud School SaaS</h2>
+        <p style="color: #64748b; font-size: 15px; margin: 0 auto 24px; max-width: 720px; text-align: center;">Compare one-time perpetual desktop licensing against recurring per-student monthly cloud subscriptions across real school operating dimensions.</p>
+
+        <div style="overflow-x: auto;">
+          <table class="ec-matrix-table">
+            <thead>
+              <tr>
+                <th>Comparison Dimension</th>
+                <th style="background: #0369a1; color: #ffffff;">EduCore Offline Desktop ERP</th>
+                <th>Typical Cloud School SaaS</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>Internet Requirement</strong></td>
+                <td style="color: #047857; font-weight: 600;">100% offline after 1-time license activation</td>
+                <td style="color: #64748b;">Mandatory continuous internet access</td>
+              </tr>
+              <tr>
+                <td><strong>Data Storage Location</strong></td>
+                <td style="color: #047857; font-weight: 600;">Encrypted local SQLite database on your school PC</td>
+                <td style="color: #64748b;">Remote multi-tenant vendor cloud servers</td>
+              </tr>
+              <tr>
+                <td><strong>Pricing Model</strong></td>
+                <td style="color: #047857; font-weight: 600;">₹0 Trial (50 students); ₹4,499–₹59,999 one-time + optional low annual renewal</td>
+                <td style="color: #64748b;">₹20–₹50 per student/month recurring indefinitely</td>
+              </tr>
+              <tr>
+                <td><strong>Batch Fee Speed</strong></td>
+                <td style="color: #047857; font-weight: 600;">1,000+ student monthly invoices generated in &lt;1 second locally</td>
+                <td style="color: #64748b;">Subject to browser latency, server queues, and broadband speed</td>
+              </tr>
+              <tr>
+                <td><strong>Hardware Requirements</strong></td>
+                <td style="color: #047857; font-weight: 600;">Standard 64-bit Windows 10/11 PC, 4 GB RAM, 500 MB disk</td>
+                <td style="color: #64748b;">Requires reliable ISP, backup Wi-Fi, and browser uptime</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div style="margin-top: 22px; text-align: center;">
+          <a href="offline-vs-cloud-school-erp-tco-guide.html" style="background: #0369a1; border-radius: 10px; color: #ffffff; display: inline-block; font-size: 14px; font-weight: 700; padding: 11px 22px; text-decoration: none;">
+            📊 View Full 1-Year, 3-Year &amp; 5-Year TCO Cost Breakdown →
+          </a>
+        </div>
+      </section>
+
       <!-- Licensing FAQs -->
       <section style="background: #ffffff; border: 1px solid #e2e8f0; border-radius: 20px; box-shadow: 0 4px 16px rgba(0, 0, 0, 0.03); margin-bottom: 40px; padding: 34px 28px;">
         <h2 style="color: #0f172a; font-size: 22px; font-weight: 800; margin: 0 0 20px; text-align: center;">Licensing &amp; Ownership FAQs</h2>
@@ -897,60 +920,16 @@
         </div>
       </section>
 
-      <!-- Verified School Reviews & Rating -->
-      <section style="background: #ffffff; border: 1px solid #e2e8f0; border-radius: 20px; box-shadow: 0 4px 16px rgba(0, 0, 0, 0.03); margin-bottom: 40px; padding: 34px 28px;">
-        <div style="align-items: center; display: flex; flex-wrap: wrap; justify-content: space-between; margin-bottom: 24px;">
-          <div>
-            <h2 style="color: #0f172a; font-size: 22px; font-weight: 800; margin: 0 0 6px;">Verified Educator &amp; Administrator Reviews</h2>
-            <p style="color: #64748b; font-size: 14px; margin: 0;">Trusted by school principals, administrators, and teachers across India.</p>
-          </div>
-          <div style="align-items: center; background: #f0fdf4; border: 1px solid #bbf7d0; border-radius: 12px; display: flex; gap: 10px; margin-top: 10px; padding: 10px 18px;">
-            <span style="color: #eab308; font-size: 22px;">★★★★★</span>
-            <div>
-              <div style="color: #166534; font-size: 16px; font-weight: 800;">4.9 / 5.0 Rating</div>
-              <div style="color: #15803d; font-size: 12px;">Based on 48 School Reviews</div>
-            </div>
-          </div>
-        </div>
-
-        <div style="display: grid; gap: 18px; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));">
-          <div style="background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 14px; padding: 22px;">
-            <div style="color: #eab308; font-size: 16px; margin-bottom: 8px;">★★★★★</div>
-            <p style="color: #334155; font-size: 14px; font-style: italic; line-height: 1.6; margin: 0 0 14px;">
-              "EduCore transformed our administration. Generating report cards, collecting fees, and tracking student attendance completely offline eliminated recurring cloud expenses."
-            </p>
-            <div style="color: #0f172a; font-size: 14px; font-weight: 700;">Rajesh Verma</div>
-            <div style="color: #64748b; font-size: 12px;">Principal, Apex Senior Secondary School</div>
-          </div>
-
-          <div style="background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 14px; padding: 22px;">
-            <div style="color: #eab308; font-size: 16px; margin-bottom: 8px;">★★★★★</div>
-            <p style="color: #334155; font-size: 14px; font-style: italic; line-height: 1.6; margin: 0 0 14px;">
-              "The offline SQLite database security gives us total peace of mind. Very smooth Excel import and our teachers learned the interface in less than an hour."
-            </p>
-            <div style="color: #0f172a; font-size: 14px; font-weight: 700;">Sister Mary Theresa</div>
-            <div style="color: #64748b; font-size: 12px;">Administrator, St. Jude Convent Academy</div>
-          </div>
-
-          <div style="background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 14px; padding: 22px;">
-            <div style="color: #eab308; font-size: 16px; margin-bottom: 8px;">★★★★★</div>
-            <p style="color: #334155; font-size: 14px; font-style: italic; line-height: 1.6; margin: 0 0 14px;">
-              "Fastest school software on Windows. Generating 500 fee receipts and quarterly marksheets takes seconds with zero lag. Highly recommended."
-            </p>
-            <div style="color: #0f172a; font-size: 14px; font-weight: 700;">Mohammed Tariq Khan</div>
-            <div style="color: #64748b; font-size: 12px;">Director, Al-Huda Educational Institute</div>
-          </div>
-        </div>
-      </section>
-
       <!-- Universal Site Navigation Bar -->
       <nav class="ec-site-nav" aria-label="EduCore Navigation Menu">
         <div class="ec-nav-inner">
           <a href="/" class="ec-nav-link">🏠 Home</a>
           <a href="licensing.html" class="ec-nav-link">💳 Licensing Plans</a>
+          <a href="offline-vs-cloud-school-erp-tco-guide.html" class="ec-nav-link">📊 TCO &amp; Privacy Guide</a>
           <a href="screenshots.html" class="ec-nav-link">📸 UI Screenshots</a>
           <a href="system-requirements.html" class="ec-nav-link">⚙️ System Specs</a>
           <a href="help-support.html" class="ec-nav-link">📖 User Manual</a>
+          <a href="changelog.html" class="ec-nav-link">🚀 Changelog</a>
           <a href="contact-us.html" class="ec-nav-link">📞 Contact Us</a>
           <a href="about-us.html" class="ec-nav-link">ℹ️ About Us</a>
           <a href="privacy-policy.html" class="ec-nav-link">🛡️ Privacy Policy</a>
@@ -979,6 +958,7 @@
             <li><a href="screenshots.html">UI Screenshots</a></li>
             <li><a href="system-requirements.html">System Requirements</a></li>
             <li><a href="help-support.html">User Manual &amp; Docs</a></li>
+            <li><a href="offline-vs-cloud-school-erp-tco-guide.html">Offline vs. Cloud TCO Guide</a></li>
           </ul>
         </div>
 
@@ -987,6 +967,7 @@
           <ul class="ec-footer-links">
             <li><a href="licensing.html">Licensing Plans</a></li>
             <li><a href="school-management-software-faq.html">School Software FAQ</a></li>
+            <li><a href="changelog.html">Release Changelog</a></li>
             <li><a href="privacy-policy.html">Data Privacy Policy</a></li>
             <li><a href="about-us.html">About Us</a></li>
             <li><a href="contact-us.html">Contact Us</a></li>
