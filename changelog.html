@@ -17,7 +17,7 @@
   <link rel="sitemap" type="application/xml" title="Sitemap" href="https://educoreapp.in/sitemap.xml">
 
   <title>EduCore Release Changelog — Version History &amp; Security Updates (v8.2.3) | EduCore</title>
-  <meta name="description" content="Official public release notes for EduCore Offline Windows School ERP, documenting v8.2.3 features, security hardening, installer SHA-256 checksums, and milestone updates.">
+  <meta name="description" content="Official public release notes for EduCore Offline Windows School ERP covering v8.2.3, v7.2.3, v5.2.3–5.2.4, and v2.3.8 updates, security hardening, and installer SHA-256 checksums.">
   <meta name="keywords" content="EduCore changelog, EduCore v8.2.3 release notes, school management software updates, EduCore installer SHA-256, SUBLIME ENTERPRISES">
   <meta name="author" content="SUBLIME ENTERPRISES">
   <meta name="robots" content="index, follow">
@@ -25,7 +25,7 @@
   <!-- Open Graph / Social Media -->
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://educoreapp.in/changelog.html">
-  <meta property="og:title" content="EduCore Release Changelog — Version History (v8.2.3)">
+  <meta property="og:title" content="EduCore Release Changelog — Complete Version History (v2.3.8 – v8.2.3)">
   <meta property="og:description" content="Explore EduCore desktop releases, workflow improvements, security hardening, and verified Windows installer checksums.">
   <meta property="og:image" content="https://educoreapp.in/assets/img/logo.png">
 
@@ -72,7 +72,7 @@
         "@type": "WebPage",
         "@id": "https://educoreapp.in/changelog.html#webpage",
         "name": "EduCore Release Changelog & Version History",
-        "description": "Public version milestones, feature enhancements, security hardening, and Windows installer SHA-256 verification for EduCore School Management Software.",
+        "description": "Public version history across v2.3.8, v5.2.3–5.2.4, v7.2.3, and v8.2.3 detailing workflow additions, security hardening, and Windows installer verification.",
         "dateModified": "2026-11-26",
         "publisher": {
           "@type": "Organization",
@@ -242,24 +242,25 @@
         <div style="display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 10px; margin-bottom: 14px;">
           <div style="display: flex; align-items: center; gap: 10px; flex-wrap: wrap;">
             <h2 style="color: #0f172a; font-size: 22px; font-weight: 800; margin: 0;">Version 8.2.3 — Enterprise Edition</h2>
-            <span class="ec-release-badge latest">Current Production Release</span>
+            <span class="ec-release-badge latest">Current Release (Oct–Nov 2026)</span>
           </div>
           <a href="https://github.com/tyk786/EduCore/releases/download/8.2.3/Setup_EduCore_App.zip" style="background: #0369a1; border-radius: 8px; color: #ffffff; font-size: 13px; font-weight: 700; padding: 8px 16px; text-decoration: none;" target="_blank">📥 Download v8.2.3 (.zip)</a>
         </div>
 
-        <h3 style="color: #0369a1; font-size: 15px; font-weight: 700; margin: 16px 0 8px;">New Workflows &amp; Capabilities</h3>
+        <h3 style="color: #0369a1; font-size: 15px; font-weight: 700; margin: 16px 0 8px;">New Workflows &amp; UI Upgrades</h3>
         <ul style="color: #475569; font-size: 14px; line-height: 1.75; margin: 0 0 14px; padding-left: 20px;">
-          <li><strong>Dedicated Fees &amp; Payroll Workspaces:</strong> Separated Fees, Payroll, and Expenses into three focused financial modules with role-gated payroll access for bursars and administrators.</li>
-          <li><strong>Weekly &amp; Alternating-Week Timetables:</strong> Added day selection, subject distribution controls, and automated teacher collision checks for rotating schedules.</li>
-          <li><strong>Exam Matrix Save Guards:</strong> Added unsaved-edit prompts when switching classes or exam terms, single-cell grade clearing, and safe preset switching safeguards.</li>
-          <li><strong>Automated Startup Backup Integrity Check:</strong> Verifies local database integrity at startup prior to login while maintaining rolling 30-day snapshots.</li>
+          <li><strong>Dedicated Fees &amp; Payroll Workspaces:</strong> Split unified finance into separate <strong>Fees</strong> and <strong>Payroll</strong> modules alongside <strong>Expenses</strong>, with distinct billing/salary dashboards and role-gated payroll sidebar visibility for authorized staff.</li>
+          <li><strong>Weekly &amp; Alternating-Week Timetables:</strong> Added day selection, subject distribution controls, and automated teacher collision prevention for both standard weekly and alternating-week school schedules.</li>
+          <li><strong>Exam Matrix Save Guards &amp; Preset Controls:</strong> Added unsaved-edit confirmation prompts when switching tabs, classes, or exam terms; single-cell mark clearing; and safer exam preset switching.</li>
+          <li><strong>Native High-DPI Date Picker:</strong> Replaced legacy external calendar widgets with a built-in, click-anywhere-to-dismiss calendar picker.</li>
         </ul>
 
-        <h3 style="color: #0369a1; font-size: 15px; font-weight: 700; margin: 14px 0 8px;">Security, Export &amp; Installer Enhancements</h3>
+        <h3 style="color: #0369a1; font-size: 15px; font-weight: 700; margin: 14px 0 8px;">Security Hardening, Licensing &amp; Installer Safety</h3>
         <ul style="color: #475569; font-size: 14px; line-height: 1.75; margin: 0 0 16px; padding-left: 20px;">
-          <li><strong>Safe Spreadsheet Exports:</strong> Enforced export permissions across admission/report builders and protected CSV exports against spreadsheet formula injection.</li>
-          <li><strong>Single-Instance Upgrade Guard:</strong> Windows installer detects running EduCore instances cleanly so upgrades never interrupt active database writes.</li>
-          <li><strong>Atomic Finance &amp; Audit Operations:</strong> Standardized transactional rollbacks for monthly fee/salary automation and ensured audited exports across reports.</li>
+          <li><strong>Login &amp; Permission Hardening (Nov 2026):</strong> Added login rate-limiting/lockout protection, password-change ownership enforcement, strict permission checks on fee reversals and data exports, and percentage bounds (`0–100%`) on fee discounts.</li>
+          <li><strong>Safe Documents &amp; Exports:</strong> Enforced file-extension allowlists and 15 MB upload caps on student/staff attachments, safe text escaping in generated PDFs, and formula-injection sanitization in CSV exports.</li>
+          <li><strong>Startup Backup Check &amp; Single-Instance Installer Guard:</strong> Verifies database integrity on startup before login, enforces authorization on backup/restore actions, ensures atomic monthly fee/salary rollbacks, and detects running instances during Windows setup upgrades while preserving all local school data.</li>
+          <li><strong>Licensing Enforcement &amp; Documentation:</strong> Added strict activation enforcement on expired trials and published `v8.2.3` SHA-256 checksums, VirusTotal `0/72` Clean verification, and illustrated SmartScreen setup steps.</li>
         </ul>
 
         <div style="background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 10px; padding: 14px 16px; font-size: 12px; color: #475569;">
@@ -274,26 +275,55 @@
 
       <!-- Release v7.2.3 -->
       <article class="ec-release-card">
-        <div style="display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 10px; margin-bottom: 10px;">
-          <h2 style="color: #0f172a; font-size: 20px; font-weight: 800; margin: 0;">Version 7.2.3</h2>
+        <div style="display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 10px; margin-bottom: 12px;">
+          <h2 style="color: #0f172a; font-size: 20px; font-weight: 800; margin: 0;">Version 7.2.3 — Reporting, Results &amp; Packaging</h2>
           <span class="ec-release-badge">September 19, 2026</span>
         </div>
         <ul style="color: #475569; font-size: 14px; line-height: 1.75; margin: 0; padding-left: 20px;">
-          <li>Updated Windows setup packaging, dependency security bounds, and automated documentation alignment across the desktop installer.</li>
+          <li><strong>Student Date of Birth (DOB) Support:</strong> Added student DOB capture, management, and printing across student profiles and academic records.</li>
+          <li><strong>Redesigned Exam Results Workspace:</strong> Overhauled marks entry layout with clear total marks/percentage rows, streamlined exam selection, and cleaner report card generation.</li>
+          <li><strong>Executive Multi-Page PDF Reports:</strong> Standardized school branding across Fee &amp; Staff Ledgers, Expense Vouchers, Report Builder exports, Calendar PDFs, Exam Admit Cards (with school phone &amp; email), and Student/Staff ID Cards; upgraded Student List by Class (30 students per page) and Attendance Summary PDFs (supporting all 5 statuses: Present, Absent, Half Day, Late, Leave).</li>
+          <li><strong>Diagnostics &amp; Packaging Synchronization:</strong> Enhanced missing-document and photo conflict diagnostics with direct entity details, and unified installer build pipelines.</li>
         </ul>
       </article>
 
-      <!-- Release v5.2.4 & v5.2.3 -->
+      <!-- Release v5.2.3 & v5.2.4 -->
       <article class="ec-release-card">
-        <div style="display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 10px; margin-bottom: 10px;">
-          <h2 style="color: #0f172a; font-size: 20px; font-weight: 800; margin: 0;">Versions 5.2.3 &amp; 5.2.4 — Security &amp; Reliability Milestone</h2>
+        <div style="display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 10px; margin-bottom: 12px;">
+          <h2 style="color: #0f172a; font-size: 20px; font-weight: 800; margin: 0;">Versions 5.2.3 &amp; 5.2.4 — Security, Quota &amp; UI Architecture</h2>
           <span class="ec-release-badge">September 14–18, 2026</span>
         </div>
         <ul style="color: #475569; font-size: 14px; line-height: 1.75; margin: 0; padding-left: 20px;">
-          <li><strong>Role-Based Access Enforcement:</strong> Enforced granular permission checks across student, faculty, finance, exam, and class workflows.</li>
-          <li><strong>Transactional Audit Logging:</strong> Every mutation records an authenticated user identifier inside the active database transaction so changes and audit logs stay strictly atomic.</li>
-          <li><strong>Credential &amp; Crash Resilience:</strong> Added secure memory clearing for password buffers, sanitized diagnostic logs, and improved background database connection performance.</li>
+          <li><strong>Active-Student Licensing &amp; Unlimited Staff:</strong> License quotas strictly meter active enrolled students only—preserving Alumni, Transferred, Withdrawn, and Dropped records indefinitely without using paid student capacity, while imposing zero headcount limits on faculty and staff.</li>
+          <li><strong>Dynamic Curriculum Subjects:</strong> Removed the legacy 10-subject limit per class so schools can configure 11+ curriculum subjects across grading and report cards.</li>
+          <li><strong>Midnight Blue UI &amp; Executive Dashboard:</strong> Refreshed the dashboard and sidebar into a Midnight Blue theme with live KPI cards, categorized actions, and dedicated Feedback and About views.</li>
+          <li><strong>Role-Based Access &amp; Transactional Audit Trails:</strong> Enforced granular permission checks across all administrative actions, ensured every mutation records an authenticated user entry inside the same transaction, and protected student/staff attendance and payment audit histories from accidental deletion.</li>
+          <li><strong>Cent-Accurate Financial Reversals &amp; Startup Auto-Backups:</strong> Eliminated rounding drift during multi-installment fee/salary reversals, added encrypted credential memory clearing and sanitized crash logs, and launched automated daily rolling 30-day backups with pre-archive integrity checks.</li>
         </ul>
+      </article>
+
+      <!-- Release v2.3.8 -->
+      <article class="ec-release-card">
+        <div style="display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 10px; margin-bottom: 12px;">
+          <h2 style="color: #0f172a; font-size: 20px; font-weight: 800; margin: 0;">Version 2.3.8 — Offline Concurrency &amp; Core Modules Overhaul</h2>
+          <span class="ec-release-badge">August 17–31, 2026</span>
+        </div>
+        <ul style="color: #475569; font-size: 14px; line-height: 1.75; margin: 0; padding-left: 20px;">
+          <li><strong>High-Concurrency Offline Database Engine:</strong> Enabled SQLite Write-Ahead Logging (WAL), automated lock retries, thread-isolated background task execution, and exact integer-cent financial precision.</li>
+          <li><strong>Bulk Excel/CSV Import (Students &amp; Faculty):</strong> Added template-driven Excel/CSV imports with column alias recognition, duplicate prevention, photo path support, and structured import result summaries.</li>
+          <li><strong>Modernized Attendance, Library, Calendar &amp; Classes:</strong> Introduced 5-status attendance marking with keyboard shortcuts, a 4-tab Digital Library circulation &amp; stock catalog, multi-day holiday calendar scheduling, split-view Class management with Session Promotion, and one-click Student/Staff Profile PDF dossiers.</li>
+        </ul>
+      </article>
+
+      <!-- Early Foundation Releases -->
+      <article class="ec-release-card">
+        <div style="display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 10px; margin-bottom: 10px;">
+          <h2 style="color: #0f172a; font-size: 20px; font-weight: 800; margin: 0;">Versions 1.1.0 – 2.0.6 — Initial Windows Releases</h2>
+          <span class="ec-release-badge">July 2026</span>
+        </div>
+        <p style="color: #475569; font-size: 14px; line-height: 1.7; margin: 0;">
+          Initial public Windows distributions establishing EduCore's offline desktop architecture, local school database setup, and end-user license framework prior to the v2.3.8–v8.2.3 platform upgrades.
+        </p>
       </article>
 
       <!--Universal Site Navigation Bar-->
