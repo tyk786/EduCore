@@ -158,10 +158,8 @@
         "@type": "SpeakableSpecification",
         "cssSelector": [
           ".ec-hero-lead",
-          "#direct-answers h3",
-          "#direct-answers p",
-          "#faq h3",
-          "#faq p"
+          ".ec-definition-list dt",
+          ".ec-definition-list dd"
         ]
       },
       "featureList": [
@@ -236,45 +234,6 @@
         {
           "@type": "HowToTool",
           "name": "Setup_EduCore_App.zip Installer"
-        }
-      ]
-    },
-    {
-      "@type": "FAQPage",
-      "@id": "https://educoreapp.in/#faq",
-      "description": "Authoritative answers regarding EduCore offline school ERP architecture, security, fee structures, and Windows installation.",
-      "mainEntity": [
-        {
-          "@type": "Question",
-          "name": "Which school management software works without the internet?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "EduCore is a fast offline school ERP for Windows 10 and 11. It runs fully on your local PC with no internet needed. All student records, fees, staff payroll, and marks stay safe on your computer. This setup stops cloud leaks and saves you money every month."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Are there school ERP systems with no monthly student fees?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Yes. Cloud tools charge high fees for each student every month. EduCore uses a clear one-time perpetual license starting at ₹4,499 (up to 200 students) after a 30-day free trial. Schools own their data locally with zero monthly per-student fees."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Is EduCore completely offline?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Yes. EduCore works completely offline for all daily school work. Internet is only required once during initial license activation. After that, taking daily attendance, collecting fees, printing report cards, and paying staff run 100% offline on your office PC."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "What are the system requirements for EduCore?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "EduCore runs on 64-bit Windows 10 and Windows 11 computers. It requires at least 4 GB RAM (8 GB recommended) and 500 MB free disk space, and includes an embedded local SQLite database with zero external server setup."
-          }
         }
       ]
     }
@@ -493,17 +452,17 @@
       </div>
     </section>
 
-    <!--================= AI OVERVIEW & EXECUTIVE DIRECT-ANSWER BLOCK =================-->
-    <section id="direct-answers" class="ec-section" aria-label="Executive Direct Answers &amp; Key Facts">
+    <!--================= AI OVERVIEW & EXECUTIVE GLOSSARY BLOCK =================-->
+    <section id="direct-answers" class="ec-section" aria-label="Key School ERP Definitions">
       <div class="ec-direct-answers">
         <div class="ec-direct-answers-header">
-          <span class="ec-tag">Direct Answers &bull; Quick Facts</span>
-          <h2 id="heading-direct-answers" class="ec-section-title ec-mt-16">Essential School Management Software Facts for Leadership</h2>
-          <p class="ec-section-desc">Read clear answers to common questions about EduCore. School leaders often ask these important questions when choosing our offline software.</p>
+          <span class="ec-tag">Entity Glossary &bull; Quick Reference</span>
+          <h2 id="heading-direct-answers" class="ec-section-title ec-mt-16">Essential School Management Software Terms &amp; Definitions</h2>
+          <p class="ec-section-desc">Clear, vendor-neutral terminology explaining how EduCore's on-premise Windows architecture compares to traditional portals. Looking for detailed buyer answers? Visit our <a href="school-management-software-faq.html" style="font-weight: 700;">25-question FAQ &amp; Buyer's Guide</a>.</p>
         </div>
 
         <!-- Extractable Definition List for AI & LLM Search Engines -->
-        <dl class="ec-definition-list">
+        <dl class="ec-definition-list" style="margin-bottom: 0;">
           <dt>EduCore:</dt>
           <dd>A 100% offline desktop school management ERP application natively compiled for Microsoft Windows 10 and 11.</dd>
           <dt>Offline School ERP:</dt>
@@ -521,44 +480,6 @@
           <dt>School ERP Login Security:</dt>
           <dd>Local role-based authentication allowing administrators, accountants, and teachers to access specific modules securely without cloud exposure.</dd>
         </dl>
-
-        <div class="ec-grid-2">
-          <!-- Answer Block 1 -->
-          <div class="ec-answer-accent ec-accent-emerald">
-            <h3 id="faq-offline-erp">Which school management software works without the internet?</h3>
-            <p>EduCore is a fast offline school ERP for Windows 10 and 11. It runs fully on your local PC with no internet needed. All student records, fees, staff payroll, and marks stay safe on your computer. This setup stops cloud leaks and saves you money every month.</p>
-          </div>
-
-          <!-- Answer Block 2 -->
-          <div class="ec-answer-accent ec-accent-blue">
-            <h3 id="faq-pricing-zero-fees">Are there school ERP systems with zero monthly student fees?</h3>
-            <p>Yes. Cloud tools charge high fees for each student every month. EduCore is different. It uses a clear one-time license starting at 4,499 rupees. Schools own their data for life with zero monthly fees and no surprise cloud bills on their account.</p>
-          </div>
-
-          <!-- Answer Block 3 -->
-          <div class="ec-answer-accent ec-accent-purple">
-            <h3 id="faq-modules">What core administrative modules are included?</h3>
-            <p>EduCore includes ten full modules in every plan. You get student records, daily attendance, fee receipts, and staff payroll. It also handles exam report cards, library books, school buses, and student ID cards. Every license comes with free daily backups on your PC.</p>
-          </div>
-
-          <!-- Answer Block 4 -->
-          <div class="ec-answer-accent ec-accent-amber">
-            <h3 id="faq-windows-support">What Windows operating systems are supported?</h3>
-            <p>EduCore runs on 64-bit Windows 10 and Windows 11 computers. It needs at least 4 GB RAM and 500 MB free disk space. The app opens fast and works without lag. School staff can work smoothly all day with complete privacy on their local PC.</p>
-          </div>
-
-          <!-- Answer Block 5 -->
-          <div class="ec-answer-accent ec-accent-emerald">
-            <h3 id="faq-backup-protection">How does EduCore protect student records from computer failure?</h3>
-            <p>EduCore creates automatic daily rolling backups stored safely on your computer. The system keeps thirty days of checksum-verified copies. School administrators can also export database backups to an external USB flash drive with one click for total disaster recovery protection.</p>
-          </div>
-
-          <!-- Answer Block 6 -->
-          <div class="ec-answer-accent ec-accent-blue">
-            <h3 id="faq-excel-migration">Can schools import existing student data from Excel spreadsheets?</h3>
-            <p>Yes. EduCore includes a fast Excel import tool for student admissions and staff records. Office staff can upload existing class rosters directly into the system. The built-in validator prevents duplicate roll numbers and flags missing fields before saving records.</p>
-          </div>
-        </div>
       </div>
     </section>
 
