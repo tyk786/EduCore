@@ -39,7 +39,7 @@
   <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
   <link rel="shortcut icon" href="favicon.ico">
   <link rel="manifest" href="assets/favicon/site.webmanifest">
-  <meta name="theme-color" content="#0f172a">
+  <meta name="theme-color" content="#070b14">
 
   <link rel="preload" href="assets/css/shared.css" as="style">
   <link rel="stylesheet" href="assets/css/shared.css">
@@ -102,97 +102,7 @@
   </script>
 
   <style>
-    .ec-contact-wrap {
-      color: #1e293b;
-      margin: 0 auto;
-      max-width: 980px;
-      padding: 30px 20px 50px;
-    }
-    .ec-contact-grid {
-      display: grid;
-      gap: 20px;
-      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-      margin-bottom: 34px;
-    }
-    .ec-contact-card {
-      background: #ffffff;
-      border: 1px solid #e2e8f0;
-      border-radius: 16px;
-      box-shadow: 0 4px 16px rgba(0, 0, 0, 0.03);
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-      padding: 30px 24px;
-      text-align: left;
-      transition: transform 0.2s ease, box-shadow 0.2s ease;
-    }
-    .ec-contact-card:hover {
-      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.06);
-      transform: translateY(-3px);
-    }
-    .ec-icon-bubble {
-      align-items: center;
-      border-radius: 12px;
-      display: inline-flex;
-      font-size: 26px;
-      height: 52px;
-      justify-content: center;
-      margin-bottom: 16px;
-      width: 52px;
-    }
-    .ec-info-card {
-      background: #ffffff;
-      border: 1px solid #e2e8f0;
-      border-radius: 16px;
-      box-shadow: 0 4px 16px rgba(0, 0, 0, 0.03);
-      margin-bottom: 30px;
-      padding: 32px;
-    }
-    .ec-site-nav {
-      margin: 36px auto 20px;
-      max-width: 1040px;
-      padding: 0 10px;
-    }
-    .ec-nav-inner {
-      align-items: center;
-      background: #ffffff;
-      border: 1px solid #e2e8f0;
-      border-radius: 14px;
-      box-shadow: 0 4px 16px rgba(0, 0, 0, 0.03);
-      display: flex;
-      flex-wrap: wrap;
-      gap: 8px;
-      justify-content: center;
-      padding: 14px 16px;
-    }
-    .ec-nav-link {
-      align-items: center;
-      background: #f8fafc;
-      border: 1px solid #e2e8f0;
-      border-radius: 8px;
-      color: #0f172a !important;
-      display: inline-flex;
-      font-size: 13px;
-      font-weight: 600;
-      gap: 5px;
-      padding: 8px 14px;
-      text-decoration: none !important;
-      transition: all 0.2s ease;
-    }
-    .ec-nav-link:hover {
-      background: #0369a1;
-      border-color: #0369a1;
-      color: #ffffff !important;
-      transform: translateY(-1px);
-    }
-    @media (max-width: 640px) {
-      .ec-contact-wrap {
-        padding: 20px 14px;
-      }
-      .ec-info-card {
-        padding: 20px 18px;
-      }
-    }
+    /* Subpage styling unified via shared.css Obsidian Command system */
   </style>
 </head>
 <body>
@@ -244,97 +154,100 @@
     </div>
   </header>
 
-  <!-- Breadcrumbs -->
-  <nav class="ec-breadcrumbs" aria-label="Breadcrumb">
-    <ol>
-      <li><a href="/">Home</a></li>
-      <li aria-current="page">Contact Us &amp; Support</li>
-    </ol>
-  </nav>
-
   <main id="main-content">
-    <div class="ec-contact-wrap">
-
-      <!--Header-->
-      <header style="margin-bottom: 40px; text-align: center;">
-        <div style="background: rgb(224, 242, 254); border-radius: 9999px; color: #0369a1; display: inline-block; font-size: 12px; font-weight: 700; letter-spacing: 0.5px; margin-bottom: 12px; padding: 4px 14px; text-transform: uppercase;">
-          Direct Developer Support
-        </div>
-        <h1 style="color: #0f172a; font-size: clamp(28px, 4vw, 40px); font-weight: 800; margin: 0px 0px 10px;">Contact EduCore Support, Sales &amp; Licensing</h1>
-        <p style="color: #64748b; font-size: 16px; margin: 0px auto; max-width: 660px;">
+    <section class="ec-subpage-hero">
+      <div class="ec-subpage-hero-inner">
+        <nav class="ec-breadcrumbs" aria-label="Breadcrumb">
+          <ol>
+            <li><a href="/">Home</a></li>
+            <li aria-current="page">Contact Us &amp; Support</li>
+          </ol>
+        </nav>
+        <span class="ec-pill-badge">Direct Developer Support</span>
+        <h1>Contact EduCore Support, Sales &amp; Licensing</h1>
+        <p>
           Have a question about offline installation, licensing tiers, custom report designs, or school data migration? Reach out directly to our engineering team.
         </p>
-      </header>
+      </div>
+    </section>
+
+    <div class="ec-contact-wrap">
 
       <!--3 Action Cards-->
-      <div class="ec-contact-grid">
+      <div class="ec-contact-grid" style="margin-bottom: 32px;">
 
         <!--Card 1: Direct Email-->
-        <div class="ec-contact-card" style="border-top: 5px solid rgb(2, 132, 199);">
+        <div class="ec-contact-card" style="border-top: 3px solid var(--ec-emerald-deep);">
           <div>
-            <div class="ec-icon-bubble" style="background: rgb(224, 242, 254); color: #0369a1;">✉️</div>
-            <h2 style="color: #0f172a; font-size: 20px; font-weight: 700; margin: 0px 0px 8px;">Direct Developer Email</h2>
-            <p style="color: #64748b; font-size: 14px; margin: 0px 0px 18px;">
+            <div class="ec-icon-bubble ec-icon-emerald">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+            </div>
+            <h2 style="color: var(--ec-ink); font-size: 20px; font-weight: 800; margin: 0 0 8px;">Direct Developer Email</h2>
+            <p style="color: var(--ec-ink-muted); font-size: 14px; margin: 0 0 18px;">
               For licensing inquiries, machine activation requests, custom module enhancements, or priority technical support.
             </p>
           </div>
           <div>
-            <div style="background: rgb(248, 250, 252); border-radius: 10px; border: 1px solid rgb(226, 232, 240); margin-bottom: 14px; padding: 12px; text-align: center;">
-              <strong style="color: #0369a1; font-size: 15px;">info@educoreapp.in</strong>
+            <div style="background: var(--ec-surface-subtle); border-radius: 10px; border: 1px solid var(--ec-border); margin-bottom: 14px; padding: 12px; text-align: center;">
+              <strong style="color: var(--ec-emerald-deep); font-family: var(--ec-mono); font-size: 14.5px;">info@educoreapp.in</strong>
             </div>
-            <a href="mailto:info@educoreapp.in" style="background: rgb(2, 132, 199); border-radius: 10px; color: white; display: block; font-size: 14px; font-weight: 700; padding: 11px; text-align: center; text-decoration: none;">
+            <a href="mailto:info@educoreapp.in" class="ec-btn-solid" style="display: block; text-align: center; width: 100%;">
               Send Email Now
             </a>
           </div>
         </div>
 
         <!--Card 2: Direct Demo Walkthrough-->
-        <div class="ec-contact-card" style="border-top: 5px solid rgb(16, 185, 129);">
+        <div class="ec-contact-card" style="border-top: 3px solid var(--ec-cyan);">
           <div>
-            <div class="ec-icon-bubble" style="background: rgb(209, 250, 229); color: #047857;">✨</div>
-            <h2 style="color: #0f172a; font-size: 20px; font-weight: 700; margin: 0px 0px 8px;">Schedule Live Walkthrough</h2>
-            <p style="color: #64748b; font-size: 14px; margin: 0px 0px 18px;">
+            <div class="ec-icon-bubble ec-icon-cyan">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect><line x1="8" y1="21" x2="16" y2="21"></line><line x1="12" y1="17" x2="12" y2="21"></line></svg>
+            </div>
+            <h2 style="color: var(--ec-ink); font-size: 20px; font-weight: 800; margin: 0 0 8px;">Schedule Live Walkthrough</h2>
+            <p style="color: var(--ec-ink-muted); font-size: 14px; margin: 0 0 18px;">
               Request a personalized remote demonstration tailored to your school's student capacity, fee structures, and administrative workflow.
             </p>
           </div>
           <div>
-            <div style="background: rgb(248, 250, 252); border-radius: 10px; border: 1px solid rgb(226, 232, 240); margin-bottom: 14px; padding: 10px 12px; text-align: center;">
-              <span style="color: #047857; font-size: 13px; font-weight: 600;">Direct Developer Walkthrough</span>
+            <div style="background: var(--ec-surface-subtle); border-radius: 10px; border: 1px solid var(--ec-border); margin-bottom: 14px; padding: 10px 12px; text-align: center;">
+              <span style="color: var(--ec-emerald-deep); font-size: 13px; font-weight: 700;">Direct Developer Walkthrough</span>
             </div>
-            <a href="mailto:info@educoreapp.in?subject=EduCore%20Institutional%20Demo%20Request" style="background: rgb(16, 185, 129); border-radius: 10px; color: rgb(255, 255, 255); display: block; font-size: 14px; font-weight: 700; padding: 12px; text-align: center; text-decoration: none;">
+            <a href="mailto:info@educoreapp.in?subject=EduCore%20Institutional%20Demo%20Request" class="ec-btn-primary" style="display: block; text-align: center; width: 100%;">
               Email Demo Request →
             </a>
           </div>
         </div>
 
         <!--Card 3: Free Trial Download-->
-        <div class="ec-contact-card" style="border-top: 5px solid rgb(139, 92, 246);">
+        <div class="ec-contact-card" style="border-top: 3px solid var(--ec-violet);">
           <div>
-            <div class="ec-icon-bubble" style="background: rgb(237, 233, 254); color: #8b5cf6;">📥</div>
-            <h2 style="color: #0f172a; font-size: 20px; font-weight: 700; margin: 0px 0px 8px;">Free 30-Day Evaluation</h2>
-            <p style="color: #64748b; font-size: 14px; margin: 0px 0px 18px;">
+            <div class="ec-icon-bubble ec-icon-purple">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+            </div>
+            <h2 style="color: var(--ec-ink); font-size: 20px; font-weight: 800; margin: 0 0 8px;">Free 30-Day Evaluation</h2>
+            <p style="color: var(--ec-ink-muted); font-size: 14px; margin: 0 0 18px;">
               Download the fully functional desktop edition of EduCore. Test all modules and features directly on your Windows computer.
             </p>
           </div>
           <div>
-            <div style="background: rgb(248, 250, 252); border-radius: 10px; border: 1px solid rgb(226, 232, 240); margin-bottom: 14px; padding: 12px; text-align: center;">
-              <span style="color: #6d28d9; font-size: 13px; font-weight: 600;">Standalone Installer (.zip)</span>
+            <div style="background: var(--ec-surface-subtle); border-radius: 10px; border: 1px solid var(--ec-border); margin-bottom: 14px; padding: 12px; text-align: center;">
+              <span style="color: var(--ec-ink); font-family: var(--ec-mono); font-size: 12.5px; font-weight: 700;">Standalone Installer (.zip)</span>
             </div>
             <div style="display: flex; gap: 8px; flex-direction: column;">
-              <a href="https://github.com/tyk786/EduCore/releases/download/8.2.3/Setup_EduCore_App.zip" style="background: rgb(139, 92, 246); border-radius: 10px; color: white; display: block; font-size: 14px; font-weight: 700; padding: 11px; text-align: center; text-decoration: none;" target="_blank">
+              <a href="https://github.com/tyk786/EduCore/releases/download/8.2.3/Setup_EduCore_App.zip" class="ec-btn-solid" style="display: block; text-align: center; width: 100%;" target="_blank">
                 Download Installer (.zip)
               </a>
-              <a href="assets/EduCore_Installation_Guide.pdf" style="background: #f1f5f9; border: 1px solid #cbd5e1; border-radius: 10px; color: #334155; display: block; font-size: 13px; font-weight: 600; padding: 10px; text-align: center; text-decoration: none;" target="_blank" download>
-                📖 Installation Guide (.pdf)
+              <a href="assets/EduCore_Installation_Guide.pdf" class="ec-btn-outline" style="display: block; text-align: center; width: 100%; padding: 9px; font-size: 13px;" target="_blank" download>
+                Installation Guide (.pdf)
               </a>
             </div>
 
-            <div style="margin-top: 12px; background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 8px; padding: 8px 10px; font-size: 11px;">
+            <div class="ec-vault-panel" style="margin-top: 12px; padding: 10px 12px; font-size: 11px;">
               <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 4px;">
-                <span style="font-weight: 700; color: #0f172a;">🛡️ Malware Scan:</span>
-                <a href="https://www.virustotal.com/gui/file/f47999d6952f294330de11cbf0c78290e692f04f7673212d048ad170164deeec" target="_blank" rel="noopener noreferrer" style="color: #047857; font-weight: 700; text-decoration: none;">✅ VirusTotal Clean (0/72)</a>
+                <strong style="color: #ffffff;">Malware Scan:</strong>
+                <a href="https://www.virustotal.com/gui/file/f47999d6952f294330de11cbf0c78290e692f04f7673212d048ad170164deeec" target="_blank" rel="noopener noreferrer" style="color: var(--ec-emerald-bright); font-weight: 700; text-decoration: none;">✓ 0/72 Clean</a>
               </div>
-              <div style="color: #64748b; font-family: monospace; font-size: 10.5px; word-break: break-all;">
+              <div class="ec-vault-hash" style="font-size: 10px;">
                 SHA-256: f47999d6952f294330de11cbf0c78290e692f04f7673212d048ad170164deeec
               </div>
             </div>
@@ -345,40 +258,40 @@
 
       <!--Operational Info & License Activation Guidance-->
       <div class="ec-info-card">
-        <h2 style="color: #0f172a; font-size: 20px; font-weight: 800; margin: 0px 0px 14px;">🔑 How to Activate Your EduCore License</h2>
-        <p style="color: #475569; font-size: 14.5px; line-height: 1.7; margin: 0px 0px 16px;">
+        <h2 style="color: var(--ec-ink); font-size: 20px; font-weight: 800; margin: 0 0 14px;">How to Activate Your EduCore License</h2>
+        <p style="color: var(--ec-ink-body); font-size: 14.5px; line-height: 1.7; margin: 0 0 16px;">
           EduCore uses a hardware-locked licensing protocol that binds to your local Windows computer for offline security:
         </p>
-        <ol style="color: #475569; font-size: 14px; line-height: 1.8; margin: 0px 0px 20px; padding-left: 20px;">
+        <ol style="color: var(--ec-ink-body); font-size: 14px; line-height: 1.8; margin: 0 0 20px; padding-left: 20px;">
           <li>Install and open EduCore on your primary administrative desktop or laptop.</li>
           <li>Navigate to <code>Settings → License Management</code> to view your unique <strong>Machine ID</strong> (e.g. <code>WIN-XXXXXXXXXXXX</code>).</li>
-          <li>Email your Machine ID along with your desired tier (Trial, Basic, Standard, Professional, Enterprise, Diamond, Ultimate) to <a href="mailto:info@educoreapp.in" style="color: #0369a1; font-weight: 600; text-decoration: none;">info@educoreapp.in</a>.</li>
+          <li>Email your Machine ID along with your desired tier (Trial, Basic, Standard, Professional, Enterprise, Diamond, Ultimate) to <a href="mailto:info@educoreapp.in" style="color: var(--ec-emerald-deep); font-weight: 700;">info@educoreapp.in</a>.</li>
           <li>You will receive your cryptographic license activation key. Enter the key in the license dialog to permanently activate your system.</li>
         </ol>
-        <div style="background: rgb(239, 246, 255); border-left: 4px solid rgb(2, 132, 199); border-radius: 8px; color: #1e40af; font-size: 13.5px; padding: 14px 18px;">
-          💡 <strong>Technical Troubleshooting Tip:</strong> When reaching out for technical diagnostics or database assistance, you can attach the <code>educore_audit.log</code> file located in your application folder to help us analyze and resolve inquiries swiftly.
+        <div class="ec-callout">
+          <strong>Technical Troubleshooting Tip:</strong> When reaching out for technical diagnostics or database assistance, you can attach the <code>educore_audit.log</code> file located in your application folder to help us analyze and resolve inquiries swiftly.
         </div>
       </div>
 
-      <!--Developer Attribution & Verified Publisher Banner-->
-      <section style="background: #ffffff; border-radius: 14px; border: 1px solid #e2e8f0; margin-bottom: 30px; padding: 24px; text-align: left; box-shadow: 0 4px 14px rgba(0,0,0,0.03);">
-        <div style="display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 10px; margin-bottom: 12px;">
+      <!--Developer Attribution & Verified Publisher Obsidian Vault Banner-->
+      <section class="ec-vault-panel" style="margin-bottom: 30px;">
+        <div class="ec-vault-head">
           <div>
-            <div style="color: #0f172a; font-size: 17px; font-weight: 800;">🏢 Published &amp; Maintained by Sublime Enterprises</div>
-            <p style="color: #64748b; font-size: 13.5px; margin: 4px 0 0;">Dedicated to engineering dependable, fast, and offline management systems for educational institutions worldwide.</p>
+            <div style="color: #ffffff; font-size: 17px; font-weight: 800;">Published &amp; Maintained by Sublime Enterprises</div>
+            <p style="color: #cbd5e1; font-size: 13.5px; margin: 4px 0 0;">Dedicated to engineering dependable, fast, and offline management systems for educational institutions worldwide.</p>
           </div>
-          <a href="https://www.virustotal.com/gui/file/f47999d6952f294330de11cbf0c78290e692f04f7673212d048ad170164deeec" target="_blank" rel="noopener noreferrer" style="background: #ecfdf5; border: 1px solid #a7f3d0; border-radius: 6px; padding: 4px 12px; font-size: 12px; font-weight: 700; color: #047857; text-decoration: none;">
-            ✅ VirusTotal 0/72 Clean
+          <a href="https://www.virustotal.com/gui/file/f47999d6952f294330de11cbf0c78290e692f04f7673212d048ad170164deeec" target="_blank" rel="noopener noreferrer" class="ec-vt-pill">
+            ✓ VirusTotal 0/72 Clean
           </a>
         </div>
-        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 10px; font-size: 13px; color: #475569; background: #f8fafc; border-radius: 8px; padding: 12px 14px; border: 1px solid #e2e8f0;">
-          <div><strong>Publisher:</strong> Sublime Enterprises / Tariq Yousuf</div>
-          <div><strong>Support Desk:</strong> <a href="mailto:info@educoreapp.in" style="color: #0369a1; text-decoration: none;">info@educoreapp.in</a></div>
-          <div><strong>Country / Jurisdiction:</strong> India (IN)</div>
-          <div><strong>Official Repository:</strong> <a href="https://github.com/tyk786/EduCore" target="_blank" rel="noopener noreferrer" style="color: #0369a1; text-decoration: none;">github.com/tyk786/EduCore</a></div>
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 10px; font-size: 13px; color: #cbd5e1; background: #0d1424; border-radius: 10px; padding: 14px; border: 1px solid rgba(148, 163, 184, 0.16);">
+          <div><strong style="color: #ffffff;">Publisher:</strong> Sublime Enterprises / Tariq Yousuf</div>
+          <div><strong style="color: #ffffff;">Support Desk:</strong> <a href="mailto:info@educoreapp.in" style="color: var(--ec-emerald-bright); text-decoration: none;">info@educoreapp.in</a></div>
+          <div><strong style="color: #ffffff;">Country / Jurisdiction:</strong> India (IN)</div>
+          <div><strong style="color: #ffffff;">Official Repository:</strong> <a href="https://github.com/tyk786/EduCore" target="_blank" rel="noopener noreferrer" style="color: var(--ec-emerald-bright); text-decoration: none;">github.com/tyk786/EduCore</a></div>
         </div>
-        <div style="margin-top: 10px; font-size: 11px; color: #64748b; font-family: monospace; word-break: break-all;">
-          <strong>SHA-256 Checksum (v8.2.3):</strong> f47999d6952f294330de11cbf0c78290e692f04f7673212d048ad170164deeec
+        <div class="ec-vault-hash" style="margin-top: 12px;">
+          <strong style="color: #ffffff;">SHA-256 Checksum (v8.2.3):</strong> f47999d6952f294330de11cbf0c78290e692f04f7673212d048ad170164deeec
         </div>
       </section>
 

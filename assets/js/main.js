@@ -254,43 +254,69 @@ document.addEventListener('DOMContentLoaded', function () {
         try {
           const res = await navigator.modelContext.invokeTool('calculateLicensePricing', { studentCount: count });
           const text = res.content[0].text;
-          calcResult.innerHTML = `<div style="background: #e0f2fe; border: 1px solid #bae6fd; border-radius: 8px; padding: 14px 18px; color: #0369a1; font-size: 14px; line-height: 1.6;"><strong>🎯 Plan Recommendation:</strong><br>${text}</div>`;
+          calcResult.innerHTML = `<div style="background: #070b14; border: 1px solid rgba(52, 211, 153, 0.35); border-radius: 10px; padding: 14px 18px; color: #e2e8f0; font-size: 14px; line-height: 1.6;"><strong style="color: #34d399;">Plan Recommendation:</strong><br>${text}</div>`;
           calcResult.style.display = 'block';
           return;
         } catch (err) {}
       }
       let planName = count <= 50 ? 'Free Trial (₹0)' : count <= 200 ? 'Basic Tier (₹4,499)' : count <= 500 ? 'Standard Tier (₹9,999)' : count <= 700 ? 'Professional Tier (₹14,999)' : count <= 1000 ? 'Enterprise Tier (₹22,499)' : count <= 2000 ? 'Diamond Tier (₹37,499)' : 'Ultimate Tier (₹59,999)';
-      calcResult.innerHTML = `<div style="background: #e0f2fe; border: 1px solid #bae6fd; border-radius: 8px; padding: 14px 18px; color: #0369a1; font-size: 14px; line-height: 1.6;"><strong>Recommended Plan:</strong> ${planName} for ${count} students. Includes lifetime offline data sovereignty and all 10 modules unlocked.</div>`;
+      calcResult.innerHTML = `<div style="background: #070b14; border: 1px solid rgba(52, 211, 153, 0.35); border-radius: 10px; padding: 14px 18px; color: #e2e8f0; font-size: 14px; line-height: 1.6;"><strong style="color: #34d399;">Recommended Plan:</strong> ${planName} for ${count} students. Includes lifetime offline data sovereignty and all 10 modules unlocked.</div>`;
       calcResult.style.display = 'block';
     });
   }
 
   // Interactive FAQ Instant Search Bar Handler
+  const faqSearchForm = document.getElementById('faq-search-form');
   const faqSearchInput = document.getElementById('faq-search-input');
-  if (faqSearchInput) {
-    faqSearchInput.addEventListener('input', function () {
-      const q = this.value.toLowerCase().trim();
-      const faqItems = document.querySelectorAll('.ec-faq-item, .ec-faq-section article');
-      let visibleCount = 0;
 
-      faqItems.forEach(function (item) {
-        const heading = item.querySelector('h3');
-        const paragraph = item.querySelector('p');
-        const textToMatch = (heading ? heading.textContent : '') + ' ' + (paragraph ? paragraph.textContent : '');
+  function runFaqFilter(rawQuery) {
+    const q = (rawQuery || '').toLowerCase().trim();
+    const faqItems = document.querySelectorAll('.ec-faq-item, .ec-faq-section article, main article');
+    let visibleCount = 0;
 
-        if (q === '' || textToMatch.toLowerCase().includes(q)) {
-          item.style.display = '';
-          visibleCount++;
-        } else {
-          item.style.display = 'none';
-        }
-      });
+    faqItems.forEach(function (item) {
+      const heading = item.querySelector('h3');
+      const paragraph = item.querySelector('p');
+      const listEl = item.querySelector('ul');
+      const textToMatch =
+        (heading ? heading.textContent : '') + ' ' +
+        (paragraph ? paragraph.textContent : '') + ' ' +
+        (listEl ? listEl.textContent : '');
 
-      // Update counter if present
-      const countEl = document.getElementById('faq-count-feedback');
-      if (countEl) {
-        countEl.textContent = q ? `Showing ${visibleCount} matching questions for "${q}"` : 'Browse all 25 questions across 5 core categories below';
+      if (q === '' || textToMatch.toLowerCase().includes(q)) {
+        item.style.display = '';
+        visibleCount++;
+      } else {
+        item.style.display = 'none';
       }
     });
+
+    const countEl = document.getElementById('faq-count-feedback');
+    if (countEl) {
+      countEl.textContent = q
+        ? `Showing ${visibleCount} matching questions for "${q}"`
+        : 'Browse all 25 questions across 5 core categories below';
+    }
+  }
+
+  if (faqSearchInput) {
+    faqSearchInput.addEventListener('input', function () {
+      runFaqFilter(this.value);
+    });
+
+    if (faqSearchForm) {
+      faqSearchForm.addEventListener('submit', function (e) {
+        e.preventDefault();
+        runFaqFilter(faqSearchInput.value);
+      });
+    }
+
+    // Apply URL ?q= or ?query= automatically on load
+    const params = new URLSearchParams(window.location.search);
+    const initialQuery = params.get('q') || params.get('query');
+    if (initialQuery) {
+      faqSearchInput.value = initialQuery;
+      runFaqFilter(initialQuery);
+    }
   }
 });

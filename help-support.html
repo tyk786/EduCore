@@ -39,7 +39,7 @@
   <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
   <link rel="shortcut icon" href="favicon.ico">
   <link rel="manifest" href="assets/favicon/site.webmanifest">
-  <meta name="theme-color" content="#0f172a">
+  <meta name="theme-color" content="#070b14">
 
   <link rel="preload" href="assets/css/shared.css" as="style">
   <link rel="stylesheet" href="assets/css/shared.css">
@@ -192,92 +192,7 @@
   </script>
 
   <style>
-    .ec-guide-wrap {
-      color: #1e293b;
-      margin: 0 auto;
-      max-width: 980px;
-      padding: 30px 20px 50px;
-    }
-    .ec-step-card {
-      background: #ffffff;
-      border: 1px solid #e2e8f0;
-      border-radius: 16px;
-      box-shadow: 0 4px 16px rgba(0, 0, 0, 0.03);
-      margin-bottom: 24px;
-      padding: 28px 32px;
-      transition: transform 0.2s ease, box-shadow 0.2s ease;
-    }
-    .ec-step-card:hover {
-      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.06);
-      border-color: #cbd5e1;
-    }
-    .ec-step-num {
-      align-items: center;
-      background: #e0f2fe;
-      border-radius: 8px;
-      color: #0369a1;
-      display: inline-flex;
-      font-size: 14px;
-      font-weight: 800;
-      height: 32px;
-      justify-content: center;
-      margin-right: 10px;
-      width: 32px;
-    }
-    .ec-callout {
-      background: #eff6ff;
-      border-left: 4px solid #0369a1;
-      border-radius: 8px;
-      color: #1e40af;
-      font-size: 14px;
-      margin-top: 14px;
-      padding: 12px 16px;
-    }
-    .ec-site-nav {
-      margin: 36px auto 20px;
-      max-width: 1040px;
-      padding: 0 10px;
-    }
-    .ec-nav-inner {
-      align-items: center;
-      background: #ffffff;
-      border: 1px solid #e2e8f0;
-      border-radius: 14px;
-      box-shadow: 0 4px 16px rgba(0, 0, 0, 0.03);
-      display: flex;
-      flex-wrap: wrap;
-      gap: 8px;
-      justify-content: center;
-      padding: 14px 16px;
-    }
-    .ec-nav-link {
-      align-items: center;
-      background: #f8fafc;
-      border: 1px solid #e2e8f0;
-      border-radius: 8px;
-      color: #0f172a !important;
-      display: inline-flex;
-      font-size: 13px;
-      font-weight: 600;
-      gap: 5px;
-      padding: 8px 14px;
-      text-decoration: none !important;
-      transition: all 0.2s ease;
-    }
-    .ec-nav-link:hover {
-      background: #0369a1;
-      border-color: #0369a1;
-      color: #ffffff !important;
-      transform: translateY(-1px);
-    }
-    @media (max-width: 640px) {
-      .ec-guide-wrap {
-        padding: 20px 14px;
-      }
-      .ec-step-card {
-        padding: 20px 18px;
-      }
-    }
+    /* Subpage styling unified via shared.css Obsidian Command system */
   </style>
 </head>
 <body>
@@ -329,80 +244,77 @@
     </div>
   </header>
 
-  <!-- Breadcrumbs -->
-  <nav class="ec-breadcrumbs" aria-label="Breadcrumb">
-    <ol>
-      <li><a href="/">Home</a></li>
-      <li aria-current="page">User Manual &amp; Documentation</li>
-    </ol>
-  </nav>
-
   <main id="main-content">
-    <div class="ec-guide-wrap">
-
-      <!-- Header -->
-      <header style="margin-bottom: 40px; text-align: center;">
-        <div style="background: #e0f2fe; border-radius: 9999px; color: #0369a1; display: inline-block; font-size: 12px; font-weight: 700; letter-spacing: 0.5px; margin-bottom: 12px; padding: 4px 14px; text-transform: uppercase;">
-          Official Documentation &amp; User Manual
-        </div>
-        <h1 style="color: #0f172a; font-size: clamp(28px, 4vw, 40px); font-weight: 800; margin: 0 0 12px;">EduCore User Manual &amp; Administration Guide — Step-by-Step Knowledge Base</h1>
-        <p style="color: #64748b; font-size: 16px; margin: 0 auto; max-width: 720px;">
+    <section class="ec-subpage-hero">
+      <div class="ec-subpage-hero-inner">
+        <nav class="ec-breadcrumbs" aria-label="Breadcrumb">
+          <ol>
+            <li><a href="/">Home</a></li>
+            <li aria-current="page">User Manual &amp; Documentation</li>
+          </ol>
+        </nav>
+        <span class="ec-pill-badge">Official Documentation &amp; User Manual</span>
+        <h1>EduCore User Manual &amp; Administration Guide — Step-by-Step Knowledge Base</h1>
+        <p>
           A comprehensive operational handbook for installing, configuring, and operating your offline school ERP system with complete data sovereignty.
         </p>
-      </header>
+      </div>
+    </section>
 
-      <!-- Installation & Security Handbook Banner -->
-      <div style="background: #f0f9ff; border: 1px solid #b9e6fe; border-left: 5px solid #0369a1; border-radius: 14px; margin-bottom: 28px; padding: 20px 24px;">
+    <div class="ec-guide-wrap">
+
+      <!-- Obsidian Installation & Security Handbook Vault Banner -->
+      <div class="ec-vault-panel" style="margin-bottom: 28px;">
         <div style="align-items: center; display: flex; flex-wrap: wrap; justify-content: space-between; gap: 14px;">
           <div>
-            <h2 style="color: #0f172a; font-size: 17px; font-weight: 800; margin: 0 0 6px;">📥 Official Windows Installation &amp; SmartScreen Guide</h2>
-            <p style="color: #475569; font-size: 14px; margin: 0; max-width: 680px;">
+            <h2 style="color: #ffffff; font-size: 17px; font-weight: 800; margin: 0 0 6px;">Official Windows Installation &amp; SmartScreen Guide</h2>
+            <p style="color: #cbd5e1; font-size: 14px; margin: 0; max-width: 660px;">
               Encountering the blue "Windows protected your PC" (Microsoft Defender SmartScreen) prompt? Download our comprehensive, illustrated handbook with full walkthrough screenshots and security verification details.
             </p>
           </div>
-          <a href="assets/EduCore_Installation_Guide.pdf" target="_blank" download style="background: #0369a1; border-radius: 10px; color: #ffffff; display: inline-flex; font-size: 14px; font-weight: 700; padding: 11px 20px; text-decoration: none; white-space: nowrap;">
-            Download Guide (.pdf) 📄
+          <a href="assets/EduCore_Installation_Guide.pdf" target="_blank" download class="ec-btn-primary">
+            Download Guide (.pdf)
           </a>
         </div>
-        <div style="margin-top: 14px; padding-top: 12px; border-top: 1px solid #e0f2fe; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 8px; font-size: 12px; color: #475569;">
+        <div class="ec-vault-foot">
           <div>
-            <strong>Verified Binary Checksum (SHA-256):</strong> <code style="font-size: 11px; color: #0369a1; word-break: break-all;">f47999d6952f294330de11cbf0c78290e692f04f7673212d048ad170164deeec</code>
+            <strong style="color: #ffffff;">Verified Binary Checksum (SHA-256):</strong> <code class="ec-vault-hash">f47999d6952f294330de11cbf0c78290e692f04f7673212d048ad170164deeec</code>
           </div>
-          <a href="https://www.virustotal.com/gui/file/f47999d6952f294330de11cbf0c78290e692f04f7673212d048ad170164deeec" target="_blank" rel="noopener noreferrer" style="background: #ecfdf5; border: 1px solid #a7f3d0; border-radius: 6px; padding: 3px 10px; font-size: 11.5px; font-weight: 700; color: #047857; text-decoration: none;">
-            ✅ VirusTotal 0/72 Clean Scan
+          <a href="https://www.virustotal.com/gui/file/f47999d6952f294330de11cbf0c78290e692f04f7673212d048ad170164deeec" target="_blank" rel="noopener noreferrer" class="ec-vt-pill">
+            ✓ VirusTotal 0/72 Clean Scan
           </a>
         </div>
       </div>
 
       <!-- Step 1: First-Time Launch & Admin Setup -->
       <section class="ec-step-card">
-        <h2 style="align-items: center; color: #0369a1; display: flex; font-size: 20px; font-weight: 800; margin: 0 0 14px;">
-          <span class="ec-step-num">1</span>
+        <h2 style="align-items: center; color: var(--ec-ink); display: flex; font-size: 20px; font-weight: 800; margin: 0 0 14px;">
+          <span class="ec-step-num">01</span>
           <span>First-Time Launch &amp; Master Administrator Setup</span>
         </h2>
-        <p style="color: #475569; font-size: 14.5px; margin: 0 0 12px;">
+        <p style="color: var(--ec-ink-body); font-size: 14.5px; margin: 0 0 12px;">
           Upon starting EduCore for the very first time on your Windows computer, the system initializes the local embedded SQLite database and guides you to create your <strong>Master Administrator</strong> account. This account possesses complete administrative rights to configure academic rules, manage staff roles, and audit financial records.
         </p>
-        <ul style="color: #475569; font-size: 14px; line-height: 1.8; margin: 0 0 14px; padding-left: 20px;">
+        <ul style="color: var(--ec-ink-body); font-size: 14px; line-height: 1.8; margin: 0 0 14px; padding-left: 20px;">
           <li>Enter a secure administrator username and password.</li>
           <li>EduCore secures passwords with cryptographic PBKDF2 hashing and per-user random salts.</li>
           <li>Plaintext credentials are immediately wiped from memory using zeroization buffers.</li>
         </ul>
         <div class="ec-callout">
-          🔒 <strong>Security Best Practice:</strong> Store your master admin credentials securely. While password resets can be requested by authorized school directors, keeping your credentials safe ensures total access integrity.
+          <strong>Security Best Practice:</strong> Store your master admin credentials securely. While password resets can be requested by authorized school directors, keeping your credentials safe ensures total access integrity.
         </div>
       </section>
 
       <!-- Step 2: Institute Configuration -->
       <section class="ec-step-card">
-        <h2 style="align-items: center; color: #0369a1; display: flex; font-size: 20px; font-weight: 800; margin: 0 0 14px;">
-          <span class="ec-step-num">2</span>
+        <h2 style="align-items: center; color: var(--ec-ink); display: flex; font-size: 20px; font-weight: 800; margin: 0 0 14px;">
+          <span class="ec-step-num">02</span>
           <span>School Profile &amp; Academic Structure Configuration</span>
         </h2>
-        <p style="color: #475569; font-size: 14.5px; margin: 0 0 12px;">
+        <p style="color: var(--ec-ink-body); font-size: 14.5px; margin: 0 0 12px;">
           Customize your institution's profile by navigating to <code>Settings → School Settings</code>:
         </p>
-        <ul style="color: #475569; font-size: 14px; line-height: 1.8; margin: 0 0 14px; padding-left: 20px;">
+        <ul style="color: var(--ec-ink-body); font-size: 14px; line-height: 1.8; margin: 0 0 14px; padding-left: 20px;">
           <li><strong>Institutional Identity:</strong> Enter your School Name, Motto, Campus Address, Contact Phone, and Official Email.</li>
           <li><strong>Accreditation Details:</strong> Specify your Affiliation Board (e.g. CBSE, ICSE, State Board, Cambridge), Registration Number, and UDISE Code.</li>
           <li><strong>Official Logo Upload:</strong> Upload a high-resolution PNG or JPG logo. EduCore automatically positions your emblem on Marksheets, Student ID Cards, Transfer Certificates, and Fee Receipts.</li>
@@ -412,14 +324,14 @@
 
       <!-- Step 3: Student & Staff Enrollment -->
       <section class="ec-step-card">
-        <h2 style="align-items: center; color: #0369a1; display: flex; font-size: 20px; font-weight: 800; margin: 0 0 14px;">
-          <span class="ec-step-num">3</span>
+        <h2 style="align-items: center; color: var(--ec-ink); display: flex; font-size: 20px; font-weight: 800; margin: 0 0 14px;">
+          <span class="ec-step-num">03</span>
           <span>Student Enrollment &amp; Faculty HR Onboarding</span>
         </h2>
-        <p style="color: #475569; font-size: 14.5px; margin: 0 0 12px;">
+        <p style="color: var(--ec-ink-body); font-size: 14.5px; margin: 0 0 12px;">
           EduCore gives you two flexible ways to onboard your student body and teaching staff:
         </p>
-        <ul style="color: #475569; font-size: 14px; line-height: 1.8; margin: 0 0 14px; padding-left: 20px;">
+        <ul style="color: var(--ec-ink-body); font-size: 14px; line-height: 1.8; margin: 0 0 14px; padding-left: 20px;">
           <li><strong>Bulk Excel Import:</strong> Under the Student or Staff management tab, click <em>Bulk Import</em> and download the pre-formatted template (<code>student_import_template.xlsx</code> / <code>staff_import_template.xlsx</code>). Paste your existing roster and click import. EduCore validates every row and rejects duplicates automatically.</li>
           <li><strong>Individual Profile Entry:</strong> Add student profiles one-by-one with student photograph, blood group, guardian contact, residential address, emergency numbers, and previous school history.</li>
           <li><strong>Faculty HR Profiles:</strong> Add teaching faculty and administrative personnel under <strong>Teacher Management</strong> with academic qualifications, designated subjects, and salary structures.</li>
@@ -428,11 +340,11 @@
 
       <!-- Step 4: Daily Attendance & Absentee Investigation -->
       <section class="ec-step-card">
-        <h2 style="align-items: center; color: #0369a1; display: flex; font-size: 20px; font-weight: 800; margin: 0 0 14px;">
-          <span class="ec-step-num">4</span>
+        <h2 style="align-items: center; color: var(--ec-ink); display: flex; font-size: 20px; font-weight: 800; margin: 0 0 14px;">
+          <span class="ec-step-num">04</span>
           <span>Dual-Track Daily Attendance &amp; Absentee Investigation</span>
         </h2>
-        <ul style="color: #475569; font-size: 14px; line-height: 1.8; margin: 0 0 14px; padding-left: 20px;">
+        <ul style="color: var(--ec-ink-body); font-size: 14px; line-height: 1.8; margin: 0 0 14px; padding-left: 20px;">
           <li><strong>Class Roll Call:</strong> Navigate to the <strong>Attendance</strong> tab, select the class, section, and date, and record attendance with one click (Present, Absent, Late, Leave, Half Day).</li>
           <li><strong>Chronic Absentee Investigation:</strong> Use the dedicated Absentee Investigation tool on the Executive Dashboard to monitor students who have missed multiple consecutive days.</li>
           <li><strong>Staff Attendance:</strong> Record daily faculty arrival and departure status. Staff attendance seamlessly syncs with the payroll engine to calculate leave deductions.</li>
@@ -442,11 +354,11 @@
 
       <!-- Step 5: Fee Collection & Receipt Printing -->
       <section class="ec-step-card">
-        <h2 style="align-items: center; color: #0369a1; display: flex; font-size: 20px; font-weight: 800; margin: 0 0 14px;">
-          <span class="ec-step-num">5</span>
+        <h2 style="align-items: center; color: var(--ec-ink); display: flex; font-size: 20px; font-weight: 800; margin: 0 0 14px;">
+          <span class="ec-step-num">05</span>
           <span>Automated Fee Generation, Payments &amp; Receipts</span>
         </h2>
-        <ul style="color: #475569; font-size: 14px; line-height: 1.8; margin: 0 0 14px; padding-left: 20px;">
+        <ul style="color: var(--ec-ink-body); font-size: 14px; line-height: 1.8; margin: 0 0 14px; padding-left: 20px;">
           <li><strong>Batch Fee Automation:</strong> Under <strong>Finance</strong>, execute the monthly fee run. EduCore generates invoices for all enrolled students across all classes in less than 1 second.</li>
           <li><strong>Collecting Payments:</strong> Search students by name or admission number. Accept full or partial payments, apply scholarship concessions or sibling discounts, and calculate late fines.</li>
           <li><strong>Instant Receipts:</strong> Print professional payment receipts on compact 80mm thermal receipt printers or standard A4/A5 sheets with institutional headers and watermark.</li>
@@ -456,11 +368,11 @@
 
       <!-- Step 6: Teacher HR & Staff Payroll -->
       <section class="ec-step-card">
-        <h2 style="align-items: center; color: #0369a1; display: flex; font-size: 20px; font-weight: 800; margin: 0 0 14px;">
-          <span class="ec-step-num">6</span>
+        <h2 style="align-items: center; color: var(--ec-ink); display: flex; font-size: 20px; font-weight: 800; margin: 0 0 14px;">
+          <span class="ec-step-num">06</span>
           <span>Faculty HR, Monthly Payroll &amp; Salary Slips</span>
         </h2>
-        <ul style="color: #475569; font-size: 14px; line-height: 1.8; margin: 0 0 14px; padding-left: 20px;">
+        <ul style="color: var(--ec-ink-body); font-size: 14px; line-height: 1.8; margin: 0 0 14px; padding-left: 20px;">
           <li><strong>Salary Structures:</strong> Configure base salary, travel allowances, house rent allowances, medical benefits, and provident fund (PF) deductions.</li>
           <li><strong>One-Click Payroll Run:</strong> Run monthly staff compensation under <strong>Finance → Salary</strong>. The engine computes working days, subtracts unpaid leave, and finalizes net pay.</li>
           <li><strong>Printable Salary Slips:</strong> Generate professional salary pay slips for each employee complete with earnings breakdown, deductions, and authorization signature blocks.</li>
@@ -469,11 +381,11 @@
 
       <!-- Step 7: Exams, Grading & Marksheet PDFs -->
       <section class="ec-step-card">
-        <h2 style="align-items: center; color: #0369a1; display: flex; font-size: 20px; font-weight: 800; margin: 0 0 14px;">
-          <span class="ec-step-num">7</span>
+        <h2 style="align-items: center; color: var(--ec-ink); display: flex; font-size: 20px; font-weight: 800; margin: 0 0 14px;">
+          <span class="ec-step-num">07</span>
           <span>Examinations, Grading &amp; Marksheet PDF Generation</span>
         </h2>
-        <ul style="color: #475569; font-size: 14px; line-height: 1.8; margin: 0 0 14px; padding-left: 20px;">
+        <ul style="color: var(--ec-ink-body); font-size: 14px; line-height: 1.8; margin: 0 0 14px; padding-left: 20px;">
           <li><strong>Exam Configuration:</strong> Configure examination terms (First Term, Mid-Term, Pre-Board, Final Exams) and subject weightages.</li>
           <li><strong>Score Entry:</strong> Enter theory, practical, and viva marks class-by-class. EduCore automatically computes totals, percentages, grade points, and class ranks.</li>
           <li><strong>Official Marksheet PDFs:</strong> Generate high-DPI printable student report cards featuring official grading scales, teacher remarks, attendance summaries, and school seals.</li>
@@ -483,11 +395,11 @@
 
       <!-- Step 8: Master Timetable & School Calendar -->
       <section class="ec-step-card">
-        <h2 style="align-items: center; color: #0369a1; display: flex; font-size: 20px; font-weight: 800; margin: 0 0 14px;">
-          <span class="ec-step-num">8</span>
+        <h2 style="align-items: center; color: var(--ec-ink); display: flex; font-size: 20px; font-weight: 800; margin: 0 0 14px;">
+          <span class="ec-step-num">08</span>
           <span>Conflict-Free Timetable &amp; Academic Calendar</span>
         </h2>
-        <ul style="color: #475569; font-size: 14px; line-height: 1.8; margin: 0 0 14px; padding-left: 20px;">
+        <ul style="color: var(--ec-ink-body); font-size: 14px; line-height: 1.8; margin: 0 0 14px; padding-left: 20px;">
           <li><strong>Timetable Builder:</strong> Allocate subject periods across weekly schedules. The automated conflict detection prevents assigning the same teacher to two simultaneous classes.</li>
           <li><strong>Printable Schedules:</strong> Print class-wise timetables for classroom noticeboards and individual teacher schedules.</li>
           <li><strong>Academic Calendar:</strong> Schedule school holidays, exam blocks, sports meets, parent-teacher conferences, and multi-day celebrations with color-coded dashboard reminders.</li>
@@ -496,11 +408,11 @@
 
       <!-- Step 9: Document & Certificate Printing -->
       <section class="ec-step-card">
-        <h2 style="align-items: center; color: #0369a1; display: flex; font-size: 20px; font-weight: 800; margin: 0 0 14px;">
-          <span class="ec-step-num">9</span>
+        <h2 style="align-items: center; color: var(--ec-ink); display: flex; font-size: 20px; font-weight: 800; margin: 0 0 14px;">
+          <span class="ec-step-num">09</span>
           <span>Automated Certificate &amp; Identity Badge Generation</span>
         </h2>
-        <ul style="color: #475569; font-size: 14px; line-height: 1.8; margin: 0 0 14px; padding-left: 20px;">
+        <ul style="color: var(--ec-ink-body); font-size: 14px; line-height: 1.8; margin: 0 0 14px; padding-left: 20px;">
           <li><strong>Bonafide &amp; Character Certificates:</strong> Select any student and generate formal Bonafide or Character certificates pre-filled with registration numbers and dates.</li>
           <li><strong>Transfer Certificate (TC):</strong> Generate official School Leaving Transfer Certificates with academic track records and clearance signatures.</li>
           <li><strong>ID Badges:</strong> Generate Student and Staff ID Cards choosing between vertical and modern horizontal layouts with barcodes and student photos.</li>
@@ -510,11 +422,11 @@
 
       <!-- Step 10: Backups & Academic Session Rollover -->
       <section class="ec-step-card">
-        <h2 style="align-items: center; color: #0369a1; display: flex; font-size: 20px; font-weight: 800; margin: 0 0 14px;">
+        <h2 style="align-items: center; color: var(--ec-ink); display: flex; font-size: 20px; font-weight: 800; margin: 0 0 14px;">
           <span class="ec-step-num">10</span>
           <span>Disaster Recovery Backups &amp; Annual Promotion Wizard</span>
         </h2>
-        <ul style="color: #475569; font-size: 14px; line-height: 1.8; margin: 0 0 14px; padding-left: 20px;">
+        <ul style="color: var(--ec-ink-body); font-size: 14px; line-height: 1.8; margin: 0 0 14px; padding-left: 20px;">
           <li><strong>Automated Rolling Backups:</strong> EduCore automatically executes a daily background backup, verifying database integrity and rotating a rolling 30-day snapshot archive.</li>
           <li><strong>Manual Backup Archive:</strong> Create on-demand timestamped ZIP backups at any time under <code>Settings → Backup &amp; Restore</code>. Copy this archive to a USB drive weekly.</li>
           <li><strong>Student Promotion Wizard:</strong> At the close of an academic year, launch the promotion wizard to promote passing students to the next grade while archiving graduating alumni records.</li>
@@ -523,49 +435,49 @@
 
       <!-- Frequently Asked Questions (FAQ) Section -->
       <section class="ec-step-card" style="margin-top: 30px;">
-        <h2 style="align-items: center; color: #0f172a; display: flex; font-size: 22px; font-weight: 800; gap: 10px; margin: 0 0 20px;">
-          <span>❓</span> <span>Frequently Asked Questions &amp; Troubleshooting</span>
+        <h2 style="align-items: center; color: var(--ec-ink); display: flex; font-size: 22px; font-weight: 800; gap: 10px; margin: 0 0 20px;">
+          <span>Frequently Asked Questions &amp; Troubleshooting</span>
         </h2>
 
         <div style="display: grid; gap: 16px;">
-          <div style="background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 12px; padding: 20px;">
-            <h3 style="color: #0369a1; font-size: 16px; font-weight: 700; margin: 0 0 8px;">How do I take a complete backup of my EduCore database?</h3>
-            <p style="color: #475569; font-size: 14px; line-height: 1.6; margin: 0;">EduCore automatically creates an encrypted, integrity-verified daily backup snapshot archive whenever you close the application. You can also create an on-demand manual backup at any time by navigating to <code>Settings → Backup &amp; Restore → Create Backup Now</code>, and exporting the resulting archive to an external USB flash drive.</p>
+          <div class="ec-faq-item" style="margin-bottom: 0;">
+            <h3 style="color: var(--ec-emerald-deep); font-size: 16px;">How do I take a complete backup of my EduCore database?</h3>
+            <p>EduCore automatically creates an encrypted, integrity-verified daily backup snapshot archive whenever you close the application. You can also create an on-demand manual backup at any time by navigating to <code>Settings → Backup &amp; Restore → Create Backup Now</code>, and exporting the resulting archive to an external USB flash drive.</p>
           </div>
 
-          <div style="background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 12px; padding: 20px;">
-            <h3 style="color: #0369a1; font-size: 16px; font-weight: 700; margin: 0 0 8px;">Can multiple administrative computers run EduCore simultaneously?</h3>
-            <p style="color: #475569; font-size: 14px; line-height: 1.6; margin: 0;">Yes. EduCore is architected with thread-isolated SQLite connections and Write-Ahead Logging (WAL) concurrency. In local area network (LAN) shared folder deployments, administrative workstations can access the central institutional database simultaneously without lock contention.</p>
+          <div class="ec-faq-item" style="margin-bottom: 0;">
+            <h3 style="color: var(--ec-emerald-deep); font-size: 16px;">Can multiple administrative computers run EduCore simultaneously?</h3>
+            <p>Yes. EduCore is architected with thread-isolated SQLite connections and Write-Ahead Logging (WAL) concurrency. In local area network (LAN) shared folder deployments, administrative workstations can access the central institutional database simultaneously without lock contention.</p>
           </div>
 
-          <div style="background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 12px; padding: 20px;">
-            <h3 style="color: #0369a1; font-size: 16px; font-weight: 700; margin: 0 0 8px;">How do I bulk import student and staff records from Excel?</h3>
-            <p style="color: #475569; font-size: 14px; line-height: 1.6; margin: 0;">Navigate to the Students or Faculty module and click <em>'Bulk Import from Excel'</em>. Download the official pre-formatted Excel template (<code>.xlsx</code>), fill in student or faculty attributes, and upload the file. EduCore automatically validates fields, detects duplicates, and ingests all records in seconds.</p>
+          <div class="ec-faq-item" style="margin-bottom: 0;">
+            <h3 style="color: var(--ec-emerald-deep); font-size: 16px;">How do I bulk import student and staff records from Excel?</h3>
+            <p>Navigate to the Students or Faculty module and click <em>'Bulk Import from Excel'</em>. Download the official pre-formatted Excel template (<code>.xlsx</code>), fill in student or faculty attributes, and upload the file. EduCore automatically validates fields, detects duplicates, and ingests all records in seconds.</p>
           </div>
 
-          <div style="background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 12px; padding: 20px;">
-            <h3 style="color: #0369a1; font-size: 16px; font-weight: 700; margin: 0 0 8px;">What happens if our administrative PC crashes or gets replaced?</h3>
-            <p style="color: #475569; font-size: 14px; line-height: 1.6; margin: 0;">Your student records and fee data remain 100% safe. Simply install EduCore on the replacement Windows computer, navigate to <code>Settings → Backup &amp; Restore</code>, and select your latest backup archive to restore all institutional records in one click. Email your new Machine ID to <a href="mailto:info@educoreapp.in" style="color: #0369a1; font-weight: 600;">info@educoreapp.in</a> for instant license re-binding.</p>
+          <div class="ec-faq-item" style="margin-bottom: 0;">
+            <h3 style="color: var(--ec-emerald-deep); font-size: 16px;">What happens if our administrative PC crashes or gets replaced?</h3>
+            <p>Your student records and fee data remain 100% safe. Simply install EduCore on the replacement Windows computer, navigate to <code>Settings → Backup &amp; Restore</code>, and select your latest backup archive to restore all institutional records in one click. Email your new Machine ID to <a href="mailto:info@educoreapp.in" style="color: var(--ec-emerald-deep); font-weight: 700;">info@educoreapp.in</a> for instant license re-binding.</p>
           </div>
 
-          <div style="background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 12px; padding: 20px;">
-            <h3 style="color: #0369a1; font-size: 16px; font-weight: 700; margin: 0 0 8px;">How does student promotion work at the end of the academic year?</h3>
-            <p style="color: #475569; font-size: 14px; line-height: 1.6; margin: 0;">Use the built-in Annual Promotion Wizard located under <code>Settings</code>. It automatically promotes eligible students from one grade section to the next while preserving their full historical fee and examination records in the permanent school archives.</p>
+          <div class="ec-faq-item" style="margin-bottom: 0;">
+            <h3 style="color: var(--ec-emerald-deep); font-size: 16px;">How does student promotion work at the end of the academic year?</h3>
+            <p>Use the built-in Annual Promotion Wizard located under <code>Settings</code>. It automatically promotes eligible students from one grade section to the next while preserving their full historical fee and examination records in the permanent school archives.</p>
           </div>
         </div>
       </section>
 
-      <!-- Dedicated Support Banner -->
-      <section style="background: linear-gradient(135deg, #f0fdf4 0%, #dcfce7 100%); border: 1px solid #bbf7d0; border-radius: 16px; margin-bottom: 30px; padding: 32px; text-align: center;">
-        <h2 style="color: #166534; font-size: 21px; font-weight: 800; margin: 0 0 10px;">Need Hands-On Setup Assistance?</h2>
-        <p style="color: #14532d; font-size: 15px; margin: 0 auto 18px; max-width: 620px;">
+      <!-- Dedicated Support Obsidian Banner -->
+      <section class="ec-unlocked-banner" style="margin-bottom: 30px;">
+        <h2 style="color: #ffffff; font-size: 22px; font-weight: 800; margin: 0 0 10px;">Need Hands-On Setup Assistance?</h2>
+        <p style="color: #cbd5e1; font-size: 15px; margin: 0 auto 20px; max-width: 620px;">
           Our engineering team provides direct setup assistance, remote migration help, and staff training.
         </p>
         <div style="display: flex; flex-wrap: wrap; gap: 14px; justify-content: center;">
-          <a href="contact-us.html" style="background: #15803d; border-radius: 10px; color: #ffffff; font-size: 14px; font-weight: 700; padding: 12px 24px; text-decoration: none;">
+          <a href="contact-us.html" class="ec-btn-primary">
             Contact Support &amp; Sales
           </a>
-          <a href="mailto:info@educoreapp.in?subject=EduCore%20Live%20Walkthrough%20Request" style="background: #ffffff; border: 1px solid #15803d; border-radius: 10px; color: #166534; font-size: 14px; font-weight: 700; padding: 12px 24px; text-decoration: none;">
+          <a href="mailto:info@educoreapp.in?subject=EduCore%20Live%20Walkthrough%20Request" class="ec-btn-secondary">
             Request Live Walkthrough →
           </a>
         </div>

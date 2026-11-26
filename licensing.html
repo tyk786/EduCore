@@ -39,7 +39,7 @@
   <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
   <link rel="shortcut icon" href="favicon.ico">
   <link rel="manifest" href="assets/favicon/site.webmanifest">
-  <meta name="theme-color" content="#0f172a">
+  <meta name="theme-color" content="#070b14">
 
   <link rel="preload" href="assets/css/shared.css" as="style">
   <link rel="stylesheet" href="assets/css/shared.css">
@@ -222,144 +222,7 @@
   </script>
 
   <style>
-    .ec-pricing-wrap {
-      color: #1e293b;
-      margin: 0 auto;
-      max-width: 1140px;
-      padding: 30px 20px 50px;
-    }
-    .ec-unlocked-banner {
-      background: linear-gradient(135deg, #0f172a 0%, #1e3a8a 100%);
-      border-radius: 16px;
-      box-shadow: 0 10px 25px rgba(2, 132, 199, 0.2);
-      color: #ffffff;
-      margin: 0 auto 40px;
-      padding: 24px 28px;
-      text-align: center;
-    }
-    .ec-tier-grid {
-      display: grid;
-      gap: 20px;
-      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-      margin-bottom: 50px;
-    }
-    .ec-tier-card {
-      background: #ffffff;
-      border: 1px solid #e2e8f0;
-      border-radius: 18px;
-      box-shadow: 0 4px 16px rgba(0, 0, 0, 0.03);
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-      padding: 28px 24px;
-      position: relative;
-      text-align: left;
-      transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
-    }
-    .ec-tier-card:hover {
-      border-color: #cbd5e1;
-      box-shadow: 0 12px 28px rgba(0, 0, 0, 0.08);
-      transform: translateY(-4px);
-    }
-    .ec-tier-featured {
-      border: 2px solid #0369a1 !important;
-      box-shadow: 0 12px 30px rgba(2, 132, 199, 0.15) !important;
-    }
-    .ec-popular-badge {
-      background: #0369a1;
-      border-radius: 9999px;
-      color: #ffffff;
-      font-size: 11px;
-      font-weight: 700;
-      padding: 3px 12px;
-      position: absolute;
-      right: 20px;
-      text-transform: uppercase;
-      top: -12px;
-    }
-    .ec-feature-list {
-      color: #475569;
-      font-size: 13px;
-      line-height: 1.8;
-      list-style: none;
-      margin: 0 0 20px;
-      padding: 0;
-    }
-    .ec-feature-list li {
-      display: flex;
-      gap: 8px;
-      margin-bottom: 6px;
-    }
-    .ec-feature-list li .ec-check {
-      color: #047857;
-      flex-shrink: 0;
-      font-weight: 700;
-    }
-    .ec-matrix-table {
-      border-collapse: collapse;
-      font-size: 14px;
-      min-width: 820px;
-      text-align: center;
-      width: 100%;
-    }
-    .ec-matrix-table th, .ec-matrix-table td {
-      border-bottom: 1px solid #e2e8f0;
-      padding: 13px 14px;
-    }
-    .ec-matrix-table th:first-child, .ec-matrix-table td:first-child {
-      font-weight: 600;
-      text-align: left;
-    }
-    .ec-matrix-table th {
-      background: #0f172a;
-      color: #ffffff;
-      font-weight: 700;
-    }
-    .ec-matrix-table tr:hover td {
-      background: #f8fafc;
-    }
-    .ec-site-nav {
-      margin: 36px auto 20px;
-      max-width: 1040px;
-      padding: 0 10px;
-    }
-    .ec-nav-inner {
-      align-items: center;
-      background: #ffffff;
-      border: 1px solid #e2e8f0;
-      border-radius: 14px;
-      box-shadow: 0 4px 16px rgba(0, 0, 0, 0.03);
-      display: flex;
-      flex-wrap: wrap;
-      gap: 8px;
-      justify-content: center;
-      padding: 14px 16px;
-    }
-    .ec-nav-link {
-      align-items: center;
-      background: #f8fafc;
-      border: 1px solid #e2e8f0;
-      border-radius: 8px;
-      color: #0f172a !important;
-      display: inline-flex;
-      font-size: 13px;
-      font-weight: 600;
-      gap: 5px;
-      padding: 8px 14px;
-      text-decoration: none !important;
-      transition: all 0.2s ease;
-    }
-    .ec-nav-link:hover {
-      background: #0369a1;
-      border-color: #0369a1;
-      color: #ffffff !important;
-      transform: translateY(-1px);
-    }
-    @media (max-width: 640px) {
-      .ec-pricing-wrap {
-        padding: 20px 14px;
-      }
-    }
+    /* Subpage pricing grid & matrix unified via shared.css Obsidian Command system */
   </style>
 </head>
 <body>
@@ -411,32 +274,29 @@
     </div>
   </header>
 
-  <!-- Breadcrumbs -->
-  <nav class="ec-breadcrumbs" aria-label="Breadcrumb">
-    <ol>
-      <li><a href="/">Home</a></li>
-      <li aria-current="page">Licensing &amp; Pricing Plans</li>
-    </ol>
-  </nav>
-
   <main id="main-content">
-    <div class="ec-pricing-wrap">
-
-      <!-- Header -->
-      <header style="margin-bottom: 30px; text-align: center;">
-        <div style="background: #e0f2fe; border-radius: 9999px; color: #0369a1; display: inline-block; font-size: 12px; font-weight: 700; letter-spacing: 0.5px; margin-bottom: 12px; padding: 4px 14px; text-transform: uppercase;">
-          Transparent &amp; Perpetual
-        </div>
-        <h1 style="color: #0f172a; font-size: clamp(28px, 4vw, 40px); font-weight: 800; margin: 0 0 12px;">EduCore Licensing &amp; Pricing Plans — All Features Unlocked In Every Tier</h1>
-        <p style="color: #64748b; font-size: 16px; margin: 0 auto; max-width: 780px; line-height: 1.65;">
+    <section class="ec-subpage-hero">
+      <div class="ec-subpage-hero-inner">
+        <nav class="ec-breadcrumbs" aria-label="Breadcrumb">
+          <ol>
+            <li><a href="/">Home</a></li>
+            <li aria-current="page">Licensing &amp; Pricing Plans</li>
+          </ol>
+        </nav>
+        <span class="ec-pill-badge">Transparent &amp; Perpetual</span>
+        <h1>EduCore Licensing &amp; Pricing Plans — All Features Unlocked In Every Tier</h1>
+        <p>
           EduCore is an offline desktop School ERP for 64-bit Windows 10 and 11 developed by SUBLIME ENTERPRISES. All student records, fee ledgers, payroll, and exam marks reside in an encrypted local SQLite database with zero cloud uploads. Start with a 30-day free trial (up to 50 students) or one-time perpetual licenses from ₹4,499 with all 10 modules unlocked.
         </p>
-      </header>
+      </div>
+    </section>
+
+    <div class="ec-pricing-wrap">
 
       <!-- Zero Feature Lockout Banner -->
       <div class="ec-unlocked-banner">
         <div style="align-items: center; display: flex; flex-wrap: wrap; gap: 12px; justify-content: center; margin-bottom: 8px;">
-          <span style="background: #10b981; border-radius: 9999px; color: #ffffff; font-size: 11px; font-weight: 800; letter-spacing: 0.5px; padding: 3px 12px; text-transform: uppercase;">Guaranteed</span>
+          <span style="background: var(--ec-emerald); border-radius: 9999px; color: #03261d; font-family: var(--ec-mono); font-size: 11px; font-weight: 800; letter-spacing: 0.5px; padding: 3px 12px; text-transform: uppercase;">Guaranteed</span>
           <h2 style="color: #ffffff; font-size: 20px; font-weight: 800; margin: 0;">100% Complete ERP Features Unlocked in ALL Tiers</h2>
         </div>
         <p style="color: #cbd5e1; font-size: 14px; line-height: 1.6; margin: 0 auto; max-width: 860px;">
@@ -451,15 +311,15 @@
         <div class="ec-tier-card">
           <div>
             <div style="align-items: center; display: flex; justify-content: space-between; margin-bottom: 8px;">
-              <h3 style="color: #0f172a; font-size: 20px; font-weight: 800; margin: 0;">TRIAL</h3>
-              <span style="background: #f1f5f9; border-radius: 6px; color: #475569; font-size: 11px; font-weight: 700; padding: 2px 8px;">30 DAYS</span>
+              <h3 style="color: var(--ec-ink); font-size: 20px; font-weight: 800; margin: 0;">TRIAL</h3>
+              <span class="ec-release-badge">30 DAYS</span>
             </div>
-            <p style="color: #64748b; font-size: 13px; margin: 0 0 14px;">Full evaluation on your school PC</p>
-            <div style="color: #0f172a; font-size: 32px; font-weight: 800; margin-bottom: 12px;">₹0</div>
+            <p style="color: var(--ec-ink-muted); font-size: 13px; margin: 0 0 14px;">Full evaluation on your school PC</p>
+            <div class="ec-pricing-amount" style="margin-bottom: 12px;">₹0</div>
 
-            <div style="background: #f8fafc; border-radius: 8px; color: #475569; font-size: 13px; margin-bottom: 18px; padding: 10px;">
-              👥 <strong>Capacity: Up to 50 Students</strong><br />
-              ⏱️ <strong>Validity: 30 Days Free</strong>
+            <div style="background: var(--ec-canvas); border: 1px solid var(--ec-border); border-radius: 8px; color: var(--ec-ink-body); font-size: 13px; margin-bottom: 18px; padding: 10px 12px;">
+              <strong>Capacity: Up to 50 Students</strong><br />
+              <strong>Validity: 30 Days Free</strong>
             </div>
 
             <ul class="ec-feature-list">
@@ -473,18 +333,18 @@
           </div>
 
           <div style="display: flex; flex-direction: column; gap: 8px;">
-            <a href="https://github.com/tyk786/EduCore/releases/download/8.2.3/Setup_EduCore_App.zip" style="background: #0f172a; border-radius: 10px; color: #ffffff; display: block; font-size: 14px; font-weight: 700; padding: 12px 18px; text-align: center; text-decoration: none;" target="_blank">
+            <a href="https://github.com/tyk786/EduCore/releases/download/8.2.3/Setup_EduCore_App.zip" class="ec-btn-solid" style="display: block; text-align: center; width: 100%;" target="_blank">
               Download Free Trial
             </a>
-            <a href="assets/EduCore_Installation_Guide.pdf" style="background: #f1f5f9; border: 1px solid #cbd5e1; border-radius: 10px; color: #334155; display: block; font-size: 12.5px; font-weight: 600; padding: 8px 14px; text-align: center; text-decoration: none;" target="_blank" download>
-              📖 Installation Guide (.pdf)
+            <a href="assets/EduCore_Installation_Guide.pdf" class="ec-btn-outline" style="display: block; font-size: 12.5px; padding: 8px 14px; text-align: center; width: 100%;" target="_blank" download>
+              Installation Guide (.pdf)
             </a>
-            <div style="background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 8px; padding: 6px 8px; font-size: 11px; margin-top: 4px;">
+            <div class="ec-vault-panel" style="padding: 8px 10px; font-size: 11px; margin-top: 4px;">
               <div style="display: flex; justify-content: space-between; align-items: center;">
-                <span style="font-weight: 700; color: #0f172a;">🛡️ Integrity:</span>
-                <a href="https://www.virustotal.com/gui/file/f47999d6952f294330de11cbf0c78290e692f04f7673212d048ad170164deeec" target="_blank" rel="noopener noreferrer" style="color: #047857; font-weight: 700; text-decoration: none;">0/72 Clean Scan</a>
+                <span style="font-weight: 700; color: #ffffff;">Integrity:</span>
+                <a href="https://www.virustotal.com/gui/file/f47999d6952f294330de11cbf0c78290e692f04f7673212d048ad170164deeec" target="_blank" rel="noopener noreferrer" style="color: var(--ec-emerald-bright); font-weight: 700; text-decoration: none;">✓ 0/72 Clean</a>
               </div>
-              <div style="font-family: monospace; font-size: 10px; color: #64748b; word-break: break-all; margin-top: 2px;">
+              <div class="ec-vault-hash" style="font-size: 10px; margin-top: 2px;">
                 SHA-256: f47999d6952f294330de11cb...
               </div>
             </div>
@@ -495,15 +355,15 @@
         <div class="ec-tier-card">
           <div>
             <div style="align-items: center; display: flex; justify-content: space-between; margin-bottom: 8px;">
-              <h3 style="color: #0369a1; font-size: 20px; font-weight: 800; margin: 0;">BASIC</h3>
-              <span style="background: #e0f2fe; border-radius: 6px; color: #0369a1; font-size: 11px; font-weight: 700; padding: 2px 8px;">STARTER</span>
+              <h3 style="color: var(--ec-emerald-deep); font-size: 20px; font-weight: 800; margin: 0;">BASIC</h3>
+              <span class="ec-release-badge latest">STARTER</span>
             </div>
-            <p style="color: #64748b; font-size: 13px; margin: 0 0 14px;">Ideal for kindergartens &amp; small academies</p>
-            <div style="color: #0f172a; font-size: 32px; font-weight: 800; margin-bottom: 12px;">₹4,499</div>
+            <p style="color: var(--ec-ink-muted); font-size: 13px; margin: 0 0 14px;">Ideal for kindergartens &amp; small academies</p>
+            <div class="ec-pricing-amount" style="margin-bottom: 12px;">₹4,499</div>
 
-            <div style="background: #f0fdf4; border-radius: 8px; color: #166534; font-size: 13px; margin-bottom: 18px; padding: 10px;">
-              👥 <strong>Capacity: Up to 200 Students</strong><br />
-              🔄 <strong>Yearly Renewal: ₹1,499</strong>
+            <div style="background: var(--ec-emerald-50); border: 1px solid var(--ec-emerald-200); border-radius: 8px; color: var(--ec-emerald-dark); font-size: 13px; margin-bottom: 18px; padding: 10px 12px;">
+              <strong>Capacity: Up to 200 Students</strong><br />
+              <strong>Yearly Renewal: ₹1,499</strong>
             </div>
 
             <ul class="ec-feature-list">
@@ -516,25 +376,25 @@
             </ul>
           </div>
 
-          <a href="contact-us.html" style="background: #0369a1; border-radius: 10px; color: #ffffff; display: block; font-size: 14px; font-weight: 700; padding: 12px 18px; text-align: center; text-decoration: none;">
+          <a href="contact-us.html" class="ec-btn-solid" style="display: block; text-align: center; width: 100%;">
             Purchase Basic
           </a>
         </div>
 
-        <!-- Tier 3: STANDARD (Featured) -->
+        <!-- Tier 3: STANDARD (Obsidian Featured Card) -->
         <div class="ec-tier-card ec-tier-featured">
           <span class="ec-popular-badge">Most Popular</span>
           <div>
             <div style="align-items: center; display: flex; justify-content: space-between; margin-bottom: 8px;">
-              <h3 style="color: #0369a1; font-size: 20px; font-weight: 800; margin: 0;">STANDARD</h3>
-              <span style="background: #e0f2fe; border-radius: 6px; color: #0369a1; font-size: 11px; font-weight: 700; padding: 2px 8px;">POPULAR</span>
+              <h3 style="color: var(--ec-emerald-bright) !important; font-size: 20px; font-weight: 800; margin: 0;">STANDARD</h3>
+              <span style="background: rgba(16, 185, 129, 0.16); border: 1px solid rgba(52, 211, 153, 0.35); border-radius: 9999px; color: var(--ec-emerald-bright); font-family: var(--ec-mono); font-size: 11px; font-weight: 700; padding: 2px 9px;">POPULAR</span>
             </div>
-            <p style="color: #64748b; font-size: 13px; margin: 0 0 14px;">Designed for growing primary &amp; middle schools</p>
-            <div style="color: #0f172a; font-size: 32px; font-weight: 800; margin-bottom: 12px;">₹9,999</div>
+            <p style="color: #cbd5e1; font-size: 13px; margin: 0 0 14px;">Designed for growing primary &amp; middle schools</p>
+            <div class="ec-pricing-amount" style="color: #ffffff; margin-bottom: 12px;">₹9,999</div>
 
-            <div style="background: #f0fdf4; border-radius: 8px; color: #166534; font-size: 13px; margin-bottom: 18px; padding: 10px;">
-              👥 <strong>Capacity: Up to 500 Students</strong><br />
-              🔄 <strong>Yearly Renewal: ₹2,999</strong>
+            <div style="background: rgba(16, 185, 129, 0.12); border: 1px solid rgba(52, 211, 153, 0.3); border-radius: 8px; color: var(--ec-emerald-bright); font-size: 13px; margin-bottom: 18px; padding: 10px 12px;">
+              <strong>Capacity: Up to 500 Students</strong><br />
+              <strong>Yearly Renewal: ₹2,999</strong>
             </div>
 
             <ul class="ec-feature-list">
@@ -547,7 +407,7 @@
             </ul>
           </div>
 
-          <a href="contact-us.html" style="background: #0369a1; border-radius: 10px; color: #ffffff; display: block; font-size: 14px; font-weight: 700; padding: 12px 18px; text-align: center; text-decoration: none;">
+          <a href="contact-us.html" class="ec-btn-primary" style="display: block; text-align: center; width: 100%;">
             Purchase Standard
           </a>
         </div>
@@ -556,15 +416,15 @@
         <div class="ec-tier-card">
           <div>
             <div style="align-items: center; display: flex; justify-content: space-between; margin-bottom: 8px;">
-              <h3 style="color: #0369a1; font-size: 20px; font-weight: 800; margin: 0;">PROFESSIONAL</h3>
-              <span style="background: #ede9fe; border-radius: 6px; color: #7c3aed; font-size: 11px; font-weight: 700; padding: 2px 8px;">GROWTH</span>
+              <h3 style="color: var(--ec-emerald-deep); font-size: 20px; font-weight: 800; margin: 0;">PROFESSIONAL</h3>
+              <span style="background: #ede9fe; border-radius: 9999px; color: #5b21b6; font-family: var(--ec-mono); font-size: 11px; font-weight: 700; padding: 2px 9px;">GROWTH</span>
             </div>
-            <p style="color: #64748b; font-size: 13px; margin: 0 0 14px;">Comprehensive management for high schools</p>
-            <div style="color: #0f172a; font-size: 32px; font-weight: 800; margin-bottom: 12px;">₹14,999</div>
+            <p style="color: var(--ec-ink-muted); font-size: 13px; margin: 0 0 14px;">Comprehensive management for high schools</p>
+            <div class="ec-pricing-amount" style="margin-bottom: 12px;">₹14,999</div>
 
-            <div style="background: #f0fdf4; border-radius: 8px; color: #166534; font-size: 13px; margin-bottom: 18px; padding: 10px;">
-              👥 <strong>Capacity: Up to 700 Students</strong><br />
-              🔄 <strong>Yearly Renewal: ₹3,999</strong>
+            <div style="background: var(--ec-emerald-50); border: 1px solid var(--ec-emerald-200); border-radius: 8px; color: var(--ec-emerald-dark); font-size: 13px; margin-bottom: 18px; padding: 10px 12px;">
+              <strong>Capacity: Up to 700 Students</strong><br />
+              <strong>Yearly Renewal: ₹3,999</strong>
             </div>
 
             <ul class="ec-feature-list">
@@ -577,7 +437,7 @@
             </ul>
           </div>
 
-          <a href="contact-us.html" style="background: #0369a1; border-radius: 10px; color: #ffffff; display: block; font-size: 14px; font-weight: 700; padding: 12px 18px; text-align: center; text-decoration: none;">
+          <a href="contact-us.html" class="ec-btn-solid" style="display: block; text-align: center; width: 100%;">
             Purchase Professional
           </a>
         </div>
@@ -586,15 +446,15 @@
         <div class="ec-tier-card">
           <div>
             <div style="align-items: center; display: flex; justify-content: space-between; margin-bottom: 8px;">
-              <h3 style="color: #0369a1; font-size: 20px; font-weight: 800; margin: 0;">ENTERPRISE</h3>
-              <span style="background: #fef3c7; border-radius: 6px; color: #92400e; font-size: 11px; font-weight: 700; padding: 2px 8px;">SCALABLE</span>
+              <h3 style="color: var(--ec-emerald-deep); font-size: 20px; font-weight: 800; margin: 0;">ENTERPRISE</h3>
+              <span style="background: #fef3c7; border-radius: 9999px; color: #92400e; font-family: var(--ec-mono); font-size: 11px; font-weight: 700; padding: 2px 9px;">SCALABLE</span>
             </div>
-            <p style="color: #64748b; font-size: 13px; margin: 0 0 14px;">Engineered for senior secondary colleges</p>
-            <div style="color: #0f172a; font-size: 32px; font-weight: 800; margin-bottom: 12px;">₹22,499</div>
+            <p style="color: var(--ec-ink-muted); font-size: 13px; margin: 0 0 14px;">Engineered for senior secondary colleges</p>
+            <div class="ec-pricing-amount" style="margin-bottom: 12px;">₹22,499</div>
 
-            <div style="background: #f0fdf4; border-radius: 8px; color: #166534; font-size: 13px; margin-bottom: 18px; padding: 10px;">
-              👥 <strong>Capacity: Up to 1,000 Students</strong><br />
-              🔄 <strong>Yearly Renewal: ₹5,999</strong>
+            <div style="background: var(--ec-emerald-50); border: 1px solid var(--ec-emerald-200); border-radius: 8px; color: var(--ec-emerald-dark); font-size: 13px; margin-bottom: 18px; padding: 10px 12px;">
+              <strong>Capacity: Up to 1,000 Students</strong><br />
+              <strong>Yearly Renewal: ₹5,999</strong>
             </div>
 
             <ul class="ec-feature-list">
@@ -607,7 +467,7 @@
             </ul>
           </div>
 
-          <a href="contact-us.html" style="background: #0369a1; border-radius: 10px; color: #ffffff; display: block; font-size: 14px; font-weight: 700; padding: 12px 18px; text-align: center; text-decoration: none;">
+          <a href="contact-us.html" class="ec-btn-solid" style="display: block; text-align: center; width: 100%;">
             Purchase Enterprise
           </a>
         </div>
@@ -616,15 +476,15 @@
         <div class="ec-tier-card">
           <div>
             <div style="align-items: center; display: flex; justify-content: space-between; margin-bottom: 8px;">
-              <h3 style="color: #0369a1; font-size: 20px; font-weight: 800; margin: 0;">DIAMOND</h3>
-              <span style="background: #ede9fe; border-radius: 6px; color: #6d28d9; font-size: 11px; font-weight: 700; padding: 2px 8px;">HIGH CAPACITY</span>
+              <h3 style="color: var(--ec-emerald-deep); font-size: 20px; font-weight: 800; margin: 0;">DIAMOND</h3>
+              <span style="background: #ede9fe; border-radius: 9999px; color: #5b21b6; font-family: var(--ec-mono); font-size: 11px; font-weight: 700; padding: 2px 9px;">HIGH CAPACITY</span>
             </div>
-            <p style="color: #64748b; font-size: 13px; margin: 0 0 14px;">Large institutional campus infrastructure</p>
-            <div style="color: #0f172a; font-size: 32px; font-weight: 800; margin-bottom: 12px;">₹37,499</div>
+            <p style="color: var(--ec-ink-muted); font-size: 13px; margin: 0 0 14px;">Large institutional campus infrastructure</p>
+            <div class="ec-pricing-amount" style="margin-bottom: 12px;">₹37,499</div>
 
-            <div style="background: #f0fdf4; border-radius: 8px; color: #166534; font-size: 13px; margin-bottom: 18px; padding: 10px;">
-              👥 <strong>Capacity: Up to 2,000 Students</strong><br />
-              🔄 <strong>Yearly Renewal: ₹8,999</strong>
+            <div style="background: var(--ec-emerald-50); border: 1px solid var(--ec-emerald-200); border-radius: 8px; color: var(--ec-emerald-dark); font-size: 13px; margin-bottom: 18px; padding: 10px 12px;">
+              <strong>Capacity: Up to 2,000 Students</strong><br />
+              <strong>Yearly Renewal: ₹8,999</strong>
             </div>
 
             <ul class="ec-feature-list">
@@ -637,7 +497,7 @@
             </ul>
           </div>
 
-          <a href="contact-us.html" style="background: #0369a1; border-radius: 10px; color: #ffffff; display: block; font-size: 14px; font-weight: 700; padding: 12px 18px; text-align: center; text-decoration: none;">
+          <a href="contact-us.html" class="ec-btn-solid" style="display: block; text-align: center; width: 100%;">
             Purchase Diamond
           </a>
         </div>
@@ -646,15 +506,15 @@
         <div class="ec-tier-card">
           <div>
             <div style="align-items: center; display: flex; justify-content: space-between; margin-bottom: 8px;">
-              <h3 style="color: #0369a1; font-size: 20px; font-weight: 800; margin: 0;">ULTIMATE</h3>
-              <span style="background: #fef2f2; border-radius: 6px; color: #b91c1c; font-size: 11px; font-weight: 700; padding: 2px 8px;">MAXIMUM</span>
+              <h3 style="color: var(--ec-emerald-deep); font-size: 20px; font-weight: 800; margin: 0;">ULTIMATE</h3>
+              <span style="background: #fef2f2; border-radius: 9999px; color: #b91c1c; font-family: var(--ec-mono); font-size: 11px; font-weight: 700; padding: 2px 9px;">MAXIMUM</span>
             </div>
-            <p style="color: #64748b; font-size: 13px; margin: 0 0 14px;">Uncapped operations for large educational groups</p>
-            <div style="color: #0f172a; font-size: 32px; font-weight: 800; margin-bottom: 12px;">₹59,999</div>
+            <p style="color: var(--ec-ink-muted); font-size: 13px; margin: 0 0 14px;">Uncapped operations for large educational groups</p>
+            <div class="ec-pricing-amount" style="margin-bottom: 12px;">₹59,999</div>
 
-            <div style="background: #f0fdf4; border-radius: 8px; color: #166534; font-size: 13px; margin-bottom: 18px; padding: 10px;">
-              👥 <strong>Capacity: Up to 3,000 Students</strong><br />
-              🔄 <strong>Yearly Renewal: ₹11,999</strong>
+            <div style="background: var(--ec-emerald-50); border: 1px solid var(--ec-emerald-200); border-radius: 8px; color: var(--ec-emerald-dark); font-size: 13px; margin-bottom: 18px; padding: 10px 12px;">
+              <strong>Capacity: Up to 3,000 Students</strong><br />
+              <strong>Yearly Renewal: ₹11,999</strong>
             </div>
 
             <ul class="ec-feature-list">
@@ -667,7 +527,7 @@
             </ul>
           </div>
 
-          <a href="contact-us.html" style="background: #0369a1; border-radius: 10px; color: #ffffff; display: block; font-size: 14px; font-weight: 700; padding: 12px 18px; text-align: center; text-decoration: none;">
+          <a href="contact-us.html" class="ec-btn-solid" style="display: block; text-align: center; width: 100%;">
             Purchase Ultimate
           </a>
         </div>
@@ -675,9 +535,9 @@
       </div>
 
       <!-- Detailed Feature Comparison Matrix -->
-      <section style="background: #ffffff; border: 1px solid #e2e8f0; border-radius: 20px; box-shadow: 0 6px 24px rgba(0, 0, 0, 0.03); margin-bottom: 50px; overflow: hidden; padding: 32px 24px;">
-        <h2 style="color: #0f172a; font-size: 24px; font-weight: 800; margin: 0 0 8px; text-align: center;">Cross-Tier Feature &amp; Capability Matrix</h2>
-        <p style="color: #64748b; font-size: 15px; margin: 0 0 26px; text-align: center;">Every tier includes 100% of all features, local SQLite database encryption, and automated daily backups. The only difference is the student enrollment capacity limit.</p>
+      <section class="ec-card" style="overflow: hidden; padding: 32px 24px;">
+        <h2 style="color: var(--ec-ink); font-size: 24px; font-weight: 800; margin: 0 0 8px; text-align: center;">Cross-Tier Feature &amp; Capability Matrix</h2>
+        <p style="color: var(--ec-ink-muted); font-size: 15px; margin: 0 0 26px; text-align: center;">Every tier includes 100% of all features, local SQLite database encryption, and automated daily backups. The only difference is the student enrollment capacity limit.</p>
 
         <div style="overflow-x: auto;">
           <table class="ec-matrix-table">
@@ -686,14 +546,14 @@
                 <th>Module &amp; Capability</th>
                 <th>Trial</th>
                 <th>Basic</th>
-                <th>Standard</th>
+                <th style="color: var(--ec-emerald-bright);">Standard</th>
                 <th>Professional</th>
                 <th>Enterprise</th>
                 <th>Diamond / Ultimate</th>
               </tr>
             </thead>
             <tbody>
-              <tr style="background: #f0fdf4; font-weight: 700;">
+              <tr style="background: var(--ec-emerald-50); font-weight: 700;">
                 <td>Active Student Limit</td>
                 <td>50 Students</td>
                 <td>200 Students</td>
@@ -834,88 +694,88 @@
       </section>
 
       <!-- Offline Desktop ERP vs. Cloud SaaS Comparison Matrix -->
-      <section style="background: #ffffff; border: 1px solid #e2e8f0; border-radius: 20px; box-shadow: 0 6px 24px rgba(0, 0, 0, 0.03); margin-bottom: 50px; overflow: hidden; padding: 32px 24px;">
-        <h2 style="color: #0f172a; font-size: 24px; font-weight: 800; margin: 0 0 8px; text-align: center;">EduCore Offline Desktop ERP vs. Typical Cloud School SaaS</h2>
-        <p style="color: #64748b; font-size: 15px; margin: 0 auto 24px; max-width: 720px; text-align: center;">Compare one-time perpetual desktop licensing against recurring per-student monthly cloud subscriptions across real school operating dimensions.</p>
+      <section class="ec-card" style="overflow: hidden; padding: 32px 24px;">
+        <h2 style="color: var(--ec-ink); font-size: 24px; font-weight: 800; margin: 0 0 8px; text-align: center;">EduCore Offline Desktop ERP vs. Typical Cloud School SaaS</h2>
+        <p style="color: var(--ec-ink-muted); font-size: 15px; margin: 0 auto 24px; max-width: 720px; text-align: center;">Compare one-time perpetual desktop licensing against recurring per-student monthly cloud subscriptions across real school operating dimensions.</p>
 
         <div style="overflow-x: auto;">
           <table class="ec-matrix-table">
             <thead>
               <tr>
                 <th>Comparison Dimension</th>
-                <th style="background: #0369a1; color: #ffffff;">EduCore Offline Desktop ERP</th>
+                <th style="background: rgba(16, 185, 129, 0.18); color: var(--ec-emerald-bright);">EduCore Offline Desktop ERP</th>
                 <th>Typical Cloud School SaaS</th>
               </tr>
             </thead>
             <tbody>
               <tr>
                 <td><strong>Internet Requirement</strong></td>
-                <td style="color: #047857; font-weight: 600;">100% offline after 1-time license activation</td>
-                <td style="color: #64748b;">Mandatory continuous internet access</td>
+                <td style="color: var(--ec-emerald-deep); font-weight: 700;">100% offline after 1-time license activation</td>
+                <td style="color: var(--ec-ink-muted);">Mandatory continuous internet access</td>
               </tr>
               <tr>
                 <td><strong>Data Storage Location</strong></td>
-                <td style="color: #047857; font-weight: 600;">Encrypted local SQLite database on your school PC</td>
-                <td style="color: #64748b;">Remote multi-tenant vendor cloud servers</td>
+                <td style="color: var(--ec-emerald-deep); font-weight: 700;">Encrypted local SQLite database on your school PC</td>
+                <td style="color: var(--ec-ink-muted);">Remote multi-tenant vendor cloud servers</td>
               </tr>
               <tr>
                 <td><strong>Pricing Model</strong></td>
-                <td style="color: #047857; font-weight: 600;">₹0 Trial (50 students); ₹4,499–₹59,999 one-time + optional low annual renewal</td>
-                <td style="color: #64748b;">₹20–₹50 per student/month recurring indefinitely</td>
+                <td style="color: var(--ec-emerald-deep); font-weight: 700;">₹0 Trial (50 students); ₹4,499–₹59,999 one-time + optional low annual renewal</td>
+                <td style="color: var(--ec-ink-muted);">₹20–₹50 per student/month recurring indefinitely</td>
               </tr>
               <tr>
                 <td><strong>Batch Fee Speed</strong></td>
-                <td style="color: #047857; font-weight: 600;">1,000+ student monthly invoices generated in &lt;1 second locally</td>
-                <td style="color: #64748b;">Subject to browser latency, server queues, and broadband speed</td>
+                <td style="color: var(--ec-emerald-deep); font-weight: 700;">1,000+ student monthly invoices generated in &lt;1 second locally</td>
+                <td style="color: var(--ec-ink-muted);">Subject to browser latency, server queues, and broadband speed</td>
               </tr>
               <tr>
                 <td><strong>Hardware Requirements</strong></td>
-                <td style="color: #047857; font-weight: 600;">Standard 64-bit Windows 10/11 PC, 4 GB RAM, 500 MB disk</td>
-                <td style="color: #64748b;">Requires reliable ISP, backup Wi-Fi, and browser uptime</td>
+                <td style="color: var(--ec-emerald-deep); font-weight: 700;">Standard 64-bit Windows 10/11 PC, 4 GB RAM, 500 MB disk</td>
+                <td style="color: var(--ec-ink-muted);">Requires reliable ISP, backup Wi-Fi, and browser uptime</td>
               </tr>
             </tbody>
           </table>
         </div>
         <div style="margin-top: 22px; text-align: center;">
-          <a href="offline-vs-cloud-school-erp-tco-guide.html" style="background: #0369a1; border-radius: 10px; color: #ffffff; display: inline-block; font-size: 14px; font-weight: 700; padding: 11px 22px; text-decoration: none;">
-            📊 View Full 1-Year, 3-Year &amp; 5-Year TCO Cost Breakdown →
+          <a href="offline-vs-cloud-school-erp-tco-guide.html" class="ec-btn-solid">
+            View Full 1-Year, 3-Year &amp; 5-Year TCO Cost Breakdown →
           </a>
         </div>
       </section>
 
       <!-- Licensing FAQs -->
-      <section style="background: #ffffff; border: 1px solid #e2e8f0; border-radius: 20px; box-shadow: 0 4px 16px rgba(0, 0, 0, 0.03); margin-bottom: 40px; padding: 34px 28px;">
-        <h2 style="color: #0f172a; font-size: 22px; font-weight: 800; margin: 0 0 20px; text-align: center;">Licensing &amp; Ownership FAQs</h2>
+      <section class="ec-card" style="padding: 34px 28px;">
+        <h2 style="color: var(--ec-ink); font-size: 22px; font-weight: 800; margin: 0 0 20px; text-align: center;">Licensing &amp; Ownership FAQs</h2>
 
         <div style="display: grid; gap: 16px;">
-          <div style="background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 12px; padding: 20px;">
-            <h3 style="color: #0f172a; font-size: 16px; font-weight: 700; margin: 0 0 6px;">Are any features or modules locked in lower tiers like Basic or Standard?</h3>
-            <p style="color: #64748b; font-size: 14px; margin: 0;">No! Every single tier in EduCore includes 100% of all ERP features and modules without any artificial feature gating. The only cap applied across tiers is the active student enrollment limit. Every school gets complete access to admissions, attendance, fees, payroll, exams, marksheets, ID cards, certificates, timetables, and library management.</p>
+          <div class="ec-faq-item" style="margin-bottom: 0;">
+            <h3>Are any features or modules locked in lower tiers like Basic or Standard?</h3>
+            <p>No! Every single tier in EduCore includes 100% of all ERP features and modules without any artificial feature gating. The only cap applied across tiers is the active student enrollment limit. Every school gets complete access to admissions, attendance, fees, payroll, exams, marksheets, ID cards, certificates, timetables, and library management.</p>
           </div>
 
-          <div style="background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 12px; padding: 20px;">
-            <h3 style="color: #0f172a; font-size: 16px; font-weight: 700; margin: 0 0 6px;">How does offline license activation work?</h3>
-            <p style="color: #64748b; font-size: 14px; margin: 0;">An internet connection is required only once for a brief initial license verification. After entering your cryptographic license key, EduCore runs 100% offline without requiring internet access for your daily school operations.</p>
+          <div class="ec-faq-item" style="margin-bottom: 0;">
+            <h3>How does offline license activation work?</h3>
+            <p>An internet connection is required only once for a brief initial license verification. After entering your cryptographic license key, EduCore runs 100% offline without requiring internet access for your daily school operations.</p>
           </div>
 
-          <div style="background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 12px; padding: 20px;">
-            <h3 style="color: #0f172a; font-size: 16px; font-weight: 700; margin: 0 0 6px;">Can we upgrade our tier as student enrollment expands?</h3>
-            <p style="color: #64748b; font-size: 14px; margin: 0;">Yes! You can upgrade between any tiers (e.g., from Basic to Standard or Enterprise) at any time simply by paying the tier difference. Since all features are already unlocked, all student records, fee ledgers, and exam data continue working smoothly without disruption.</p>
+          <div class="ec-faq-item" style="margin-bottom: 0;">
+            <h3>Can we upgrade our tier as student enrollment expands?</h3>
+            <p>Yes! You can upgrade between any tiers (e.g., from Basic to Standard or Enterprise) at any time simply by paying the tier difference. Since all features are already unlocked, all student records, fee ledgers, and exam data continue working smoothly without disruption.</p>
           </div>
 
-          <div style="background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 12px; padding: 20px;">
-            <h3 style="color: #0f172a; font-size: 16px; font-weight: 700; margin: 0 0 6px;">What is included in the annual maintenance renewal?</h3>
-            <p style="color: #64748b; font-size: 14px; margin: 0;">The annual maintenance renewal provides access to all software updates, continuous feature enhancements, board report formatting updates, and priority customer support.</p>
+          <div class="ec-faq-item" style="margin-bottom: 0;">
+            <h3>What is included in the annual maintenance renewal?</h3>
+            <p>The annual maintenance renewal provides access to all software updates, continuous feature enhancements, board report formatting updates, and priority customer support.</p>
           </div>
 
-          <div style="background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 12px; padding: 20px;">
-            <h3 style="color: #0f172a; font-size: 16px; font-weight: 700; margin: 0 0 6px;">Is our school data accessible if we do not renew maintenance?</h3>
-            <p style="color: #64748b; font-size: 14px; margin: 0;">Yes. Unlike cloud subscription software that locks you out of your data, EduCore ensures perpetual data access. Your software continues to operate offline with complete access to all historical records.</p>
+          <div class="ec-faq-item" style="margin-bottom: 0;">
+            <h3>Is our school data accessible if we do not renew maintenance?</h3>
+            <p>Yes. Unlike cloud subscription software that locks you out of your data, EduCore ensures perpetual data access. Your software continues to operate offline with complete access to all historical records.</p>
           </div>
 
-          <div style="background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 12px; padding: 20px;">
-            <h3 style="color: #0f172a; font-size: 16px; font-weight: 700; margin: 0 0 6px;">How do we migrate our license to a new PC?</h3>
-            <p style="color: #64748b; font-size: 14px; margin: 0;">Simply create a backup archive within EduCore, install the software on your new Windows PC, restore the backup, and email us your new Machine ID for free license re-keying.</p>
+          <div class="ec-faq-item" style="margin-bottom: 0;">
+            <h3>How do we migrate our license to a new PC?</h3>
+            <p>Simply create a backup archive within EduCore, install the software on your new Windows PC, restore the backup, and email us your new Machine ID for free license re-keying.</p>
           </div>
         </div>
       </section>

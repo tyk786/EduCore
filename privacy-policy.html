@@ -39,7 +39,7 @@
   <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
   <link rel="shortcut icon" href="favicon.ico">
   <link rel="manifest" href="assets/favicon/site.webmanifest">
-  <meta name="theme-color" content="#0f172a">
+  <meta name="theme-color" content="#070b14">
 
   <link rel="preload" href="assets/css/shared.css" as="style">
   <link rel="stylesheet" href="assets/css/shared.css">
@@ -88,75 +88,7 @@
   </script>
 
   <style>
-    .ec-policy-wrap {
-      color: #1e293b;
-      margin: 0 auto;
-      max-width: 920px;
-      padding: 30px 20px 50px;
-    }
-    .ec-article-card {
-      background: #ffffff;
-      border: 1px solid #e2e8f0;
-      border-radius: 16px;
-      box-shadow: 0 4px 16px rgba(0, 0, 0, 0.03);
-      margin-bottom: 30px;
-      padding: 36px;
-    }
-    .ec-article-section {
-      border-bottom: 1px solid #f1f5f9;
-      margin-bottom: 26px;
-      padding-bottom: 26px;
-    }
-    .ec-article-section:last-child {
-      border-bottom: none;
-      margin-bottom: 0;
-      padding-bottom: 0;
-    }
-    .ec-site-nav {
-      margin: 36px auto 20px;
-      max-width: 1040px;
-      padding: 0 10px;
-    }
-    .ec-nav-inner {
-      align-items: center;
-      background: #ffffff;
-      border: 1px solid #e2e8f0;
-      border-radius: 14px;
-      box-shadow: 0 4px 16px rgba(0, 0, 0, 0.03);
-      display: flex;
-      flex-wrap: wrap;
-      gap: 8px;
-      justify-content: center;
-      padding: 14px 16px;
-    }
-    .ec-nav-link {
-      align-items: center;
-      background: #f8fafc;
-      border: 1px solid #e2e8f0;
-      border-radius: 8px;
-      color: #0f172a !important;
-      display: inline-flex;
-      font-size: 13px;
-      font-weight: 600;
-      gap: 5px;
-      padding: 8px 14px;
-      text-decoration: none !important;
-      transition: all 0.2s ease;
-    }
-    .ec-nav-link:hover {
-      background: #0369a1;
-      border-color: #0369a1;
-      color: #ffffff !important;
-      transform: translateY(-1px);
-    }
-    @media (max-width: 640px) {
-      .ec-policy-wrap {
-        padding: 20px 14px;
-      }
-      .ec-article-card {
-        padding: 22px 18px;
-      }
-    }
+    /* Subpage styling unified via shared.css Obsidian Command system */
   </style>
 </head>
 <body>
@@ -208,27 +140,24 @@
     </div>
   </header>
 
-  <!-- Breadcrumbs -->
-  <nav class="ec-breadcrumbs" aria-label="Breadcrumb">
-    <ol>
-      <li><a href="/">Home</a></li>
-      <li aria-current="page">Data Privacy &amp; Security Policy</li>
-    </ol>
-  </nav>
-
   <main id="main-content">
-    <div class="ec-policy-wrap">
-
-      <!-- Header -->
-      <header style="margin-bottom: 40px; text-align: center;">
-        <div style="background: #e0f2fe; border-radius: 9999px; color: #0369a1; display: inline-block; font-size: 12px; font-weight: 700; letter-spacing: 0.5px; margin-bottom: 12px; padding: 4px 14px; text-transform: uppercase;">
-          Institutional Trust &amp; Data Sovereignty
-        </div>
-        <h1 style="color: #0f172a; font-size: clamp(28px, 4vw, 40px); font-weight: 800; margin: 0 0 12px;">EduCore Data Privacy Policy &amp; Institutional Security Standards</h1>
-        <p style="color: #64748b; font-size: 16px; line-height: 1.65; margin: 0 auto; max-width: 760px;">
+    <section class="ec-subpage-hero">
+      <div class="ec-subpage-hero-inner">
+        <nav class="ec-breadcrumbs" aria-label="Breadcrumb">
+          <ol>
+            <li><a href="/">Home</a></li>
+            <li aria-current="page">Data Privacy &amp; Security Policy</li>
+          </ol>
+        </nav>
+        <span class="ec-pill-badge">Institutional Trust &amp; Data Sovereignty</span>
+        <h1>EduCore Data Privacy Policy &amp; Institutional Security Standards</h1>
+        <p>
           EduCore is an offline desktop School ERP for Windows 10 and 11 developed by SUBLIME ENTERPRISES. All student records, fee ledgers, payroll, and exam marks reside inside an encrypted local SQLite database with zero cloud uploads, enabling direct DPDP-aligned custody from a 30-day free trial or ₹4,499 perpetual license.
         </p>
-      </header>
+      </div>
+    </section>
+
+    <div class="ec-policy-wrap">
 
       <!-- Policy Articles Container -->
       <div class="ec-article-card">
@@ -311,18 +240,18 @@
           <p style="color: #475569; font-size: 14.5px; margin: 0 0 10px;">
             By eliminating cloud transmission, EduCore naturally aligns with key child privacy and data protection frameworks worldwide, including India's <strong>Digital Personal Data Protection (DPDP) Act</strong> principles, the Family Educational Rights and Privacy Act (FERPA) principles, and GDPR data minimization. Schools maintain direct local custody over student and parent personal data on their own Windows hardware without third-party cloud exposure.
           </p>
-          <p style="color: #475569; font-size: 14px; margin: 0;">
-            Compare privacy and cost trade-offs in our <a href="offline-vs-cloud-school-erp-tco-guide.html" style="color: #0369a1; font-weight: 600;">Offline Desktop ERP vs. Cloud School SaaS Guide</a>.
+          <p style="color: var(--ec-ink-body); font-size: 14px; margin: 0;">
+            Compare privacy and cost trade-offs in our <a href="offline-vs-cloud-school-erp-tco-guide.html" style="color: var(--ec-emerald-deep); font-weight: 700;">Offline Desktop ERP vs. Cloud School SaaS Guide</a>.
           </p>
         </div>
 
       </div>
 
       <!-- Contact Attribution Banner -->
-      <section style="background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 14px; margin-bottom: 30px; padding: 22px; text-align: center;">
-        <p style="color: #0f172a; font-size: 15px; font-weight: 700; margin: 0 0 6px;">Questions Regarding Educational Privacy &amp; Security?</p>
-        <p style="color: #64748b; font-size: 13.5px; margin: 0 0 10px;">Contact our data protection lead directly at SUBLIME ENTERPRISES.</p>
-        <a href="mailto:info@educoreapp.in" style="color: #0369a1; font-size: 14px; font-weight: 700; text-decoration: none;">info@educoreapp.in</a>
+      <section class="ec-vault-panel" style="margin-bottom: 30px; text-align: center;">
+        <p style="color: #ffffff; font-size: 16px; font-weight: 800; margin: 0 0 6px;">Questions Regarding Educational Privacy &amp; Security?</p>
+        <p style="color: #cbd5e1; font-size: 13.5px; margin: 0 0 12px;">Contact our data protection lead directly at SUBLIME ENTERPRISES.</p>
+        <a href="mailto:info@educoreapp.in" class="ec-btn-primary" style="padding: 9px 20px; font-size: 13.5px;">info@educoreapp.in</a>
       </section>
 
       <!-- Universal Site Navigation Bar -->

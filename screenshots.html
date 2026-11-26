@@ -39,7 +39,7 @@
   <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
   <link rel="shortcut icon" href="favicon.ico">
   <link rel="manifest" href="assets/favicon/site.webmanifest">
-  <meta name="theme-color" content="#0f172a">
+  <meta name="theme-color" content="#070b14">
 
   <link rel="preload" href="assets/css/shared.css" as="style">
   <link rel="stylesheet" href="assets/css/shared.css">
@@ -84,138 +84,7 @@
   </script>
 
   <style>
-    .ec-gallery-container {
-      background-color: #f8fafc;
-      color: #1e293b;
-      margin: 0 auto;
-      max-width: 1200px;
-      padding: 30px 20px 50px;
-    }
-    .ec-gallery-header {
-      margin-bottom: 40px;
-      text-align: center;
-    }
-    .ec-section-title {
-      background: linear-gradient(135deg, #0f172a 0%, #1e3a8a 50%, #0369a1 100%);
-      border-radius: 14px;
-      box-shadow: 0 8px 24px rgba(2, 132, 199, 0.25);
-      color: #ffffff;
-      font-size: 20px;
-      font-weight: 800;
-      letter-spacing: 0.8px;
-      margin: 50px 0 26px;
-      padding: 16px 24px;
-      text-align: center;
-      text-transform: uppercase;
-    }
-    .ec-sub-section-title {
-      border-bottom: 2px solid #e2e8f0;
-      color: #0f172a;
-      font-size: 18px;
-      font-weight: 700;
-      margin: 34px 0 18px;
-      padding-bottom: 8px;
-      text-align: center;
-    }
-    .ec-screenshot-grid {
-      display: grid;
-      gap: 24px;
-      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-      margin-bottom: 24px;
-    }
-    .ec-screenshot-card {
-      background: #ffffff;
-      border: 1px solid #e2e8f0;
-      border-radius: 16px;
-      box-shadow: 0 4px 16px rgba(0, 0, 0, 0.04);
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-      padding: 18px;
-      text-align: left;
-      transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
-    }
-    .ec-screenshot-card:hover {
-      border-color: #cbd5e1;
-      box-shadow: 0 12px 28px rgba(0, 0, 0, 0.1);
-      transform: translateY(-5px);
-    }
-    .ec-img-wrap {
-      background: #f1f5f9;
-      border: 1px solid #e2e8f0;
-      border-radius: 10px;
-      display: block;
-      margin-bottom: 14px;
-      overflow: hidden;
-      position: relative;
-      text-decoration: none;
-    }
-    .ec-screenshot-card img {
-      display: block;
-      height: auto;
-      transition: transform 0.3s ease;
-      width: 100%;
-    }
-    .ec-screenshot-card:hover img {
-      transform: scale(1.02);
-    }
-    .ec-screenshot-card h3 {
-      color: #0f172a;
-      font-size: 17px;
-      font-weight: 700;
-      margin: 0 0 6px;
-    }
-    .ec-screenshot-card p {
-      color: #64748b;
-      font-size: 13.5px;
-      line-height: 1.6;
-      margin: 0;
-    }
-    .ec-site-nav {
-      margin: 36px auto 20px;
-      max-width: 1040px;
-      padding: 0 10px;
-    }
-    .ec-nav-inner {
-      align-items: center;
-      background: #ffffff;
-      border: 1px solid #e2e8f0;
-      border-radius: 14px;
-      box-shadow: 0 4px 16px rgba(0, 0, 0, 0.03);
-      display: flex;
-      flex-wrap: wrap;
-      gap: 8px;
-      justify-content: center;
-      padding: 14px 16px;
-    }
-    .ec-nav-link {
-      align-items: center;
-      background: #f8fafc;
-      border: 1px solid #e2e8f0;
-      border-radius: 8px;
-      color: #0f172a !important;
-      display: inline-flex;
-      font-size: 13px;
-      font-weight: 600;
-      gap: 5px;
-      padding: 8px 14px;
-      text-decoration: none !important;
-      transition: all 0.2s ease;
-    }
-    .ec-nav-link:hover {
-      background: #0369a1;
-      border-color: #0369a1;
-      color: #ffffff !important;
-      transform: translateY(-1px);
-    }
-    @media (max-width: 640px) {
-      .ec-gallery-container {
-        padding: 24px 14px;
-      }
-      .ec-screenshot-grid {
-        grid-template-columns: 1fr;
-      }
-    }
+    /* Subpage layout & screenshot cards harmonized via shared.css */
   </style>
 </head>
 <body>
@@ -267,30 +136,27 @@
     </div>
   </header>
 
-  <!-- Breadcrumbs -->
-  <nav class="ec-breadcrumbs" aria-label="Breadcrumb">
-    <ol>
-      <li><a href="/">Home</a></li>
-      <li aria-current="page">Screenshots &amp; UI Gallery</li>
-    </ol>
-  </nav>
-
   <main id="main-content">
-    <div class="ec-gallery-container">
-
-      <!--Main Header-->
-      <div class="ec-gallery-header">
-        <div style="background: rgb(224, 242, 254); border-radius: 9999px; color: #0369a1; display: inline-block; font-size: 12px; font-weight: 700; letter-spacing: 0.5px; margin-bottom: 12px; padding: 4px 14px; text-transform: uppercase;">
-          Visual Showcase &amp; Workflows
-        </div>
-        <h1 style="color: #0f172a; font-size: clamp(28px, 4vw, 40px); font-weight: 800; margin: 0px 0px 12px;">EduCore Screenshots Gallery — Complete UI Tour &amp; Document Showcase</h1>
-        <p style="color: #64748b; font-size: 16px; margin: 0px auto; max-width: 740px;">
+    <section class="ec-subpage-hero">
+      <div class="ec-subpage-hero-inner">
+        <nav class="ec-breadcrumbs" aria-label="Breadcrumb">
+          <ol>
+            <li><a href="/">Home</a></li>
+            <li aria-current="page">Screenshots &amp; UI Gallery</li>
+          </ol>
+        </nav>
+        <span class="ec-pill-badge">Visual Showcase &amp; Workflows</span>
+        <h1>EduCore Screenshots Gallery — Complete UI Tour &amp; Document Showcase</h1>
+        <p>
           Explore the clean typography, intuitive desktop workflows, and professional document designs engineered into every screen of EduCore. Click any image to view in full resolution.
         </p>
       </div>
+    </section>
+
+    <div class="ec-gallery-container">
 
       <!--SECTION 1: CORE APPLICATION WORKFLOWS-->
-      <h2 class="ec-section-title">Core Management &amp; Administrative Operations</h2>
+      <h2 class="ec-section-title" style="margin-top: 8px;">Core Management &amp; Administrative Operations</h2>
 
       <div class="ec-screenshot-grid">
 
@@ -617,13 +483,13 @@
       </div>
 
       <!--Action CTA-->
-      <section style="background: linear-gradient(135deg, rgb(15, 23, 42) 0%, rgb(30, 58, 138) 100%); border-radius: 20px; color: white; margin: 50px 0px 30px; padding: 40px 24px; text-align: center;">
-        <h2 style="color: white; font-size: 26px; font-weight: 800; margin: 0px 0px 10px;">Experience EduCore on Your Windows PC</h2>
-        <p style="color: #cbd5e1; font-size: 15px; margin: 0px auto 24px; max-width: 600px;">Download our free 30-day evaluation trial with all modules unlocked and test every screen firsthand.</p>
+      <section class="ec-unlocked-banner" style="margin: 50px 0 30px;">
+        <h2 style="color: #ffffff; font-size: 26px; font-weight: 800; margin: 0 0 10px;">Experience EduCore on Your Windows PC</h2>
+        <p style="color: #cbd5e1; font-size: 15px; margin: 0 auto 24px; max-width: 600px;">Download our free 30-day evaluation trial with all modules unlocked and test every screen firsthand.</p>
         <div style="display: flex; flex-wrap: wrap; gap: 14px; justify-content: center;">
-          <a href="https://github.com/tyk786/EduCore/releases/download/8.2.3/Setup_EduCore_App.zip" style="background: rgb(56, 189, 248); border-radius: 10px; color: #0f172a; font-size: 15px; font-weight: 700; padding: 12px 28px; text-decoration: none;" target="_blank">📥 Download Free Trial (.zip)</a>
-          <a href="assets/EduCore_Installation_Guide.pdf" style="background: rgba(255, 255, 255, 0.15); border-radius: 10px; border: 1px solid rgba(255, 255, 255, 0.4); color: white; font-size: 15px; font-weight: 600; padding: 12px 24px; text-decoration: none;" target="_blank" download>📖 Installation Guide (.pdf)</a>
-          <a href="contact-us.html" style="background: rgba(255, 255, 255, 0.15); border-radius: 10px; border: 1px solid rgba(255, 255, 255, 0.4); color: white; font-size: 15px; font-weight: 600; padding: 12px 24px; text-decoration: none;">✨ Request Live Demo Walkthrough</a>
+          <a href="https://github.com/tyk786/EduCore/releases/download/8.2.3/Setup_EduCore_App.zip" class="ec-btn-primary" target="_blank">Download Free Trial (.zip)</a>
+          <a href="assets/EduCore_Installation_Guide.pdf" class="ec-btn-secondary" target="_blank" download>Installation Guide (.pdf)</a>
+          <a href="contact-us.html" class="ec-btn-secondary">Request Live Demo Walkthrough</a>
         </div>
       </section>
 

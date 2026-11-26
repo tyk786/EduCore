@@ -41,7 +41,7 @@
   <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
   <link rel="shortcut icon" href="favicon.ico">
   <link rel="manifest" href="assets/favicon/site.webmanifest">
-  <meta name="theme-color" content="#0f172a">
+  <meta name="theme-color" content="#070b14">
 
   <link rel="preload" href="assets/css/shared.css" as="style">
   <link rel="stylesheet" href="assets/css/shared.css">
@@ -126,83 +126,7 @@
   </script>
 
   <style>
-    .ec-guide-wrap {
-      color: #1e293b;
-      margin: 0 auto;
-      max-width: 1020px;
-      padding: 30px 20px 50px;
-    }
-    .ec-tco-card {
-      background: #ffffff;
-      border: 1px solid #e2e8f0;
-      border-radius: 18px;
-      box-shadow: 0 4px 18px rgba(0, 0, 0, 0.03);
-      margin-bottom: 30px;
-      padding: 32px 26px;
-    }
-    .ec-tco-table {
-      border-collapse: collapse;
-      min-width: 680px;
-      width: 100%;
-    }
-    .ec-tco-table th,
-    .ec-tco-table td {
-      border-bottom: 1px solid #e2e8f0;
-      padding: 13px 14px;
-      text-align: left;
-      font-size: 13.5px;
-    }
-    .ec-tco-table thead th {
-      background: #f8fafc;
-      color: #0f172a;
-      font-weight: 700;
-      border-bottom: 2px solid #cbd5e1;
-    }
-    .ec-tco-win {
-      color: #047857;
-      font-weight: 700;
-    }
-    .ec-site-nav {
-      margin: 36px auto 20px;
-      max-width: 1040px;
-      padding: 0 10px;
-    }
-    .ec-nav-inner {
-      align-items: center;
-      background: #ffffff;
-      border: 1px solid #e2e8f0;
-      border-radius: 14px;
-      box-shadow: 0 4px 16px rgba(0, 0, 0, 0.03);
-      display: flex;
-      flex-wrap: wrap;
-      gap: 8px;
-      justify-content: center;
-      padding: 14px 16px;
-    }
-    .ec-nav-link {
-      align-items: center;
-      background: #f8fafc;
-      border: 1px solid #e2e8f0;
-      border-radius: 8px;
-      color: #0f172a !important;
-      display: inline-flex;
-      font-size: 13px;
-      font-weight: 600;
-      gap: 5px;
-      padding: 8px 14px;
-      text-decoration: none !important;
-      transition: all 0.2s ease;
-    }
-    .ec-nav-link:hover {
-      background: #0369a1;
-      border-color: #0369a1;
-      color: #ffffff !important;
-      transform: translateY(-1px);
-    }
-    @media (max-width: 640px) {
-      .ec-guide-wrap { padding: 20px 14px; }
-      .ec-tco-card { padding: 22px 16px; }
-    }
+    /* Subpage styling unified via shared.css Obsidian Command system */
   </style>
 </head>
 <body>
@@ -252,35 +176,30 @@
     </div>
   </header>
 
-  <!-- Breadcrumbs -->
-  <nav class="ec-breadcrumbs" aria-label="Breadcrumb">
-    <ol>
-      <li><a href="/">Home</a></li>
-      <li><a href="licensing.html">Pricing &amp; Licensing</a></li>
-      <li aria-current="page">Offline vs. Cloud TCO &amp; Privacy Guide</li>
-    </ol>
-  </nav>
-
   <main id="main-content">
-    <div class="ec-guide-wrap">
-
-      <!-- Header -->
-      <header style="margin-bottom: 36px; text-align: center;">
-        <div style="background: #e0f2fe; border-radius: 9999px; color: #0369a1; display: inline-block; font-size: 12px; font-weight: 700; letter-spacing: 0.5px; margin-bottom: 12px; padding: 4px 14px; text-transform: uppercase;">
-          Total Cost of Ownership &amp; Data Sovereignty Blueprint
-        </div>
-        <h1 style="color: #0f172a; font-size: clamp(26px, 4vw, 38px); font-weight: 800; margin: 0 0 12px;">
-          Offline Desktop School ERP vs. Cloud School SaaS: 5-Year Cost &amp; Privacy Guide
-        </h1>
-        <p style="color: #475569; font-size: 16px; line-height: 1.65; margin: 0 auto; max-width: 780px;">
+    <section class="ec-subpage-hero">
+      <div class="ec-subpage-hero-inner">
+        <nav class="ec-breadcrumbs" aria-label="Breadcrumb">
+          <ol>
+            <li><a href="/">Home</a></li>
+            <li><a href="licensing.html">Pricing &amp; Licensing</a></li>
+            <li aria-current="page">Offline vs. Cloud TCO &amp; Privacy Guide</li>
+          </ol>
+        </nav>
+        <span class="ec-pill-badge">Total Cost of Ownership &amp; Data Sovereignty Blueprint</span>
+        <h1>Offline Desktop School ERP vs. Cloud School SaaS: 5-Year Cost &amp; Privacy Guide</h1>
+        <p>
           EduCore is an offline desktop School ERP for 64-bit Windows 10 and 11 developed by SUBLIME ENTERPRISES. Storing student, fee, payroll, and exam records inside an encrypted local SQLite database with zero cloud uploads, EduCore replaces ₹20–₹50 per-student monthly SaaS fees with a 30-day free trial and perpetual licenses starting at ₹4,499.
         </p>
-      </header>
+      </div>
+    </section>
+
+    <div class="ec-guide-wrap">
 
       <!-- Section 1: 5-Year TCO Math -->
       <section class="ec-tco-card">
-        <h2 style="color: #0f172a; font-size: 22px; font-weight: 800; margin: 0 0 8px;">💰 1-Year, 3-Year &amp; 5-Year Total Cost of Ownership (INR)</h2>
-        <p style="color: #475569; font-size: 14.5px; line-height: 1.65; margin: 0 0 20px;">
+        <h2 style="color: var(--ec-ink); font-size: 22px; font-weight: 800; margin: 0 0 8px;">1-Year, 3-Year &amp; 5-Year Total Cost of Ownership (INR)</h2>
+        <p style="color: var(--ec-ink-body); font-size: 14.5px; line-height: 1.65; margin: 0 0 20px;">
           Typical cloud school management portals bill institutions <strong>₹20 to ₹50 per student every month</strong> indefinitely. Even at the lower ₹20/student/month tier, a school's recurring bill grows every year as enrollment expands. Compare that against EduCore's transparent one-time perpetual license (including optional annual maintenance renewal in Years 2–5):
         </p>
 
@@ -290,28 +209,28 @@
               <tr>
                 <th>School Size &amp; EduCore Tier</th>
                 <th>Horizon</th>
-                <th style="background: #ecfdf5; color: #065f46;">EduCore Offline ERP (One-Time + Renewal)</th>
+                <th style="background: rgba(16, 185, 129, 0.18); color: var(--ec-emerald-bright);">EduCore Offline ERP (One-Time + Renewal)</th>
                 <th>Cloud SaaS (₹20–₹50 / student / mo)</th>
                 <th>5-Year Cash Retained by School</th>
               </tr>
             </thead>
             <tbody>
               <tr>
-                <td><strong>200 Students</strong><br><span style="color: #64748b; font-size: 12px;">Basic (₹4,499 + ₹1,499/yr)</span></td>
+                <td><strong>200 Students</strong><br><span style="color: var(--ec-ink-muted); font-size: 12px;">Basic (₹4,499 + ₹1,499/yr)</span></td>
                 <td>Year 1<br>Year 3<br><strong>Year 5</strong></td>
                 <td class="ec-tco-win">₹4,499<br>₹7,497<br><strong>₹10,495</strong></td>
                 <td>₹48,000 – ₹1,20,000<br>₹1,44,000 – ₹3,60,000<br><strong>₹2,40,000 – ₹6,00,000</strong></td>
                 <td class="ec-tco-win">₹2,29,505 – ₹5,89,505</td>
               </tr>
               <tr>
-                <td><strong>500 Students</strong><br><span style="color: #64748b; font-size: 12px;">Standard (₹9,999 + ₹2,999/yr)</span></td>
+                <td><strong>500 Students</strong><br><span style="color: var(--ec-ink-muted); font-size: 12px;">Standard (₹9,999 + ₹2,999/yr)</span></td>
                 <td>Year 1<br>Year 3<br><strong>Year 5</strong></td>
                 <td class="ec-tco-win">₹9,999<br>₹15,997<br><strong>₹21,995</strong></td>
                 <td>₹1,20,000 – ₹3,00,000<br>₹3,60,000 – ₹9,00,000<br><strong>₹6,00,000 – ₹15,00,000</strong></td>
                 <td class="ec-tco-win">₹5,78,005 – ₹14,78,005</td>
               </tr>
               <tr>
-                <td><strong>1,000 Students</strong><br><span style="color: #64748b; font-size: 12px;">Enterprise (₹22,499 + ₹5,999/yr)</span></td>
+                <td><strong>1,000 Students</strong><br><span style="color: var(--ec-ink-muted); font-size: 12px;">Enterprise (₹22,499 + ₹5,999/yr)</span></td>
                 <td>Year 1<br>Year 3<br><strong>Year 5</strong></td>
                 <td class="ec-tco-win">₹22,499<br>₹34,497<br><strong>₹46,495</strong></td>
                 <td>₹2,40,000 – ₹6,00,000<br>₹7,20,000 – ₹18,00,000<br><strong>₹12,00,000 – ₹30,00,000</strong></td>
@@ -320,15 +239,15 @@
             </tbody>
           </table>
         </div>
-        <p style="color: #64748b; font-size: 12.5px; margin: 14px 0 0;">
-          <strong>Note on Perpetual Ownership:</strong> EduCore maintenance renewals are optional. Even if a school skips renewal in later years, the perpetual desktop software continues operating offline and all local records stay 100% accessible. See all 7 plans on <a href="licensing.html" style="color: #0369a1; font-weight: 600;">Licensing &amp; Pricing Plans</a>.
+        <p style="color: var(--ec-ink-muted); font-size: 12.5px; margin: 14px 0 0;">
+          <strong>Note on Perpetual Ownership:</strong> EduCore maintenance renewals are optional. Even if a school skips renewal in later years, the perpetual desktop software continues operating offline and all local records stay 100% accessible. See all 7 plans on <a href="licensing.html" style="color: var(--ec-emerald-deep); font-weight: 700;">Licensing &amp; Pricing Plans</a>.
         </p>
       </section>
 
       <!-- Section 2: Operational & Architecture Matrix -->
       <section class="ec-tco-card">
-        <h2 style="color: #0f172a; font-size: 22px; font-weight: 800; margin: 0 0 8px;">⚡ Architecture, Speed &amp; Zero-Internet Operations</h2>
-        <p style="color: #475569; font-size: 14.5px; line-height: 1.65; margin: 0 0 20px;">
+        <h2 style="color: var(--ec-ink); font-size: 22px; font-weight: 800; margin: 0 0 8px;">Architecture, Speed &amp; Zero-Internet Operations</h2>
+        <p style="color: var(--ec-ink-body); font-size: 14.5px; line-height: 1.65; margin: 0 0 20px;">
           For schools in semi-urban or rural areas—or busy admission counters during fee-collection week—internet interruptions halt cloud portals immediately. EduCore executes every workflow natively on your local Windows 10 or 11 machine.
         </p>
 
@@ -337,7 +256,7 @@
             <thead>
               <tr>
                 <th>Evaluation Criteria</th>
-                <th style="background: #0369a1; color: #ffffff;">EduCore Offline Desktop ERP</th>
+                <th style="background: rgba(16, 185, 129, 0.18); color: var(--ec-emerald-bright);">EduCore Offline Desktop ERP</th>
                 <th>Typical Cloud School SaaS</th>
               </tr>
             </thead>
@@ -379,30 +298,30 @@
 
       <!-- Section 3: DPDP Data Custody -->
       <section class="ec-tco-card">
-        <h2 style="color: #0f172a; font-size: 22px; font-weight: 800; margin: 0 0 12px;">🛡️ DPDP Act Readiness &amp; Student Data Custody</h2>
-        <p style="color: #475569; font-size: 14.5px; line-height: 1.7; margin: 0 0 14px;">
+        <h2 style="color: var(--ec-ink); font-size: 22px; font-weight: 800; margin: 0 0 12px;">DPDP Act Readiness &amp; Student Data Custody</h2>
+        <p style="color: var(--ec-ink-body); font-size: 14.5px; line-height: 1.7; margin: 0 0 14px;">
           School databases contain highly sensitive personal data: student photographs, dates of birth, guardian phone numbers, residential addresses, staff salary slips, and fee ledgers. Under India's <strong>Digital Personal Data Protection (DPDP) Act</strong> principles, schools acting as data fiduciaries carry direct accountability when transmitting records to external cloud SaaS vendors.
         </p>
-        <ul style="color: #475569; font-size: 14px; line-height: 1.8; margin: 0 0 16px; padding-left: 20px;">
+        <ul style="color: var(--ec-ink-body); font-size: 14px; line-height: 1.8; margin: 0 0 16px; padding-left: 20px;">
           <li><strong>Zero Third-Party Cloud Exposure:</strong> Records never leave your campus PC unless an authorized administrator manually exports a local backup or Excel report.</li>
           <li><strong>Role-Based School ERP Login:</strong> Separate access controls for Master Administrators, accountants, and teachers with hashed credentials and tamper-evident audit logs.</li>
           <li><strong>30-Day Integrity-Verified Backups:</strong> Automatic local snapshots run integrity checks (`PRAGMA quick_check`) and support 1-click USB flash drive disaster recovery.</li>
         </ul>
-        <p style="color: #475569; font-size: 14px; margin: 0;">
-          Read full technical controls on <a href="privacy-policy.html" style="color: #0369a1; font-weight: 600;">Data Privacy Policy</a> and <a href="about-us.html#dpdp-compliance" style="color: #0369a1; font-weight: 600;">About EduCore &amp; SUBLIME ENTERPRISES</a>.
+        <p style="color: var(--ec-ink-body); font-size: 14px; margin: 0;">
+          Read full technical controls on <a href="privacy-policy.html" style="color: var(--ec-emerald-deep); font-weight: 700;">Data Privacy Policy</a> and <a href="about-us.html#dpdp-compliance" style="color: var(--ec-emerald-deep); font-weight: 700;">About EduCore &amp; SUBLIME ENTERPRISES</a>.
         </p>
       </section>
 
       <!-- CTA Banner -->
-      <section style="background: linear-gradient(135deg, #0f172a 0%, #1e3a8a 100%); border-radius: 18px; color: #ffffff; padding: 36px 24px; text-align: center; margin-bottom: 30px;">
+      <section class="ec-unlocked-banner" style="margin-bottom: 30px;">
         <h2 style="color: #ffffff; font-size: 24px; font-weight: 800; margin: 0 0 10px;">Test EduCore Offline on Your School PC for 30 Days</h2>
         <p style="color: #cbd5e1; font-size: 15px; margin: 0 auto 22px; max-width: 640px;">
           All 10 modules unlocked for up to 50 students — no credit card required, zero cloud dependency.
         </p>
         <div style="display: flex; flex-wrap: wrap; gap: 12px; justify-content: center;">
-          <a href="https://github.com/tyk786/EduCore/releases/download/8.2.3/Setup_EduCore_App.zip" style="background: #38bdf8; border-radius: 10px; color: #0f172a; font-size: 14.5px; font-weight: 700; padding: 12px 24px; text-decoration: none;" target="_blank">📥 Download Free Trial (.zip)</a>
-          <a href="licensing.html" style="background: rgba(255,255,255,0.14); border: 1px solid rgba(255,255,255,0.35); border-radius: 10px; color: #ffffff; font-size: 14.5px; font-weight: 600; padding: 12px 22px; text-decoration: none;">💳 View All 7 Pricing Tiers</a>
-          <a href="mailto:info@educoreapp.in?subject=EduCore%20TCO%20and%20Demo%20Inquiry" style="background: rgba(255,255,255,0.14); border: 1px solid rgba(255,255,255,0.35); border-radius: 10px; color: #ffffff; font-size: 14.5px; font-weight: 600; padding: 12px 22px; text-decoration: none;">✉️ Email Demo Request</a>
+          <a href="https://github.com/tyk786/EduCore/releases/download/8.2.3/Setup_EduCore_App.zip" class="ec-btn-primary" target="_blank">Download Free Trial (.zip)</a>
+          <a href="licensing.html" class="ec-btn-secondary">View All 7 Pricing Tiers</a>
+          <a href="mailto:info@educoreapp.in?subject=EduCore%20TCO%20and%20Demo%20Inquiry" class="ec-btn-secondary">Email Demo Request</a>
         </div>
       </section>
 

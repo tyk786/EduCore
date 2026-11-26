@@ -39,7 +39,7 @@
   <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
   <link rel="shortcut icon" href="favicon.ico">
   <link rel="manifest" href="assets/favicon/site.webmanifest">
-  <meta name="theme-color" content="#0f172a">
+  <meta name="theme-color" content="#070b14">
 
   <link rel="preload" href="assets/css/shared.css" as="style">
   <link rel="stylesheet" href="assets/css/shared.css">
@@ -150,81 +150,7 @@
   </script>
 
   <style>
-    .ec-sys-wrap {
-      color: #1e293b;
-      margin: 0 auto;
-      max-width: 980px;
-      padding: 30px 20px 50px;
-    }
-    .ec-sys-card {
-      background: #ffffff;
-      border: 1px solid #e2e8f0;
-      border-radius: 16px;
-      box-shadow: 0 4px 16px rgba(0, 0, 0, 0.03);
-      margin-bottom: 30px;
-      padding: 32px;
-    }
-    .ec-grid-2 {
-      display: grid;
-      gap: 20px;
-      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    }
-    .ec-install-grid {
-      display: grid;
-      gap: 16px;
-      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-    }
-    .ec-install-step {
-      background: #f8fafc;
-      border-left: 4px solid #0369a1;
-      border-radius: 10px;
-      padding: 18px;
-    }
-    .ec-site-nav {
-      margin: 36px auto 20px;
-      max-width: 1040px;
-      padding: 0 10px;
-    }
-    .ec-nav-inner {
-      align-items: center;
-      background: #ffffff;
-      border: 1px solid #e2e8f0;
-      border-radius: 14px;
-      box-shadow: 0 4px 16px rgba(0, 0, 0, 0.03);
-      display: flex;
-      flex-wrap: wrap;
-      gap: 8px;
-      justify-content: center;
-      padding: 14px 16px;
-    }
-    .ec-nav-link {
-      align-items: center;
-      background: #f8fafc;
-      border: 1px solid #e2e8f0;
-      border-radius: 8px;
-      color: #0f172a !important;
-      display: inline-flex;
-      font-size: 13px;
-      font-weight: 600;
-      gap: 5px;
-      padding: 8px 14px;
-      text-decoration: none !important;
-      transition: all 0.2s ease;
-    }
-    .ec-nav-link:hover {
-      background: #0369a1;
-      border-color: #0369a1;
-      color: #ffffff !important;
-      transform: translateY(-1px);
-    }
-    @media (max-width: 640px) {
-      .ec-sys-wrap {
-        padding: 20px 14px;
-      }
-      .ec-sys-card {
-        padding: 22px 18px;
-      }
-    }
+    /* Subpage styling unified via shared.css Obsidian Command system */
   </style>
 </head>
 <body>
@@ -276,85 +202,86 @@
     </div>
   </header>
 
-  <!-- Breadcrumbs -->
-  <nav class="ec-breadcrumbs" aria-label="Breadcrumb">
-    <ol>
-      <li><a href="/">Home</a></li>
-      <li aria-current="page">System Requirements &amp; Installation</li>
-    </ol>
-  </nav>
-
   <main id="main-content">
-    <div class="ec-sys-wrap">
-
-      <!--Header-->
-      <header style="margin-bottom: 40px; text-align: center;">
-        <div style="background: rgb(224, 242, 254); border-radius: 9999px; color: #0369a1; display: inline-block; font-size: 12px; font-weight: 700; letter-spacing: 0.5px; margin-bottom: 12px; padding: 4px 14px; text-transform: uppercase;">
-          Hardware &amp; OS Compatibility
-        </div>
-        <h1 style="color: #0f172a; font-size: clamp(28px, 4vw, 40px); font-weight: 800; margin: 0px 0px 12px;">EduCore System Requirements &amp; Windows Installation Guide</h1>
-        <p style="color: #64748b; font-size: 16px; margin: 0px auto; max-width: 760px; line-height: 1.65;">
+    <section class="ec-subpage-hero">
+      <div class="ec-subpage-hero-inner">
+        <nav class="ec-breadcrumbs" aria-label="Breadcrumb">
+          <ol>
+            <li><a href="/">Home</a></li>
+            <li aria-current="page">System Requirements &amp; Installation</li>
+          </ol>
+        </nav>
+        <span class="ec-pill-badge">Hardware &amp; OS Compatibility</span>
+        <h1>EduCore System Requirements &amp; Windows Installation Guide</h1>
+        <p>
           EduCore is an offline desktop School ERP for 64-bit Windows 10 and 11 developed by SUBLIME ENTERPRISES. Requiring at least 4 GB RAM and 500 MB disk space, it stores all student records and fees inside an encrypted local SQLite database with zero cloud servers, starting from a 30-day free trial or ₹4,499 one-time license.
         </p>
-      </header>
+      </div>
+    </section>
+
+    <div class="ec-sys-wrap">
 
       <!--OS Support Badges-->
-      <section class="ec-grid-2" style="margin-bottom: 34px;">
-        <div style="background: rgb(255, 255, 255); border-radius: 14px; border: 1px solid rgb(226, 232, 240); box-shadow: rgba(0, 0, 0, 0.03) 0px 4px 14px; display: flex; gap: 16px; padding: 22px;">
-          <div style="align-items: center; background: rgb(224, 242, 254); border-radius: 12px; color: #0369a1; display: flex; font-size: 26px; height: 50px; justify-content: center; min-width: 50px;">💻</div>
+      <section class="ec-grid-2" style="margin-bottom: 30px;">
+        <div class="ec-card" style="margin-bottom: 0; display: flex; gap: 16px; padding: 22px; border-top: 3px solid var(--ec-emerald-deep);">
+          <div class="ec-pillar-icon ec-icon-emerald" style="flex-shrink: 0;">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect><line x1="8" y1="21" x2="16" y2="21"></line><line x1="12" y1="17" x2="12" y2="21"></line></svg>
+          </div>
           <div>
-            <h2 style="color: #0f172a; font-size: 18px; font-weight: 700; margin: 0px 0px 4px;">Windows 11 (64-bit)</h2>
-            <p style="color: #64748b; font-size: 13.5px; margin: 0px;">Fully optimized for Windows 11 Home, Pro, Enterprise, and Education editions with native dark/light high-DPI rendering.</p>
+            <h2 style="color: var(--ec-ink); font-size: 18px; font-weight: 800; margin: 0 0 4px;">Windows 11 (64-bit)</h2>
+            <p style="color: var(--ec-ink-muted); font-size: 13.5px; margin: 0;">Fully optimized for Windows 11 Home, Pro, Enterprise, and Education editions with native dark/light high-DPI rendering.</p>
           </div>
         </div>
 
-        <div style="background: rgb(255, 255, 255); border-radius: 14px; border: 1px solid rgb(226, 232, 240); box-shadow: rgba(0, 0, 0, 0.03) 0px 4px 14px; display: flex; gap: 16px; padding: 22px;">
-          <div style="align-items: center; background: rgb(224, 242, 254); border-radius: 12px; color: #0369a1; display: flex; font-size: 26px; height: 50px; justify-content: center; min-width: 50px;">🖥️</div>
+        <div class="ec-card" style="margin-bottom: 0; display: flex; gap: 16px; padding: 22px; border-top: 3px solid var(--ec-cyan);">
+          <div class="ec-pillar-icon ec-icon-cyan" style="flex-shrink: 0;">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect><line x1="8" y1="21" x2="16" y2="21"></line><line x1="12" y1="17" x2="12" y2="21"></line></svg>
+          </div>
           <div>
-            <h2 style="color: #0f172a; font-size: 18px; font-weight: 700; margin: 0px 0px 4px;">Windows 10 (64-bit)</h2>
-            <p style="color: #64748b; font-size: 13.5px; margin: 0px;">Comprehensive backward support for Windows 10 (Build 19041 and later) with stable SQLite background processing.</p>
+            <h2 style="color: var(--ec-ink); font-size: 18px; font-weight: 800; margin: 0 0 4px;">Windows 10 (64-bit)</h2>
+            <p style="color: var(--ec-ink-muted); font-size: 13.5px; margin: 0;">Comprehensive backward support for Windows 10 (Build 19041 and later) with stable SQLite background processing.</p>
           </div>
         </div>
       </section>
 
       <!--Hardware Comparison Table-->
       <section class="ec-sys-card">
-        <h2 style="color: #0f172a; font-size: 22px; font-weight: 800; margin: 0px 0px 18px;">Recommended Hardware Specifications</h2>
+        <h2 style="color: var(--ec-ink); font-size: 22px; font-weight: 800; margin: 0 0 18px;">Recommended Hardware Specifications</h2>
 
         <div style="overflow-x: auto;">
-          <table style="border-collapse: collapse; min-width: 540px; width: 100%;">
+          <table class="ec-matrix-table" style="min-width: 540px;">
             <thead>
-              <tr style="border-bottom: 2px solid rgb(226, 232, 240);">
-                <th style="color: #0f172a; font-size: 14px; font-weight: 700; padding: 12px 14px; text-align: left;">Component</th>
-                <th style="color: #0369a1; font-size: 14px; font-weight: 700; padding: 12px 14px; text-align: left;">Minimum Requirements</th>
-                <th style="color: #15803d; font-size: 14px; font-weight: 700; padding: 12px 14px; text-align: left;">Recommended Specs</th>
+              <tr>
+                <th>Component</th>
+                <th>Minimum Requirements</th>
+                <th style="color: var(--ec-emerald-bright);">Recommended Specs</th>
               </tr>
             </thead>
             <tbody style="font-size: 14px;">
-              <tr style="border-bottom: 1px solid rgb(241, 245, 249);">
-                <td style="color: #0f172a; font-weight: 600; padding: 12px 14px;">Processor (CPU)</td>
-                <td style="color: #64748b; padding: 12px 14px;">Dual-Core 64-bit (1.8 GHz)</td>
-                <td style="color: #334155; font-weight: 600; padding: 12px 14px;">Intel Core i3 / i5 / AMD Ryzen (Quad-Core)</td>
-              </tr>
-              <tr style="border-bottom: 1px solid rgb(241, 245, 249);">
-                <td style="color: #0f172a; font-weight: 600; padding: 12px 14px;">System Memory (RAM)</td>
-                <td style="color: #64748b; padding: 12px 14px;">4 GB RAM</td>
-                <td style="color: #334155; font-weight: 600; padding: 12px 14px;">8 GB DDR4 / DDR5 RAM</td>
-              </tr>
-              <tr style="border-bottom: 1px solid rgb(241, 245, 249);">
-                <td style="color: #0f172a; font-weight: 600; padding: 12px 14px;">Storage Disk Space</td>
-                <td style="color: #64748b; padding: 12px 14px;">500 MB Free Space</td>
-                <td style="color: #334155; font-weight: 600; padding: 12px 14px;">1 GB+ SSD (Solid State Drive)</td>
-              </tr>
-              <tr style="border-bottom: 1px solid rgb(241, 245, 249);">
-                <td style="color: #0f172a; font-weight: 600; padding: 12px 14px;">Display Resolution</td>
-                <td style="color: #64748b; padding: 12px 14px;">1280 × 720 (HD)</td>
-                <td style="color: #334155; font-weight: 600; padding: 12px 14px;">1920 × 1080 (Full HD, 100% or 125% DPI)</td>
+              <tr>
+                <td style="color: var(--ec-ink); font-weight: 700;">Processor (CPU)</td>
+                <td style="color: var(--ec-ink-muted);">Dual-Core 64-bit (1.8 GHz)</td>
+                <td style="color: var(--ec-ink); font-weight: 600;">Intel Core i3 / i5 / AMD Ryzen (Quad-Core)</td>
               </tr>
               <tr>
-                <td style="color: #0f172a; font-weight: 600; padding: 12px 14px;">Printer Support</td>
-                <td style="color: #64748b; padding: 12px 14px;">Standard A4 Inkjet / Laser Printer</td>
-                <td style="color: #334155; font-weight: 600; padding: 12px 14px;">Laser A4 + 80mm Thermal Receipt Printer</td>
+                <td style="color: var(--ec-ink); font-weight: 700;">System Memory (RAM)</td>
+                <td style="color: var(--ec-ink-muted);">4 GB RAM</td>
+                <td style="color: var(--ec-ink); font-weight: 600;">8 GB DDR4 / DDR5 RAM</td>
+              </tr>
+              <tr>
+                <td style="color: var(--ec-ink); font-weight: 700;">Storage Disk Space</td>
+                <td style="color: var(--ec-ink-muted);">500 MB Free Space</td>
+                <td style="color: var(--ec-ink); font-weight: 600;">1 GB+ SSD (Solid State Drive)</td>
+              </tr>
+              <tr>
+                <td style="color: var(--ec-ink); font-weight: 700;">Display Resolution</td>
+                <td style="color: var(--ec-ink-muted);">1280 × 720 (HD)</td>
+                <td style="color: var(--ec-ink); font-weight: 600;">1920 × 1080 (Full HD, 100% or 125% DPI)</td>
+              </tr>
+              <tr>
+                <td style="color: var(--ec-ink); font-weight: 700;">Printer Support</td>
+                <td style="color: var(--ec-ink-muted);">Standard A4 Inkjet / Laser Printer</td>
+                <td style="color: var(--ec-ink); font-weight: 600;">Laser A4 + 80mm Thermal Receipt Printer</td>
               </tr>
             </tbody>
           </table>
@@ -363,11 +290,11 @@
 
       <!--Zero External Runtime Dependency-->
       <section class="ec-sys-card">
-        <h2 style="color: #0f172a; font-size: 20px; font-weight: 800; margin: 0px 0px 12px;">⚡ Zero External Runtime Dependencies</h2>
-        <p style="color: #475569; font-size: 14.5px; margin: 0px 0px 16px;">
+        <h2 style="color: var(--ec-ink); font-size: 20px; font-weight: 800; margin: 0 0 12px;">Zero External Runtime Dependencies</h2>
+        <p style="color: var(--ec-ink-body); font-size: 14.5px; margin: 0 0 16px;">
           Unlike cumbersome web-based school portals that require installing complex Apache web servers, PHP runtimes, MySQL daemons, or Node.js environments, EduCore is distributed as a completely self-contained Windows desktop binary:
         </p>
-        <ul style="color: #475569; font-size: 14px; line-height: 1.8; margin: 0px; padding-left: 20px;">
+        <ul style="color: var(--ec-ink-body); font-size: 14px; line-height: 1.8; margin: 0; padding-left: 20px;">
           <li><strong>Embedded SQLite Engine:</strong> The high-speed database engine is compiled directly into the binary. No external database administration required.</li>
           <li><strong>ReportLab Vector Engine:</strong> Built-in vector graphics engine to produce crisp PDF marksheets, certificates, and ID cards without third-party printer drivers.</li>
           <li><strong>Offline Encryption:</strong> Cryptographic libraries are statically linked, ensuring hardware-speed encryption and validation without cloud calls.</li>
@@ -376,32 +303,32 @@
 
       <!--5-Step Rapid Installation-->
       <section class="ec-sys-card">
-        <h2 style="color: #0f172a; font-size: 20px; font-weight: 800; margin: 0px 0px 16px;">🚀 5-Minute Installation &amp; Setup Workflow</h2>
+        <h2 style="color: var(--ec-ink); font-size: 20px; font-weight: 800; margin: 0 0 16px;">5-Minute Installation &amp; Setup Workflow</h2>
 
         <div class="ec-install-grid">
           <div class="ec-install-step">
-            <strong style="color: #0369a1; font-size: 15px;">Step 1: Download</strong>
-            <p style="color: #64748b; font-size: 13px; margin: 6px 0px 0px;">Download <code>Setup_EduCore_App.zip</code> from our official release distribution server.</p>
+            <strong style="color: var(--ec-emerald-deep); font-size: 15px;">Step 1: Download</strong>
+            <p style="color: var(--ec-ink-muted); font-size: 13px; margin: 6px 0 0;">Download <code>Setup_EduCore_App.zip</code> from our official release distribution server.</p>
           </div>
 
           <div class="ec-install-step">
-            <strong style="color: #0369a1; font-size: 15px;">Step 2: Extract</strong>
-            <p style="color: #64748b; font-size: 13px; margin: 6px 0px 0px;">Right-click the zip archive, select <em>Extract All</em>, and launch the installer executable.</p>
+            <strong style="color: var(--ec-emerald-deep); font-size: 15px;">Step 2: Extract</strong>
+            <p style="color: var(--ec-ink-muted); font-size: 13px; margin: 6px 0 0;">Right-click the zip archive, select <em>Extract All</em>, and launch the installer executable.</p>
           </div>
 
           <div class="ec-install-step">
-            <strong style="color: #0369a1; font-size: 15px;">Step 3: Setup Admin</strong>
-            <p style="color: #64748b; font-size: 13px; margin: 6px 0px 0px;">Launch EduCore from your Windows Start Menu and set your Master Administrator password.</p>
+            <strong style="color: var(--ec-emerald-deep); font-size: 15px;">Step 3: Setup Admin</strong>
+            <p style="color: var(--ec-ink-muted); font-size: 13px; margin: 6px 0 0;">Launch EduCore from your Windows Start Menu and set your Master Administrator password.</p>
           </div>
 
           <div class="ec-install-step">
-            <strong style="color: #0369a1; font-size: 15px;">Step 4: School Profile</strong>
-            <p style="color: #64748b; font-size: 13px; margin: 6px 0px 0px;">Upload your institution's logo, enter campus address, and configure academic sections.</p>
+            <strong style="color: var(--ec-emerald-deep); font-size: 15px;">Step 4: School Profile</strong>
+            <p style="color: var(--ec-ink-muted); font-size: 13px; margin: 6px 0 0;">Upload your institution's logo, enter campus address, and configure academic sections.</p>
           </div>
 
           <div class="ec-install-step">
-            <strong style="color: #0369a1; font-size: 15px;">Step 5: Import Data</strong>
-            <p style="color: #64748b; font-size: 13px; margin: 6px 0px 0px;">Use bulk Excel templates to upload student and teacher rosters in seconds.</p>
+            <strong style="color: var(--ec-emerald-deep); font-size: 15px;">Step 5: Import Data</strong>
+            <p style="color: var(--ec-ink-muted); font-size: 13px; margin: 6px 0 0;">Use bulk Excel templates to upload student and teacher rosters in seconds.</p>
           </div>
         </div>
       </section>
@@ -409,62 +336,62 @@
       <!--Visual SmartScreen Verification & Checksums-->
       <section class="ec-sys-card" id="smartscreen-guide">
         <div style="display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 10px; margin-bottom: 12px;">
-          <h2 style="color: #0f172a; font-size: 20px; font-weight: 800; margin: 0;">🛡️ Windows Defender SmartScreen Visual Guide &amp; SHA-256 Verification</h2>
-          <a href="https://www.virustotal.com/gui/file/f47999d6952f294330de11cbf0c78290e692f04f7673212d048ad170164deeec" target="_blank" rel="noopener noreferrer" style="background: #ecfdf5; border: 1px solid #a7f3d0; border-radius: 6px; padding: 4px 12px; font-size: 12px; font-weight: 700; color: #047857; text-decoration: none;">
-            ✅ VirusTotal 0/72 Clean Scan
+          <h2 style="color: var(--ec-ink); font-size: 20px; font-weight: 800; margin: 0;">Windows Defender SmartScreen Visual Guide &amp; SHA-256 Verification</h2>
+          <a href="https://www.virustotal.com/gui/file/f47999d6952f294330de11cbf0c78290e692f04f7673212d048ad170164deeec" target="_blank" rel="noopener noreferrer" class="ec-tag" style="text-decoration: none;">
+            ✓ VirusTotal 0/72 Clean Scan
           </a>
         </div>
-        <p style="color: #475569; font-size: 14.5px; line-height: 1.65; margin: 0 0 18px;">
+        <p style="color: var(--ec-ink-body); font-size: 14.5px; line-height: 1.65; margin: 0 0 18px;">
           Because EduCore is distributed offline without costly corporate code-signing certificates, Windows may show an informational Microsoft Defender SmartScreen prompt when you run <code>EduCore_Setup_v8.2.3.exe</code> for the first time. Verify our official SHA-256 checksums below and follow these two clicks:
         </p>
 
         <div class="ec-grid-2" style="margin-bottom: 20px;">
-          <figure style="background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 12px; margin: 0; padding: 14px; text-align: center;">
+          <figure style="background: var(--ec-surface-subtle); border: 1px solid var(--ec-border); border-radius: 12px; margin: 0; padding: 14px; text-align: center;">
             <img src="assets/img/SmartScreen_Step1_More_Info.webp" alt="Windows protected your PC SmartScreen prompt showing More info link highlighted" width="791" height="736" loading="lazy" decoding="async" style="border-radius: 8px; margin: 0 auto 10px; max-width: 340px; width: 100%; height: auto;" />
-            <figcaption style="color: #334155; font-size: 13px; font-weight: 600;">Step 1: Click the underlined <em>More info</em> link under the SmartScreen message.</figcaption>
+            <figcaption style="color: var(--ec-ink-body); font-size: 13px; font-weight: 600;">Step 1: Click the underlined <em>More info</em> link under the SmartScreen message.</figcaption>
           </figure>
-          <figure style="background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 12px; margin: 0; padding: 14px; text-align: center;">
+          <figure style="background: var(--ec-surface-subtle); border: 1px solid var(--ec-border); border-radius: 12px; margin: 0; padding: 14px; text-align: center;">
             <img src="assets/img/SmartScreen_Step2_Run_Anyway.webp" alt="Windows SmartScreen expanded view confirming EduCore_Setup_v8.2.3.exe and highlighting Run anyway" width="791" height="740" loading="lazy" decoding="async" style="border-radius: 8px; margin: 0 auto 10px; max-width: 340px; width: 100%; height: auto;" />
-            <figcaption style="color: #334155; font-size: 13px; font-weight: 600;">Step 2: Confirm App shows <code>EduCore_Setup_v8.2.3.exe</code> and click <em>Run anyway</em>.</figcaption>
+            <figcaption style="color: var(--ec-ink-body); font-size: 13px; font-weight: 600;">Step 2: Confirm App shows <code>EduCore_Setup_v8.2.3.exe</code> and click <em>Run anyway</em>.</figcaption>
           </figure>
         </div>
 
-        <div style="background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 10px; padding: 14px 16px; font-size: 12px; color: #475569;">
-          <div style="font-weight: 700; color: #0f172a; margin-bottom: 6px;">Cryptographic SHA-256 File Verification (v8.2.3)</div>
-          <div><strong>EduCore_Setup_v8.2.3.exe:</strong> <code style="font-size: 11px; color: #0369a1; word-break: break-all;">f47999d6952f294330de11cbf0c78290e692f04f7673212d048ad170164deeec</code></div>
-          <div style="margin-top: 4px;"><strong>Setup_EduCore_App.zip:</strong> <code style="font-size: 11px; color: #0369a1; word-break: break-all;">129899440ee867a074ecd8a4ba5720c25bf2ef0853c689f5dfe27a8e83494978</code></div>
+        <div class="ec-vault-panel" style="padding: 16px 18px; font-size: 12px;">
+          <div style="font-weight: 800; color: #ffffff; margin-bottom: 8px;">Cryptographic SHA-256 File Verification (v8.2.3)</div>
+          <div><strong style="color: #ffffff;">EduCore_Setup_v8.2.3.exe:</strong> <code class="ec-vault-hash">f47999d6952f294330de11cbf0c78290e692f04f7673212d048ad170164deeec</code></div>
+          <div style="margin-top: 4px;"><strong style="color: #ffffff;">Setup_EduCore_App.zip:</strong> <code class="ec-vault-hash">129899440ee867a074ecd8a4ba5720c25bf2ef0853c689f5dfe27a8e83494978</code></div>
         </div>
       </section>
 
       <!--Troubleshooting & FAQs-->
       <section class="ec-sys-card">
-        <h2 style="color: #0f172a; font-size: 20px; font-weight: 800; margin: 0px 0px 16px;">💡 Windows Installation FAQs &amp; Troubleshooting</h2>
+        <h2 style="color: var(--ec-ink); font-size: 20px; font-weight: 800; margin: 0 0 16px;">Windows Installation FAQs &amp; Troubleshooting</h2>
 
         <div style="display: grid; gap: 14px;">
-          <div style="background: rgb(248, 250, 252); border-radius: 10px; border: 1px solid rgb(226, 232, 240); padding: 18px;">
-            <h3 style="color: #0f172a; font-size: 15px; font-weight: 700; margin: 0px 0px 6px;">Windows Defender SmartScreen Notice</h3>
-            <p style="color: #64748b; font-size: 13.5px; margin: 0px;">Because EduCore is a direct desktop binary, Windows Defender SmartScreen may display a prompt upon initial launch. Simply click <em>"More info"</em> and then select <em>"Run anyway"</em> to proceed.</p>
+          <div class="ec-faq-item" style="margin-bottom: 0;">
+            <h3 style="font-size: 15px;">Windows Defender SmartScreen Notice</h3>
+            <p style="font-size: 13.5px;">Because EduCore is a direct desktop binary, Windows Defender SmartScreen may display a prompt upon initial launch. Simply click <em>"More info"</em> and then select <em>"Run anyway"</em> to proceed.</p>
           </div>
 
-          <div style="background: rgb(248, 250, 252); border-radius: 10px; border: 1px solid rgb(226, 232, 240); padding: 18px;">
-            <h3 style="color: #0f172a; font-size: 15px; font-weight: 700; margin: 0px 0px 6px;">High-DPI Display Scaling on Laptops</h3>
-            <p style="color: #64748b; font-size: 13.5px; margin: 0px;">EduCore is DPI-aware and adjusts automatically. If using a high-resolution 4K laptop monitor with custom scaling, 125% or 150% scaling provides the clearest balance of readability and layout clarity.</p>
+          <div class="ec-faq-item" style="margin-bottom: 0;">
+            <h3 style="font-size: 15px;">High-DPI Display Scaling on Laptops</h3>
+            <p style="font-size: 13.5px;">EduCore is DPI-aware and adjusts automatically. If using a high-resolution 4K laptop monitor with custom scaling, 125% or 150% scaling provides the clearest balance of readability and layout clarity.</p>
           </div>
 
-          <div style="background: rgb(248, 250, 252); border-radius: 10px; border: 1px solid rgb(226, 232, 240); padding: 18px;">
-            <h3 style="color: #0f172a; font-size: 15px; font-weight: 700; margin: 0px 0px 6px;">Visual C++ Redistributable</h3>
-            <p style="color: #64748b; font-size: 13.5px; margin: 0px;">EduCore targets standard Microsoft Visual C++ runtime environments. Almost all modern Windows 10 and 11 installations already include this. If missing, the setup installer will prompt you to install it automatically.</p>
+          <div class="ec-faq-item" style="margin-bottom: 0;">
+            <h3 style="font-size: 15px;">Visual C++ Redistributable</h3>
+            <p style="font-size: 13.5px;">EduCore targets standard Microsoft Visual C++ runtime environments. Almost all modern Windows 10 and 11 installations already include this. If missing, the setup installer will prompt you to install it automatically.</p>
           </div>
         </div>
       </section>
 
       <!--Download CTA Banner-->
-      <section style="background: linear-gradient(135deg, rgb(2, 132, 199) 0%, rgb(30, 58, 138) 100%); border-radius: 16px; color: white; margin-bottom: 30px; padding: 36px 20px; text-align: center;">
-        <h2 style="color: white; font-size: 24px; font-weight: 800; margin: 0px 0px 10px;">Ready to Get Started with EduCore?</h2>
-        <p style="color: #e0f2fe; font-size: 15px; margin: 0px auto 20px; max-width: 600px;">Download the free 30-day evaluation package and test EduCore on your Windows machine today.</p>
+      <section class="ec-unlocked-banner">
+        <h2 style="color: #ffffff; font-size: 24px; font-weight: 800; margin: 0 0 10px;">Ready to Get Started with EduCore?</h2>
+        <p style="color: #cbd5e1; font-size: 15px; margin: 0 auto 22px; max-width: 600px;">Download the free 30-day evaluation package and test EduCore on your Windows machine today.</p>
         <div style="display: flex; gap: 14px; justify-content: center; flex-wrap: wrap;">
-          <a href="https://github.com/tyk786/EduCore/releases/download/8.2.3/Setup_EduCore_App.zip" style="background: rgb(255, 255, 255); border-radius: 10px; color: #0369a1; display: inline-block; font-size: 15px; font-weight: 700; padding: 12px 30px; text-decoration: none;" target="_blank">📥 Download EduCore Installer (.zip)</a>
-          <a href="assets/EduCore_Installation_Guide.pdf" style="background: rgba(255, 255, 255, 0.15); border: 1px solid rgba(255, 255, 255, 0.4); border-radius: 10px; color: #ffffff; display: inline-block; font-size: 15px; font-weight: 700; padding: 12px 24px; text-decoration: none;" target="_blank" download>📖 Installation Guide (.pdf)</a>
+          <a href="https://github.com/tyk786/EduCore/releases/download/8.2.3/Setup_EduCore_App.zip" class="ec-btn-primary" target="_blank">Download EduCore Installer (.zip)</a>
+          <a href="assets/EduCore_Installation_Guide.pdf" class="ec-btn-secondary" target="_blank" download>Installation Guide (.pdf)</a>
         </div>
       </section>
 

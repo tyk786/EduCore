@@ -41,7 +41,7 @@
   <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
   <link rel="shortcut icon" href="favicon.ico">
   <link rel="manifest" href="assets/favicon/site.webmanifest">
-  <meta name="theme-color" content="#0f172a">
+  <meta name="theme-color" content="#070b14">
 
   <link rel="preload" href="assets/css/shared.css" as="style">
   <link rel="stylesheet" href="assets/css/shared.css">
@@ -97,75 +97,7 @@
   </script>
 
   <style>
-    .ec-log-wrap {
-      color: #1e293b;
-      margin: 0 auto;
-      max-width: 960px;
-      padding: 30px 20px 50px;
-    }
-    .ec-release-card {
-      background: #ffffff;
-      border: 1px solid #e2e8f0;
-      border-radius: 16px;
-      box-shadow: 0 4px 16px rgba(0, 0, 0, 0.03);
-      margin-bottom: 26px;
-      padding: 30px;
-    }
-    .ec-release-badge {
-      background: #e0f2fe;
-      border-radius: 9999px;
-      color: #0369a1;
-      display: inline-block;
-      font-size: 12px;
-      font-weight: 800;
-      padding: 3px 12px;
-    }
-    .ec-release-badge.latest {
-      background: #ecfdf5;
-      color: #047857;
-      border: 1px solid #a7f3d0;
-    }
-    .ec-site-nav {
-      margin: 36px auto 20px;
-      max-width: 1040px;
-      padding: 0 10px;
-    }
-    .ec-nav-inner {
-      align-items: center;
-      background: #ffffff;
-      border: 1px solid #e2e8f0;
-      border-radius: 14px;
-      box-shadow: 0 4px 16px rgba(0, 0, 0, 0.03);
-      display: flex;
-      flex-wrap: wrap;
-      gap: 8px;
-      justify-content: center;
-      padding: 14px 16px;
-    }
-    .ec-nav-link {
-      align-items: center;
-      background: #f8fafc;
-      border: 1px solid #e2e8f0;
-      border-radius: 8px;
-      color: #0f172a !important;
-      display: inline-flex;
-      font-size: 13px;
-      font-weight: 600;
-      gap: 5px;
-      padding: 8px 14px;
-      text-decoration: none !important;
-      transition: all 0.2s ease;
-    }
-    .ec-nav-link:hover {
-      background: #0369a1;
-      border-color: #0369a1;
-      color: #ffffff !important;
-      transform: translateY(-1px);
-    }
-    @media (max-width: 640px) {
-      .ec-log-wrap { padding: 20px 14px; }
-      .ec-release-card { padding: 22px 18px; }
-    }
+    /* Subpage styling unified via shared.css Obsidian Command system */
   </style>
 </head>
 <body>
@@ -215,61 +147,58 @@
     </div>
   </header>
 
-  <!-- Breadcrumbs -->
-  <nav class="ec-breadcrumbs" aria-label="Breadcrumb">
-    <ol>
-      <li><a href="/">Home</a></li>
-      <li aria-current="page">Release Changelog</li>
-    </ol>
-  </nav>
-
   <main id="main-content">
-    <div class="ec-log-wrap">
-
-      <!-- Header -->
-      <header style="margin-bottom: 38px; text-align: center;">
-        <div style="background: #e0f2fe; border-radius: 9999px; color: #0369a1; display: inline-block; font-size: 12px; font-weight: 700; letter-spacing: 0.5px; margin-bottom: 12px; padding: 4px 14px; text-transform: uppercase;">
-          Product Release Notes &amp; Build Verification
-        </div>
-        <h1 style="color: #0f172a; font-size: clamp(28px, 4vw, 40px); font-weight: 800; margin: 0 0 12px;">EduCore Release Changelog</h1>
-        <p style="color: #475569; font-size: 16px; line-height: 1.65; margin: 0 auto; max-width: 760px;">
+    <section class="ec-subpage-hero">
+      <div class="ec-subpage-hero-inner">
+        <nav class="ec-breadcrumbs" aria-label="Breadcrumb">
+          <ol>
+            <li><a href="/">Home</a></li>
+            <li aria-current="page">Release Changelog</li>
+          </ol>
+        </nav>
+        <span class="ec-pill-badge">Product Release Notes &amp; Build Verification</span>
+        <h1>EduCore Release Changelog</h1>
+        <p>
           EduCore is an offline desktop School ERP for 64-bit Windows 10 and 11 developed by SUBLIME ENTERPRISES. Storing all student, fee, payroll, and exam records inside a local encrypted SQLite database, EduCore ships regular reliability and security releases from a 30-day free trial or ₹4,499 perpetual license.
         </p>
-      </header>
+      </div>
+    </section>
+
+    <div class="ec-log-wrap">
 
       <!-- Release v8.2.3 -->
-      <article class="ec-release-card" style="border-top: 4px solid #047857;">
+      <article class="ec-release-card" style="border-top: 4px solid var(--ec-emerald);">
         <div style="display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 10px; margin-bottom: 14px;">
           <div style="display: flex; align-items: center; gap: 10px; flex-wrap: wrap;">
-            <h2 style="color: #0f172a; font-size: 22px; font-weight: 800; margin: 0;">Version 8.2.3 — Enterprise Edition</h2>
+            <h2 style="color: var(--ec-ink); font-size: 22px; font-weight: 800; margin: 0;">Version 8.2.3 — Enterprise Edition</h2>
             <span class="ec-release-badge latest">Current Release (Oct–Nov 2026)</span>
           </div>
-          <a href="https://github.com/tyk786/EduCore/releases/download/8.2.3/Setup_EduCore_App.zip" style="background: #0369a1; border-radius: 8px; color: #ffffff; font-size: 13px; font-weight: 700; padding: 8px 16px; text-decoration: none;" target="_blank">📥 Download v8.2.3 (.zip)</a>
+          <a href="https://github.com/tyk786/EduCore/releases/download/8.2.3/Setup_EduCore_App.zip" class="ec-btn-solid" style="padding: 8px 16px; font-size: 13px;" target="_blank">Download v8.2.3 (.zip)</a>
         </div>
 
-        <h3 style="color: #0369a1; font-size: 15px; font-weight: 700; margin: 16px 0 8px;">New Workflows &amp; UI Upgrades</h3>
-        <ul style="color: #475569; font-size: 14px; line-height: 1.75; margin: 0 0 14px; padding-left: 20px;">
+        <h3 style="color: var(--ec-emerald-deep); font-size: 15px; font-weight: 700; margin: 16px 0 8px;">New Workflows &amp; UI Upgrades</h3>
+        <ul style="color: var(--ec-ink-body); font-size: 14px; line-height: 1.75; margin: 0 0 14px; padding-left: 20px;">
           <li><strong>Dedicated Fees &amp; Payroll Workspaces:</strong> Split unified finance into separate <strong>Fees</strong> and <strong>Payroll</strong> modules alongside <strong>Expenses</strong>, with distinct billing/salary dashboards and role-gated payroll sidebar visibility for authorized staff.</li>
           <li><strong>Weekly &amp; Alternating-Week Timetables:</strong> Added day selection, subject distribution controls, and automated teacher collision prevention for both standard weekly and alternating-week school schedules.</li>
           <li><strong>Exam Matrix Save Guards &amp; Preset Controls:</strong> Added unsaved-edit confirmation prompts when switching tabs, classes, or exam terms; single-cell mark clearing; and safer exam preset switching.</li>
           <li><strong>Native High-DPI Date Picker:</strong> Replaced legacy external calendar widgets with a built-in, click-anywhere-to-dismiss calendar picker.</li>
         </ul>
 
-        <h3 style="color: #0369a1; font-size: 15px; font-weight: 700; margin: 14px 0 8px;">Security Hardening, Licensing &amp; Installer Safety</h3>
-        <ul style="color: #475569; font-size: 14px; line-height: 1.75; margin: 0 0 16px; padding-left: 20px;">
+        <h3 style="color: var(--ec-emerald-deep); font-size: 15px; font-weight: 700; margin: 14px 0 8px;">Security Hardening, Licensing &amp; Installer Safety</h3>
+        <ul style="color: var(--ec-ink-body); font-size: 14px; line-height: 1.75; margin: 0 0 16px; padding-left: 20px;">
           <li><strong>Login &amp; Permission Hardening (Nov 2026):</strong> Added login rate-limiting/lockout protection, password-change ownership enforcement, strict permission checks on fee reversals and data exports, and percentage bounds (`0–100%`) on fee discounts.</li>
           <li><strong>Safe Documents &amp; Exports:</strong> Enforced file-extension allowlists and 15 MB upload caps on student/staff attachments, safe text escaping in generated PDFs, and formula-injection sanitization in CSV exports.</li>
           <li><strong>Startup Backup Check &amp; Single-Instance Installer Guard:</strong> Verifies database integrity on startup before login, enforces authorization on backup/restore actions, ensures atomic monthly fee/salary rollbacks, and detects running instances during Windows setup upgrades while preserving all local school data.</li>
           <li><strong>Licensing Enforcement &amp; Documentation:</strong> Added strict activation enforcement on expired trials and published `v8.2.3` SHA-256 checksums, VirusTotal `0/72` Clean verification, and illustrated SmartScreen setup steps.</li>
         </ul>
 
-        <div style="background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 10px; padding: 14px 16px; font-size: 12px; color: #475569;">
-          <div style="display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 8px; margin-bottom: 8px;">
-            <strong style="color: #0f172a;">Verified Build Checksums (v8.2.3)</strong>
-            <a href="https://www.virustotal.com/gui/file/f47999d6952f294330de11cbf0c78290e692f04f7673212d048ad170164deeec" target="_blank" rel="noopener noreferrer" style="background: #ecfdf5; border: 1px solid #a7f3d0; border-radius: 6px; padding: 3px 10px; font-size: 11.5px; font-weight: 700; color: #047857; text-decoration: none;">✅ VirusTotal 0/72 Clean</a>
+        <div class="ec-vault-panel" style="padding: 16px 18px; font-size: 12px;">
+          <div class="ec-vault-head" style="margin-bottom: 10px; padding-bottom: 10px;">
+            <strong style="color: #ffffff;">Verified Build Checksums (v8.2.3)</strong>
+            <a href="https://www.virustotal.com/gui/file/f47999d6952f294330de11cbf0c78290e692f04f7673212d048ad170164deeec" target="_blank" rel="noopener noreferrer" class="ec-vt-pill">✓ VirusTotal 0/72 Clean</a>
           </div>
-          <div><strong>EduCore_Setup_v8.2.3.exe:</strong> <code style="font-size: 11px; color: #0369a1; word-break: break-all;">f47999d6952f294330de11cbf0c78290e692f04f7673212d048ad170164deeec</code></div>
-          <div style="margin-top: 4px;"><strong>Setup_EduCore_App.zip:</strong> <code style="font-size: 11px; color: #0369a1; word-break: break-all;">129899440ee867a074ecd8a4ba5720c25bf2ef0853c689f5dfe27a8e83494978</code></div>
+          <div><strong style="color: #ffffff;">EduCore_Setup_v8.2.3.exe:</strong> <code class="ec-vault-hash">f47999d6952f294330de11cbf0c78290e692f04f7673212d048ad170164deeec</code></div>
+          <div style="margin-top: 4px;"><strong style="color: #ffffff;">Setup_EduCore_App.zip:</strong> <code class="ec-vault-hash">129899440ee867a074ecd8a4ba5720c25bf2ef0853c689f5dfe27a8e83494978</code></div>
         </div>
       </article>
 
